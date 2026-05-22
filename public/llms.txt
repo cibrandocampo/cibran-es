@@ -1,0 +1,41 @@
+# Cibrán Docampo — Personal Site
+
+> Senior Software Developer based in Cangas, Galicia, Spain.
+> Over a decade of experience designing and building software across IPTV, broadcast, maritime surveillance, e-health, and large-scale observability platforms.
+
+## About
+
+Cibrán Docampo Piñeiro is a Telecommunications Engineer and Senior Software Developer with deep expertise in backend systems, cloud architecture, and data engineering. He has worked as Tech Lead on high-complexity, high-performance projects across multiple sectors.
+
+## Core expertise
+
+- Backend: Python, Flask, Django/DRF, Node.js, C/C++, Java
+- Data & Databases: PostgreSQL, DynamoDB, Redis, InfluxDB, time-series databases
+- Cloud & DevOps: AWS, Docker, Kubernetes, Terraform, CI/CD
+- Observability: Grafana, Prometheus, ELK Stack, CloudWatch, Loki
+- Multimedia & AV: FFmpeg, HW/SW transcoding, DVB/IPTV, HLS/DASH streaming
+- Frontend: Vue.js, React, Astro
+
+## Career highlights
+
+- Senior Software Developer at Plexus Tech (2022–present): real-time observability platform processing hundreds of millions of events per day; food delivery integration (Burger King, Popeyes, Telepizza); e-health platform for MAPFRE.
+- Senior Software Developer at Optiva Media (2021–2022): Media & TV streaming platform development.
+- Multimedia & AV Engineering: designed innovative solutions for interactive retail spaces, touch-sensitive floors in shopping centres, and VR/AR experiences for car dealerships worldwide.
+- Tech Lead: led multidisciplinary teams on high-complexity projects; worked as Team Lead of software development squads.
+
+## Personal projects
+
+Open source projects available on GitHub (github.com/cibrandocampo) and Docker Hub (hub.docker.com/u/cibrandocampo).
+
+## Contact
+
+- Email: hello@cibran.es
+- Location: Cangas, Galicia, Spain
+- LinkedIn: linkedin.com/in/cidocampo
+- GitHub: github.com/cibrandocampo
+
+## Languages
+
+- Galician: Native
+- Spanish: Native
+- English: Professional

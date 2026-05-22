@@ -1,10 +1,11 @@
 import { defineConfig } from 'astro/config'
 import tailwind from '@astrojs/tailwind'
+import sitemap from '@astrojs/sitemap'
 
 export default defineConfig({
   site: process.env.PUBLIC_SITE_URL ?? 'https://cibran.es',
   output: 'static',
-  integrations: [tailwind()],
+  integrations: [tailwind(), sitemap({ i18n: { defaultLocale: 'en', locales: { en: 'en-GB', es: 'es-ES', gl: 'gl-ES' } } })],
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es', 'gl'],
