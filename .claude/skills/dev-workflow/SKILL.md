@@ -44,7 +44,10 @@ docker compose down                                    # Stop
 
 ```bash
 # Install dependencies
-docker compose -f docker-compose.dev.yml run --rm web npm install
+docker compose -f docker-compose.dev.yml exec web npm install
+
+# Install a new package
+docker compose -f docker-compose.dev.yml exec web npm install <package>
 
 # Build for production
 docker compose -f docker-compose.dev.yml run --rm web npm run build

@@ -5,49 +5,76 @@ description: Frontend architecture patterns and conventions for cibran.es. Use w
 
 # Frontend Patterns — cibran.es
 
+## Reuse first — never define the same thing twice
+
+The single most important rule: **if a component, class, or pattern with the same intent already exists, consume it. Do not re-implement. Do not duplicate.**
+
+### Pre-write checklist
+
+Before creating ANY new component or style, check in this order:
+
+1. **Design tokens** — `tailwind.config.mjs` (`brand`, `accent`, `primary`) and `global.css` (`--c-*`). Never hardcode a color that maps to an existing token.
+2. **UI primitives** — `src/components/ui/`. Check `SectionTitle`, `ProjectCard`, `AccordionEntry`, `FunFact`, `InterestCard`, `SkillHighlight`, `BrandIcon` before building something new.
+3. **Section components** — `src/components/sections/`. One component per page section.
+4. **Data files** — `src/data/`. All content lives here as JSON. Never hardcode user-visible content in components.
+
+### The 1 / 2 / 3 rule
+
+- **1 occurrence**: local code is fine.
+- **2 occurrences**: acceptable only if the intent differs. If intent matches, extract before the second lands.
+- **3 occurrences**: extract before merging the third. The pattern has proven itself.
+
 ## Architecture
 
 - **Astro** static site generator (`.astro` components and pages)
-- **Tailwind CSS** for all styling — no custom CSS files except for things Tailwind cannot do
-- **Lucide** for icons — named imports: `import { Github, Linkedin, Mail } from 'lucide-react'`
-- **Content**: all site data in `src/data/` as JSON files — never hardcode content in components
+- **Tailwind CSS** for all styling — no custom CSS except `global.css` (Tailwind base + CSS custom properties)
+- **Lucide** for icons via `@lucide/astro` — named imports only
+- **Content**: all site data in `src/data/` as JSON — never hardcode content in components
 
 ## Project structure
 
 ```
 src/
-  components/      # Reusable Astro components
-  layouts/         # Page layouts (BaseLayout.astro)
-  pages/           # Astro pages (index.astro = home)
-  data/            # JSON content files (profile.json, experience.json, projects.json, ...)
-  styles/          # global.css only — Tailwind base + custom properties
+  components/
+    sections/    # One component per page section (About, Hero, Portfolio…)
+    ui/          # Reusable primitives (ProjectCard, FunFact, SectionTitle…)
+  layouts/       # BaseLayout.astro
+  pages/         # index.astro (en), es/index.astro, gl/index.astro
+  data/          # JSON content files
+  i18n/          # en.json, es.json, gl.json + utils.ts
+  styles/        # global.css only
 public/
-  images/          # Static images
-  fonts/           # Self-hosted fonts (if any)
-dist/              # Build output (gitignored)
+  images/        # Static images
+  favicon.svg
+  og-image.jpg
+  CNAME
+  robots.txt
+  llms.txt
+dist/            # Build output (gitignored)
 ```
 
-## Data model
+## Color system
 
-All content lives in `src/data/`. Components receive data as props — never import JSON directly inside a component unless it is the page/layout assembling the data.
+Three custom tokens on top of Tailwind's zinc palette:
 
-Key data files:
-- `profile.json` — name, bio, location, social links
-- `experience.json` — work history array
-- `education.json` — education + courses array
-- `skills.json` — technical and personal skills
-- `projects.json` — portfolio projects
-- `fun-facts.json` — fun facts items
+| Token | Hex | Use |
+|-------|-----|-----|
+| `text-brand` / `bg-brand` | `#fcd34d` | Yellow — sparingly: skill icons, project count badges, link icons in portfolio |
+| `text-accent` / `bg-accent` | `#4a56a1` | Blue — section underlines, interest/contact icons, tech tag backgrounds, dates |
+| `text-primary` / `bg-primary` | `#454961` | Blue-grey — secondary accents |
 
-## Tailwind conventions
+**Dark base**: `bg-zinc-900` (page), `bg-zinc-800` (cards/surfaces), `bg-zinc-700` (borders).
 
-- Use Tailwind utility classes exclusively. No inline `style=` unless strictly necessary (e.g. dynamic background-image URLs).
-- Dark theme is the default. Use `bg-zinc-900`, `bg-zinc-800`, `text-zinc-100`, `text-zinc-400` as base tokens.
-- Accent color: `indigo-500` / `indigo-400` for highlights and interactive elements.
-- Spacing scale: stick to Tailwind defaults (4, 6, 8, 12, 16, 24 are the most common).
-- Responsive: mobile-first. Use `md:` and `lg:` breakpoints.
+### Label system (consistent across sections)
 
-### Design tokens (via CSS custom properties in global.css)
+| Label type | Style |
+|---|---|
+| Category / type (e.g. "Web App", "Business Intelligence") | `text-brand bg-brand/10 border border-brand/25 rounded-full` |
+| Tech tags (e.g. "Python", "Docker") | `text-zinc-200 bg-accent/25 border border-accent/30 rounded` |
+| Social/language buttons | `text-zinc-200 bg-accent/25 border border-accent/30 rounded-lg` |
+| Nav language selector (active) | `text-zinc-200 bg-accent/25 border border-accent/30 rounded` |
+
+### Design tokens (CSS custom properties in global.css)
 
 ```css
 --c-bg: theme('colors.zinc.900');
@@ -55,10 +82,8 @@ Key data files:
 --c-border: theme('colors.zinc.700');
 --c-text: theme('colors.zinc.100');
 --c-text-2: theme('colors.zinc.400');
---c-accent: theme('colors.indigo.500');
+--c-accent: theme('colors.accent');
 ```
-
-Use these when Tailwind utilities are not expressive enough (e.g. in generated SVG or canvas code).
 
 ## Component patterns
 
@@ -66,7 +91,6 @@ Use these when Tailwind utilities are not expressive enough (e.g. in generated S
 
 ```astro
 ---
-// Props interface at the top
 interface Props {
   title: string
   href?: string
@@ -79,71 +103,68 @@ const { title, href } = Astro.props
 </div>
 ```
 
-### Section pattern
-
-Each section of the page (About, Resume, Portfolio, Contact) is an Astro component in `src/components/sections/`. It receives its data as props from the page.
-
-```astro
----
-import type { Experience } from '../../data/experience.json'
-interface Props { items: Experience[] }
-const { items } = Astro.props
----
-```
-
 ### Icon usage
 
-Always use Lucide. Import only what you need:
+Always use `@lucide/astro`. Import only what you need:
 
 ```astro
 ---
-import { Github, Linkedin, Mail, ExternalLink, Download } from 'lucide-react'
+import { Github, Globe, Mail } from '@lucide/astro'
 ---
-<Github class="w-5 h-5" />
+<Github size={20} class="text-accent" />
 ```
 
-For Astro components (not React islands), use `lucide-astro` if available, otherwise embed the SVG directly for icons that must render without JS.
+For dynamic icons (from data), use the `toPascalCase` pattern:
 
-### Links — external always `target="_blank" rel="noopener noreferrer"`
+```astro
+---
+import * as LucideIcons from '@lucide/astro'
+const IconComponent = (LucideIcons as Record<string, any>)[toPascalCase(icon)]
+---
+{IconComponent && <IconComponent size={24} class="text-accent" />}
+```
+
+### External links — always include rel
 
 ```astro
 <a href={url} target="_blank" rel="noopener noreferrer">...</a>
 ```
 
+### z-index and clickable overlays
+
+When a card has a full-card `<a>` overlay (`absolute inset-0 z-10`) AND inner links that must be clickable (`z-20`):
+
+- The card's content wrapper must NOT have `z-0` — that would create a stacking context trapping the inner links below the overlay.
+- Use `relative` (no z-index) on the content wrapper; inner links with `z-20` will then be in the same stacking context as the overlay and win.
+
+## i18n
+
+Three locales: `en` (default, at `/`), `es` (at `/es/`), `gl` (at `/gl/`).
+
+- UI strings: `src/i18n/en.json`, `es.json`, `gl.json`
+- Data strings: inline per-locale keys in `src/data/*.json` (e.g. `name: { en: "...", es: "...", gl: "..." }`)
+- Helper: `t(locale, 'key')` from `src/i18n/utils.ts`
+
+**Rule**: when adding any user-visible string, add it to all three locales. Never hardcode.
+
 ## Typography
 
-Font: **Inter** (primary) + **Cormorant Garamond** (display/hero only).
-Load via `<link>` in BaseLayout with `display=swap` and `preconnect`.
+Font: **Inter** (primary) + **Space Grotesk** (logo/nav only).
 
 | Use | Class |
 |-----|-------|
-| Hero name | `text-5xl font-bold tracking-tight` |
-| Section title | `text-2xl font-semibold` |
-| Card title | `text-base font-semibold` |
-| Body text | `text-sm text-zinc-300` |
+| Section title | `text-3xl font-bold` |
+| Card title | `text-base font-semibold text-white` |
+| Body text | `text-sm text-zinc-300 leading-relaxed` |
 | Muted/secondary | `text-sm text-zinc-400` |
-| Label/tag | `text-xs font-medium uppercase tracking-wide` |
-
-## Animation
-
-Use Tailwind's `transition`, `duration-`, `ease-` utilities for hover states.
-For entrance animations (scroll-triggered), use the `@tailwindcss/animate` plugin or plain CSS `@keyframes` in `global.css` — keep it minimal.
-
-No heavy animation libraries. The typed effect on the hero can use a small vanilla JS snippet or a lightweight library.
-
-## Content update workflow
-
-To update site content (bio, new job, new project):
-1. Edit the relevant JSON file in `src/data/`.
-2. Rebuild: `docker compose -f docker-compose.dev.yml run --rm web npm run build`.
-3. The component that consumes that data will automatically reflect the change.
+| Label uppercase | `text-xs font-medium uppercase tracking-widest text-zinc-500` |
 
 ## Build verification
 
 Before every push, the build must pass with zero errors:
 
 ```bash
-docker compose -f docker-compose.dev.yml run --rm web npm run build 2>&1
+docker compose -f docker-compose.dev.yml exec web npm run build
 ```
 
 Exit 0 = PASS. Any error = FAIL, fix before pushing.
