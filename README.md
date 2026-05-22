@@ -1,20 +1,16 @@
 # cibran.es
 
 <p align="center">
-  <a href="https://github.com/cibrandocampo/cibran-es/actions/workflows/deploy.yml"><img src="https://github.com/cibrandocampo/cibran-es/actions/workflows/deploy.yml/badge.svg" alt="Deploy to GitHub Pages"/></a>
-  <a href="https://cibran.es"><img src="https://img.shields.io/badge/Live-cibran.es-4a56a1?logo=safari&logoColor=white" alt="Live site"/></a>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Astro-5.x-FF5D01?logo=astro&logoColor=white" alt="Astro 5"/>
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS 3"/>
   <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white" alt="TypeScript 5"/>
 </p>
 
 <p align="center">
-  Personal website of Cibrán Docampo Piñeiro — Senior Backend Developer based in Cangas, Galicia.
+  The quickest way to get to know Cibrán Docampo — who he is, what he's into,
+  the projects he's actually proud of, and the kind of work he does best.
   <br/>
-  Multilingual (EN · ES · GL), dark theme, zero client-side JavaScript.
+  <sub>And don't skip the <em>A few numbers</em> section.</sub>
 </p>
 
 <p align="center">
@@ -59,3 +55,7 @@ A GitHub Actions scheduled workflow rebuilds the site weekly to keep the pull co
 ## Built with Claude Code
 
 Developed with [Claude Code](https://claude.ai/code), Anthropic's AI coding assistant.
+
+## License
+
+[MIT](LICENSE) © 2026 Cibrán Docampo Piñeiro
