@@ -40,7 +40,7 @@ for (const project of highlighted) {
 <section id="portfolio" class="py-24 bg-zinc-900">
   <div class="max-w-6xl mx-auto px-4">
     <SectionTitle title={t(locale, 'section.portfolio')} />
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
       {highlighted.map(project => (
         <ProjectCard
           project={project}
