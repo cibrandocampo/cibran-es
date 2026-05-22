@@ -1,0 +1,66 @@
+---
+import { t } from '../../i18n/utils'
+import SectionTitle from '../ui/SectionTitle.astro'
+import FunFact from '../ui/FunFact.astro'
+import InterestCard from '../ui/InterestCard.astro'
+import profile from '../../data/profile.json'
+import funFacts from '../../data/fun-facts.json'
+import interests from '../../data/interests.json'
+
+interface Props {
+  locale: 'en' | 'es' | 'gl'
+}
+const { locale } = Astro.props
+
+const bioShort = profile.bio.long[locale]
+---
+
+<section id="about" class="py-24 bg-zinc-900">
+  <div class="max-w-6xl mx-auto px-4 space-y-20">
+
+    <!-- Block 1: Bio (short) -->
+    <div>
+      <SectionTitle title={t(locale, 'section.about')} />
+      <div class="max-w-3xl space-y-4">
+        {bioShort.map((paragraph: string) => (
+          <p class="text-zinc-300 leading-relaxed">{paragraph}</p>
+        ))}
+      </div>
+    </div>
+
+    <!-- Block 2: It's me -->
+    <div>
+      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
+        {t(locale, 'about.itsme_title')}
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {interests.map(item => (
+          <InterestCard
+            icon={item.icon}
+            name={item.name[locale]}
+            description={item.description[locale]}
+          />
+        ))}
+      </div>
+    </div>
+
+    <!-- Block 3: Few numbers -->
+    <div>
+      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
+        {t(locale, 'about.facts_title')}
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {funFacts.map(fact => (
+          <FunFact
+            emoji={fact.emoji}
+            value={fact.value}
+            label={fact.label[locale]}
+            note={fact.note[locale]}
+          />
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
+

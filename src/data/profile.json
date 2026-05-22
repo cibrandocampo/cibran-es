@@ -1,0 +1,117 @@
+{
+  "name": "Cibrán Docampo",
+  "firstName": "Cibrán",
+  "lastName": "Docampo Piñeiro",
+  "title": "Senior Software Developer",
+  "location": "Cangas, Galicia, Spain",
+  "email": "hola@cibran.es",
+  "bio": {
+    "short": "Engineer from the heart of the Rías Baixas. I build scalable backend systems, fly drones in cold places, and still can't decide if the bagpipes are music or a lifestyle.",
+    "long": {
+      "en": [
+        "I'm from Cangas, a small seaside town in the heart of the Rías Baixas — steeped in salt air, rich in maritime spirit and tradition, and watched over by the incredible Cíes Islands. Hard not to feel proud of that.",
+        "As a kid, while others wanted to be astronauts or footballers, I was set on being an inventor. I never really grew out of it — I just found a more practical name for it.",
+        "That's what led me to engineering. Not quite the same thing, but close enough to keep building things that (hopefully) make people's lives a bit better.",
+        "Turns out, that's all I was really after.",
+        "And beyond the code, that same curiosity still shows up in different ways.",
+        "Scroll down — you'll see what I mean."
+      ],
+      "es": [
+        "Soy de Cangas, un pequeño pueblo marinero en el corazón de las Rías Baixas — impregnado de salitre, lleno de espíritu y tradición marinera, y custodiado por las increíbles Islas Cíes. Como para no estar orgulloso.",
+        "De pequeño, mientras otros querían ser astronautas o futbolistas, yo tenía claro que quería ser inventor. Nunca se me pasó — simplemente le encontré un nombre más práctico.",
+        "Eso es lo que me llevó a la ingeniería. No es exactamente lo mismo, pero se acerca bastante: construir cosas que (con suerte) hagan la vida de la gente un poco mejor.",
+        "Al final, eso era todo lo que buscaba.",
+        "Y más allá del código, esa misma curiosidad sigue apareciendo de otras formas.",
+        "Sigue bajando — verás a qué me refiero."
+      ],
+      "gl": [
+        "Son de Cangas, unha pequena vila mariñeira no corazón das Rías Baixas — aromatizada con salitre, chea de espírito e tradición mariñeira e custodiada polas incribles Illas Cíes. Como para non estar orgulloso!",
+        "De pequeno, mentres outros querían ser astronautas ou futbolistas, eu tiña claro que quería ser inventor. Nunca se me pasou — simplemente atopeille un nome máis práctico.",
+        "Iso foi o que me levou á enxeñaría. Non é exactamente o mesmo, pero achégase bastante: construír cousas que (con sorte) fagan a vida da xente un pouco mellor.",
+        "Ao final, iso era todo o que buscaba.",
+        "E máis alá do código, esa mesma curiosidade segue aparecendo doutras formas.",
+        "Segue baixando — verás ao que me refiro."
+      ]
+    }
+  },
+  "resumeBio": {
+    "en": [
+      "Telecommunications engineer with over a decade across very different domains — IPTV and video streaming, digital signage, border security, big data and last-mile delivery. That variety has meant working with a wide mix of technologies, languages, frameworks, databases and infrastructure stacks.",
+      "The only constant is change. I've learned to enjoy that."
+    ],
+    "es": [
+      "Ingeniero de telecomunicaciones con más de una década de experiencia en ámbitos muy distintos — IPTV y streaming de vídeo, señalética digital, seguridad fronteriza, big data y logística de última milla. Esa variedad me ha llevado a trabajar con un amplio abanico de tecnologías, lenguajes, frameworks, bases de datos e infraestructuras.",
+      "La única constante es el cambio. Y he aprendido a disfrutarlo."
+    ],
+    "gl": [
+      "Enxeñeiro de telecomunicacións con máis dunha década de experiencia en ámbitos moi distintos — IPTV e streaming de vídeo, sinalización dixital, seguridade fronteiriza, big data e loxística de última milla. Esa variedade levoume a traballar cun amplo abano de tecnoloxías, linguaxes, frameworks, bases de datos e infraestruturas.",
+      "A única constante é o cambio. E aprendín a gozalo."
+    ]
+  },
+  "typedTitles": [
+    "a senior software developer.",
+    "an engineer.",
+    "a maker.",
+    "a dreamer."
+  ],
+  "languages": [
+    {
+      "name": "Galician",
+      "level": "Native"
+    },
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Professional"
+    },
+    {
+      "name": "Portuguese",
+      "level": "Enough to order coffee politely. Barely."
+    }
+  ],
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/cidocampo/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/cibrandocampo",
+      "icon": "github"
+    },
+    {
+      "name": "Docker Hub",
+      "url": "https://hub.docker.com/u/cibrandocampo",
+      "icon": "docker"
+    },
+    {
+      "name": "HappyWhale",
+      "url": "https://happywhale.com/user/25322",
+      "icon": "happywhale"
+    },
+    {
+      "name": "eBird",
+      "url": "https://ebird.org/profile/OTIxNTk2OA/world",
+      "icon": "ebird"
+    },
+    {
+      "name": "500px",
+      "url": "https://500px.com/p/cibran",
+      "icon": "500px"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://open.spotify.com/user/comepedras",
+      "icon": "spotify"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/yogurgur/",
+      "icon": "instagram"
+    }
+  ]
+}

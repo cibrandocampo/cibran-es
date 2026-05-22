@@ -1,0 +1,52 @@
+---
+import { t } from '../../i18n/utils'
+import SectionTitle from '../ui/SectionTitle.astro'
+import ProjectCard from '../ui/ProjectCard.astro'
+import projects from '../../data/projects.json'
+
+interface Props {
+  locale: 'en' | 'es' | 'gl'
+}
+const { locale } = Astro.props
+
+const highlighted = projects.filter(p => p.highlight)
+
+// Fetch Docker Hub pull counts at build time
+async function fetchPulls(images: string[]): Promise<number> {
+  let total = 0
+  for (const image of images) {
+    try {
+      const res = await fetch(`https://hub.docker.com/v2/repositories/${image}/`)
+      if (!res.ok) continue
+      const data = await res.json()
+      total += (data.pull_count as number) ?? 0
+    } catch {
+      // Network failure — continue with 0 for this image
+    }
+  }
+  return total
+}
+
+// Build a pulls map: project.id → total pull count
+const pullsMap: Record<string, number> = {}
+for (const project of highlighted) {
+  if (project.dockerHub) {
+    const fetched = await fetchPulls(project.dockerHub.images)
+    pullsMap[project.id] = fetched > 0 ? fetched : project.dockerHub.totalPulls
+  }
+}
+---
+
+<section id="portfolio" class="py-24 bg-zinc-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <SectionTitle title={t(locale, 'section.portfolio')} />
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {highlighted.map(project => (
+        <ProjectCard
+          project={project}
+          pulls={pullsMap[project.id]}
+        />
+      ))}
+    </div>
+  </div>
+</section>

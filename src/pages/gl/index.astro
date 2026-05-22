@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Hero from '../../components/sections/Hero.astro'
+import About from '../../components/sections/About.astro'
+import Professional from '../../components/sections/Professional.astro'
+import Portfolio from '../../components/sections/Portfolio.astro'
+import Contact from '../../components/sections/Contact.astro'
+
+const locale = 'gl' as const
+---
+
+<BaseLayout locale={locale}>
+  <Hero locale={locale} />
+  <About locale={locale} />
+  <Professional locale={locale} />
+  <Portfolio locale={locale} />
+  <Contact locale={locale} />
+</BaseLayout>

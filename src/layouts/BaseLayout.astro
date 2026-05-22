@@ -1,0 +1,62 @@
+---
+import '../styles/global.css'
+import { t } from '../i18n/utils'
+import Nav from '../components/Nav.astro'
+
+interface Props {
+  locale: 'en' | 'es' | 'gl'
+  title?: string
+  description?: string
+}
+
+const { locale, title, description } = Astro.props
+const pageTitle = title ?? t(locale, 'meta.title')
+const pageDesc = description ?? t(locale, 'meta.description')
+---
+
+<!doctype html>
+<html lang={locale} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={pageDesc} />
+    <title>{pageTitle}</title>
+
+    <!-- Fonts: Inter (body) + display font candidates -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={Astro.url.href} />
+  </head>
+  <body class="bg-zinc-900 text-zinc-100 font-sans antialiased pt-16">
+    <!-- Language auto-detection (runs once, stores preference in localStorage) -->
+    <script is:inline>
+      ;(function () {
+        const stored = localStorage.getItem('lang')
+        if (stored) return
+        const lang = (navigator.language || '').toLowerCase()
+        let target = 'en'
+        if (lang.startsWith('gl')) target = 'gl'
+        else if (lang.startsWith('es')) target = 'es'
+        localStorage.setItem('lang', target)
+        const path = window.location.pathname
+        if (target === 'es' && !path.startsWith('/es')) {
+          window.location.replace('/es' + (path === '/' ? '' : path))
+        } else if (target === 'gl' && !path.startsWith('/gl')) {
+          window.location.replace('/gl' + (path === '/' ? '' : path))
+        }
+      })()
+    </script>
+
+    <Nav locale={locale} />
+    <slot />
+  </body>
+</html>

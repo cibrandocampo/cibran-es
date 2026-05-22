@@ -1,0 +1,10 @@
+[
+  { "type": "animal", "id": "puffin",     "label": "Atlantic Puffin",  "image": "images/tiles/puffin.jpg" },
+  { "type": "animal", "id": "lion",       "label": "African Lion",     "image": "images/tiles/lion.jpg" },
+  { "type": "animal", "id": "whale",      "label": "Humpback Whale",   "image": "images/tiles/whale.jpg" },
+  { "type": "animal", "id": "penguin",    "label": "Penguin",          "image": "images/tiles/penguin.jpg" },
+  { "type": "place",  "id": "antarctica", "label": "Antarctica",       "image": "images/tiles/antarctica.jpg" },
+  { "type": "place",  "id": "okavango",   "label": "Okavango Delta",   "image": "images/tiles/okavango.jpg" },
+  { "type": "place",  "id": "alaska",     "label": "Alaska",           "image": "images/tiles/alaska.jpg" },
+  { "type": "place",  "id": "norway",     "label": "Norwegian Fjord",  "image": "images/tiles/norway.jpg" }
+]

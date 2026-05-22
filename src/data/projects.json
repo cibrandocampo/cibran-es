@@ -1,0 +1,158 @@
+[
+  {
+    "id": "nudge",
+    "title": "Nudge",
+    "category": "Web App",
+    "image": "images/projects/nudge.png",
+    "logo": "images/projects/nudge-logo.svg",
+    "description": "A gentle reminder app for recurring things — groceries, medications, filters, anything you tend to forget. Full-stack PWA with push notifications, sharing, and offline support.",
+    "tags": ["Python", "Django", "React", "Celery", "Redis", "PWA"],
+    "github": "https://github.com/cibrandocampo/nudge",
+    "url": "https://nudge.cibran.es",
+    "highlight": true,
+    "dockerHub": {
+      "images": ["cibrandocampo/nudge-backend", "cibrandocampo/nudge-frontend"],
+      "totalPulls": 4426
+    }
+  },
+  {
+    "id": "ovh-dyndns-client",
+    "title": "OVH DynDNS Client",
+    "category": "Networking",
+    "image": null,
+    "logo": "images/projects/ovh-dyndns-logo.svg",
+    "description": "Lightweight DynDNS client for OVH domains. Keeps your DNS record in sync with your dynamic public IP — perfect for self-hosted setups behind a residential connection.",
+    "tags": ["Python", "FastAPI", "OVH API", "Docker"],
+    "github": "https://github.com/cibrandocampo/ovh-dyndns-client",
+    "url": "https://ovh-dyndns.cibran.es",
+    "highlight": true,
+    "dockerHub": {
+      "images": ["cibrandocampo/ovh-dyndns-client"],
+      "totalPulls": 2796
+    }
+  },
+  {
+    "id": "synology-photos-video-enhancer",
+    "title": "Synology Video Enhancer",
+    "category": "Synology & Video",
+    "image": null,
+    "logo": "images/projects/synology-logo.svg",
+    "description": "Transcoding optimisation tool for Synology Photos. Automatically re-encodes videos to H.264 High Profile or H.265/HEVC, fixing the quality issues of Synology's default mobile transcoding pipeline.",
+    "tags": ["Python", "FFmpeg", "Docker", "Synology"],
+    "github": "https://github.com/cibrandocampo/synology-photos-video-enhancer",
+    "url": "https://video-enhancer.cibran.es",
+    "highlight": true,
+    "dockerHub": {
+      "images": ["cibrandocampo/synology-photos-video-enhancer"],
+      "totalPulls": 2230
+    }
+  },
+  {
+    "id": "yourfisio",
+    "title": "YourFisio",
+    "category": "Professional",
+    "image": null,
+    "logo": "images/projects/yourfisio-logo.png",
+    "description": "Physiotherapy management platform developed at Stickybit. Patient tracking, session scheduling and exercise prescription for clinics.",
+    "tags": ["Angular", "Node.js", "MongoDB"],
+    "github": null,
+    "url": "https://yourfisio.com",
+    "highlight": true,
+    "dockerHub": null
+  },
+  {
+    "id": "ebird",
+    "title": "eBird",
+    "category": "Citizen Science",
+    "image": "images/projects/ebird.jpg",
+    "description": "Bird sightings logged on eBird — Cornell Lab's global citizen science platform. Just getting started with ornithology, but already hooked on finding and identifying species along the Galician coast.",
+    "tags": ["Citizen Science", "Ornithology", "Wildlife"],
+    "github": null,
+    "url": "https://ebird.org/profile/OTIxNTk2OA/world",
+    "urlType": "profile",
+    "highlight": true,
+    "dockerHub": null
+  },
+  {
+    "id": "happywhale",
+    "title": "HappyWhale",
+    "category": "Citizen Science",
+    "image": "images/projects/happywhale.jpg",
+    "logo": "images/projects/happywhale-logo.png",
+    "description": "Contributed 50+ individual whale identifications to HappyWhale — a global cetacean research database. Fin whales and humpbacks off the Galician coast.",
+    "tags": ["Citizen Science", "Marine Biology", "Wildlife Photography"],
+    "github": null,
+    "url": "https://happywhale.com/user/25322",
+    "urlType": "profile",
+    "highlight": true,
+    "dockerHub": null
+  },
+  {
+    "id": "carbwise",
+    "title": "CarbWise",
+    "category": "Web App",
+    "image": null,
+    "logo": "images/projects/carbwise-logo.svg",
+    "description": "Carbohydrate calculator built to help people with diabetes manage their diet. Look up carb values from official sources and calculate insulin doses — simple, fast and mobile-first.",
+    "tags": ["JavaScript", "Nginx", "Docker"],
+    "github": "https://github.com/cibrandocampo/carbwise",
+    "url": "https://carbwise.cibran.es",
+    "highlight": true,
+    "dockerHub": {
+      "images": ["cibrandocampo/carbwise"],
+      "totalPulls": 948
+    }
+  },
+  {
+    "id": "lego-builder",
+    "title": "Lego Builder",
+    "category": "Fun",
+    "image": "images/projects/lego-builder.jpg",
+    "logo": "images/projects/lego-logo.png",
+    "description": "A personal experiment — image recognition tool that identifies Lego bricks and suggests possible builds. Because why not?",
+    "tags": ["Python", "Image Recognition", "Fun"],
+    "github": null,
+    "url": null,
+    "highlight": true,
+    "dockerHub": null
+  },
+  {
+    "id": "synology-service-stack",
+    "title": "Synology Service Stack",
+    "category": "Synology & DevOps",
+    "image": "images/projects/synology-stack.png",
+    "description": "Ready-to-deploy dockerised services — the must-have stack for Synology NAS. Pre-configured Docker Compose setups for the most useful self-hosted services.",
+    "tags": ["Docker", "Synology", "Self-hosted"],
+    "github": "https://github.com/cibrandocampo/synology-service-stack",
+    "url": null,
+    "highlight": false,
+    "dockerHub": null
+  },
+  {
+    "id": "work-time-control",
+    "title": "Work Time Control",
+    "category": "Web App",
+    "image": "images/projects/wtc.png",
+    "description": "Time control system for registering and reviewing working hours. Supports multiple users with individual timezones and weekly hour targets. Web dashboard and Excel export.",
+    "tags": ["Python", "Django", "JavaScript", "Docker"],
+    "github": "https://github.com/cibrandocampo/work-time-control",
+    "url": null,
+    "highlight": false,
+    "dockerHub": {
+      "images": ["cibrandocampo/work-time-control"],
+      "totalPulls": 908
+    }
+  },
+  {
+    "id": "digitally-wise-seniors",
+    "title": "Digitally Wise Seniors",
+    "category": "Web & Education",
+    "image": "images/projects/digitally-wise-seniors.jpg",
+    "description": "Suite of HTML5 games designed to help seniors develop touchscreen skills and digital confidence. Runs locally on any device, no installation required.",
+    "tags": ["HTML5", "CSS", "JavaScript"],
+    "github": "https://github.com/cibrandocampo/digitally-wise-seniors",
+    "url": null,
+    "highlight": false,
+    "dockerHub": null
+  }
+]

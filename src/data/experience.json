@@ -1,0 +1,117 @@
+[
+  {
+    "role": "Senior Backend Developer",
+    "project": "Obsly",
+    "period": "Jul. 2025 – Present",
+    "company": "Plexus Tech",
+    "description": [
+      "Senior Backend Developer at Obsly, a real-time observability platform processing hundreds of millions of events per day.",
+      "Building new platform features and designing analytics dashboards for metrics exploration at scale.",
+      "Event-driven and pub/sub architectures, time-series databases, LLM-powered query generation from natural language."
+    ],
+    "tags": ["Python", "PostgreSQL", "Event-driven", "LLM", "Observability"]
+  },
+  {
+    "role": "Integration Tech Lead",
+    "project": "WinDelivery by Glovo",
+    "period": "Oct. 2022 – Jul. 2025",
+    "company": "Plexus Tech",
+    "description": [
+      "Tech lead for WinDelivery by Glovo, a food delivery integration platform connecting restaurant brands with POS systems, delivery aggregators and last-mile logistics.",
+      "Designed a scalable integration ecosystem used by RB Iberia (Burger King, Popeyes), ALSEA (Foster's Hollywood, VIPS), FDB (Telepizza) and Dunkin' Donuts.",
+      "Event-driven architecture on AWS (Lambda, DynamoDB, SQS, SNS, RDS, Cognito). CI/CD and CloudWatch monitoring."
+    ],
+    "tags": ["Python", "Flask", "AWS", "Event-driven", "Tech Lead"]
+  },
+  {
+    "role": "Senior Backend Developer",
+    "project": "Savia — MAPFRE e-health",
+    "period": "Mar. 2022 – Oct. 2022",
+    "company": "Plexus Tech",
+    "description": [
+      "Backend team responsible for the redesign of Savia, MAPFRE's health insurance and e-health platform.",
+      "Re-architecture towards a modular, reusable platform (Multimap) to support multiple business verticals.",
+      "Python, Django REST Framework, Oscar Commerce, Stripe, Celery, Docker, Jenkins."
+    ],
+    "tags": ["Python", "Django", "DRF", "Celery", "Docker"]
+  },
+  {
+    "role": "Senior Backend Developer",
+    "project": "Telefónica R&D — STB & OTT",
+    "period": "Oct. 2021 – Mar. 2022",
+    "company": "Optiva Media",
+    "description": [
+      "Device management platforms for STBs and OTT players used by millions of Telefónica customers.",
+      "High-performance REST APIs with Python/Sanic, observability with Prometheus and Grafana.",
+      "Modernisation of legacy multicast-based STB management tools."
+    ],
+    "tags": ["Python", "Sanic", "Prometheus", "Grafana", "Docker"]
+  },
+  {
+    "role": "Full Stack Developer",
+    "project": "Maritime Surveillance Platform",
+    "period": "Jan. 2021 – Oct. 2021",
+    "company": "Grupo CPS",
+    "description": [
+      "Maritime surveillance and border control platform for law enforcement and national security agencies.",
+      "Real-time integration of AIS, SIVE radar networks and FIWARE/Orion Context Broker.",
+      "Event-driven communication via Redis Streams for high-resilience in low-connectivity environments."
+    ],
+    "tags": ["Python", "Django", "Vue.js", "Redis", "FIWARE"]
+  },
+  {
+    "role": "Projects Implementation Engineer",
+    "project": "Porsche Digitalisation",
+    "period": "Mar. 2020 – Jan. 2021",
+    "company": "TRISON",
+    "description": [
+      "Technical team leader for the Porsche digitalisation project across 570 dealerships worldwide.",
+      "Technological migrations, HelpDesk setup and software development for monitoring.",
+      "DjangoRF, Vue.js, MariaDB, Augmented Reality (AR), Docker."
+    ],
+    "tags": ["DjangoRF", "Vue.js", "AR", "Docker", "Tech Lead"]
+  },
+  {
+    "role": "R&D Engineer",
+    "project": "Multimedia Products & AV Solutions",
+    "period": "Oct. 2018 – Mar. 2020",
+    "company": "TRISON",
+    "description": [
+      "Development of new multimedia products as Designer, Developer & Product Manager.",
+      "Open Innovation environment: startup mentoring, partner integrations and project management.",
+      "Technological consultant for the Inditex group. Conceptualisation of retail and automotive spaces."
+    ],
+    "tags": ["AI/ML", "AR/VR", "Django", "Audio", "Product"]
+  },
+  {
+    "role": "R&D Engineer",
+    "project": "Streaming & Broadcast",
+    "period": "Jan. 2015 – Oct. 2018",
+    "company": "Arantia, Televes Corp",
+    "description": [
+      "Design, development and deployment of commercial streaming products.",
+      "Adaptive Multiscreen Transcoder, DVB MPTS Streaming Tools and IPTV headend solutions."
+    ],
+    "tags": ["C/C++", "Python", "DVB", "Streaming", "IPTV"]
+  },
+  {
+    "role": "R&D Student Engineer",
+    "project": "Transcoder Software",
+    "period": "Nov. 2013 – Dec. 2014",
+    "company": "Arantia, Televes Corp",
+    "description": [
+      "Transcoder software developer. Documentation, training, design and implementation of degree project."
+    ],
+    "tags": ["C++", "Streaming"]
+  },
+  {
+    "role": "Developer Student Engineer",
+    "project": "Canal7RíasBaixas OTT",
+    "period": "Jun. 2013 – Sept. 2013",
+    "company": "Streaming Galicia",
+    "description": [
+      "Deployment of the OTT Kaltura platform on AWS servers and integration with Wowza for Canal7RíasBaixas."
+    ],
+    "tags": ["AWS", "Kaltura", "Wowza", "OTT"]
+  }
+]

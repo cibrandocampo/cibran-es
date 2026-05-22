@@ -1,0 +1,80 @@
+[
+  {
+    "icon": "globe",
+    "name": {
+      "en": "Traveling",
+      "es": "Viajar",
+      "gl": "Viaxar"
+    },
+    "description": {
+      "en": "Not just to switch off — though that too. The real pull is seeing the world through someone else's eyes. Different cultures rewire something in you, if you let them.",
+      "es": "No solo para desconectar, aunque también. Lo que engancha de verdad es ver el mundo desde otro punto de vista. Las culturas distintas te reconfiguran por dentro, si se lo permites.",
+      "gl": "Non só para desconectar, aínda que tamén. O que engancha de verdade é ver o mundo dende outro punto de vista. As culturas distintas reconfigúrante por dentro, se llo permites."
+    }
+  },
+  {
+    "icon": "hammer",
+    "name": {
+      "en": "Building Things",
+      "es": "Construir cosas",
+      "gl": "Construír cousas"
+    },
+    "description": {
+      "en": "I still love building with Lego. And deep down, the material doesn't really matter — bricks, timber or code: the pull to create something new never quite goes away.",
+      "es": "Me sigue encantando construir con Lego. Y, en el fondo, da igual el material — ladrillos, madera o código: crear algo nuevo nunca deja de tirar de mí.",
+      "gl": "Ségueme encantando construír con Lego. E, no fondo, tanto ten o material — ladrillos, madeira ou código: crear algo novo nunca deixa de tirar de min."
+    }
+  },
+  {
+    "icon": "plane",
+    "name": {
+      "en": "Aeronautics",
+      "es": "Aeronáutica",
+      "gl": "Aeronáutica"
+    },
+    "description": {
+      "en": "Everything that flies fascinates me. I spend a lot of time trying to understand it — though in practice I just fly a small drone and try to keep it away from anything important.",
+      "es": "Todo lo que vuela me fascina. Dedico muchas horas a entenderlo, aunque en la práctica solo vuelo mi pequeño dron y trato de mantenerlo lejos de cualquier cosa importante.",
+      "gl": "Todo o que voa me fascina. Dedico moitas horas a entendelo, aínda que na práctica só voo o meu pequeno dron e trato de mantelo lonxe de calquera cousa importante."
+    }
+  },
+  {
+    "icon": "ship",
+    "name": {
+      "en": "Trainera (rowing)",
+      "es": "Trainera (remo)",
+      "gl": "Traíña"
+    },
+    "description": {
+      "en": "From the outside it doesn't look like much fun. It would already be worth it just to be out on the water — but the real magic is the trust and complicity you build with a whole crew.",
+      "es": "Desde fuera no parece muy divertido. Ya valdría la pena solo por navegar, pero lo mágico de verdad es la complicidad y calidad humana que se crea con todo un equipo.",
+      "gl": "Desde fóra non parece moi divertido. Xa valería a pena só por navegar, pero o máxico de verdade é a complicidade e calidade humana que se crea con todo un equipo."
+    }
+  },
+  {
+    "icon": "binoculars",
+    "name": {
+      "en": "Cetaceans & Birds",
+      "es": "Cetáceos y aves",
+      "gl": "Cetáceos e aves"
+    },
+    "description": {
+      "en": "Sounds nerdy. It is. But once you start noticing the world around you at that level, you can't stop — it stops being a hobby and becomes a need.",
+      "es": "Suena friki. Lo es. Pero cuando empiezas a fijarte en el mundo que te rodea a ese nivel, ya no puedes parar: deja de ser una afición y se convierte en una necesidad.",
+      "gl": "Soa friki. Éo. Pero cando empezas a fixarte no mundo que te rodea a ese nivel, xa non podes parar: deixa de ser unha afección e convértese nunha necesidade."
+    }
+  },
+  {
+    "icon": "music",
+    "name": {
+      "en": "Music",
+      "es": "Música",
+      "gl": "Música"
+    },
+    "description": {
+      "en": "The pepper of life. It fills the gaps between everything else — and it's even better if you play. Three guitar chords and a set of bagpipes is apparently enough.",
+      "es": "La pimienta de la vida. Llena los huecos entre todo lo demás, y más aún si has podido tocar un instrumento. Con tres acordes de guitarra y una gaita parece que es suficiente.",
+      "gl": "A pementa da vida. Enche os ocos entre todo o demais, e máis aínda se puideches tocar un instrumento. Con tres acordes de guitarra e unhas gaitas parece que é suficiente."
+    }
+  }
+]

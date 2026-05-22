@@ -1,0 +1,86 @@
+[
+  {
+    "emoji": "🌍",
+    "value": "179",
+    "label": {
+      "en": "Destinations explored",
+      "es": "Destinos explorados",
+      "gl": "Destinos explorados"
+    },
+    "note": {
+      "en": "21 countries across 5 continents",
+      "es": "21 países en 5 continentes",
+      "gl": "21 países en 5 continentes"
+    }
+  },
+  {
+    "emoji": "📸",
+    "value": "429k+",
+    "label": {
+      "en": "Photos taken",
+      "es": "Fotos tomadas",
+      "gl": "Fotos tomadas"
+    },
+    "note": {
+      "en": "3 cameras trying to capture the world as it is",
+      "es": "3 cámaras intentando capturar el mundo tal como es",
+      "gl": "3 cámaras tentando capturar o mundo tal como é"
+    }
+  },
+  {
+    "emoji": "🎧",
+    "value": "823",
+    "label": {
+      "en": "Artists last year",
+      "es": "Artistas el año pasado",
+      "gl": "Artistas o ano pasado"
+    },
+    "note": {
+      "en": "Spotify Wrapped said \"too much\". I call it curiosity.",
+      "es": "Spotify Wrapped dijo \"demasiado\". Yo lo llamo curiosidad.",
+      "gl": "Spotify Wrapped dixo \"demasiado\". Eu chámollelo curiosidade."
+    }
+  },
+  {
+    "emoji": "🐳",
+    "value": "380+",
+    "label": {
+      "en": "Whales encountered",
+      "es": "Ballenas avistadas",
+      "gl": "Baleas avistadas"
+    },
+    "note": {
+      "en": "52 uniquely identified on HappyWhale",
+      "es": "52 identificadas individualmente en HappyWhale",
+      "gl": "52 identificadas individualmente en HappyWhale"
+    }
+  },
+  {
+    "emoji": "🐧",
+    "value": "124",
+    "label": {
+      "en": "Bird species logged",
+      "es": "Especies de aves registradas",
+      "gl": "Especies de aves rexistradas"
+    },
+    "note": {
+      "en": "logged on eBird. The real number? unknowable.",
+      "es": "registradas en eBird. ¿El número real? incalculable.",
+      "gl": "rexistradas en eBird. O número real? incalculable."
+    }
+  },
+  {
+    "emoji": "🛸",
+    "value": "728 km",
+    "label": {
+      "en": "\"dronned\"",
+      "es": "\"droneados\"",
+      "gl": "\"dronados\""
+    },
+    "note": {
+      "en": "A1–A3 certified. No heads harmed. Yet.",
+      "es": "Certificado A1–A3. Ninguna cabeza dañada. De momento.",
+      "gl": "Certificado A1–A3. Ningunha cabeza danada. De momento."
+    }
+  }
+]

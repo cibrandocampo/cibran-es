@@ -1,0 +1,112 @@
+---
+import { t } from '../../i18n/utils'
+import SectionTitle from '../ui/SectionTitle.astro'
+import SkillHighlight from '../ui/SkillHighlight.astro'
+import AccordionEntry from '../ui/AccordionEntry.astro'
+import profile from '../../data/profile.json'
+import skills from '../../data/skills.json'
+import timeline from '../../data/timeline.json'
+
+interface Props {
+  locale: 'en' | 'es' | 'gl'
+}
+const { locale } = Astro.props
+---
+
+<section id="professional" class="py-24 bg-zinc-900">
+  <div class="max-w-6xl mx-auto px-4 space-y-16">
+
+    <SectionTitle title={t(locale, 'section.resume')} />
+
+    <!-- Intro -->
+    <div class="max-w-3xl -mt-8 flex flex-col gap-3">
+      {profile.resumeBio[locale].map((p: string, i: number, arr: string[]) => (
+        <p class={`leading-relaxed ${i === arr.length - 1 ? 'font-semibold text-white' : 'text-zinc-300'}`}>{p}</p>
+      ))}
+    </div>
+
+    <!-- Block 1: Skill highlights -->
+    <div>
+      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
+        {t(locale, 'professional.highlights_title')}
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {skills.highlights[0] && (
+          <div class="md:row-span-2 h-full">
+            <SkillHighlight
+              icon={skills.highlights[0].icon}
+              tag={skills.highlights[0].tag[locale]}
+              name={skills.highlights[0].name[locale]}
+              description={skills.highlights[0].description[locale]}
+            />
+          </div>
+        )}
+        {skills.highlights.slice(1).map(h => (
+          <SkillHighlight
+            icon={h.icon}
+            tag={h.tag[locale]}
+            name={h.name[locale]}
+            description={h.description[locale]}
+          />
+        ))}
+      </div>
+    </div>
+
+    <!-- Block 2: Experience accordion -->
+    <div>
+      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
+        {t(locale, 'professional.experience_title')}
+      </h3>
+      <div id="accordion" class="border-t border-zinc-700/50">
+        {timeline.map((entry, idx) => (
+          <AccordionEntry
+            period={entry.period}
+            company={entry.company}
+            role={entry.role}
+            projects={entry.projects}
+            open={idx === 0}
+          />
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script is:inline>
+  ;(function () {
+    var accordion = document.getElementById('accordion')
+    if (!accordion) return
+
+    function setOpen(entry, open) {
+      var body = entry.querySelector('.accordion-body')
+      var chevron = entry.querySelector('.chevron')
+      if (open) {
+        body.style.maxHeight = body.scrollHeight + 'px'
+        chevron.style.transform = 'rotate(180deg)'
+        entry.dataset.open = 'true'
+      } else {
+        body.style.maxHeight = '0'
+        chevron.style.transform = 'rotate(0deg)'
+        entry.dataset.open = 'false'
+      }
+    }
+
+    accordion.querySelectorAll('.accordion-trigger').forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
+        var entry = trigger.closest('.accordion-entry')
+        var isOpen = entry.dataset.open === 'true'
+        // Close all
+        accordion.querySelectorAll('.accordion-entry').forEach(function (e) {
+          setOpen(e, false)
+        })
+        // Open the clicked one if it was closed
+        if (!isOpen) setOpen(entry, true)
+      })
+    })
+
+    // Set initial open state for the first entry
+    var first = accordion.querySelector('.accordion-entry[data-open="true"]')
+    if (first) setOpen(first, true)
+  })()
+</script>

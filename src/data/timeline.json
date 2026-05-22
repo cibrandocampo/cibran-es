@@ -1,0 +1,240 @@
+[
+  {
+    "period": "2022 – Present",
+    "company": "Plexus Tech",
+    "role": "Senior Software Developer",
+    "projects": [
+      {
+        "title": "Obsly",
+        "tagline": "Real-time observability & business intelligence platform",
+        "tag": "Business Intelligence",
+        "url": "https://obsly.io/",
+        "description": [
+          "Building new platform features and analytics dashboards for real-time event processing at scale.",
+          "Event-driven architecture, time-series databases, LLM-powered natural language query generation."
+        ],
+        "tags": ["Python", "PostgreSQL", "Event-driven", "LLM", "Observability"]
+      },
+      {
+        "title": "WinDelivery by Glovo",
+        "tagline": "Food delivery integration for restaurant chains",
+        "tag": "Delivery",
+        "url": "https://www.linkedin.com/company/windelivery/",
+        "description": [
+          "Tech lead for an integration platform connecting brands like Burger King, Popeyes and Telepizza with POS systems and delivery aggregators.",
+          "Scalable event-driven architecture on AWS (Lambda, DynamoDB, SQS). CI/CD and CloudWatch monitoring."
+        ],
+        "tags": ["Python", "Flask", "AWS", "Event-driven", "Tech Lead"]
+      },
+      {
+        "title": "Savia — MAPFRE",
+        "tagline": "Health insurance and e-health platform",
+        "tag": "eHealth",
+        "url": "https://www.saludsavia.com/",
+        "description": [
+          "Backend team on the redesign of MAPFRE's health platform towards a modular, multi-vertical architecture.",
+          "Python, Django REST Framework, Oscar Commerce, Stripe, Celery."
+        ],
+        "tags": ["Python", "Django", "DRF", "Celery", "Docker"]
+      }
+    ]
+  },
+  {
+    "period": "2021 – 2022",
+    "company": "Optiva Media",
+    "role": "Senior Software Developer",
+    "projects": [
+      {
+        "title": "Telefónica R&D",
+        "tagline": "Device management for set-top boxes and OTT players",
+        "tag": "Media & TV",
+        "url": null,
+        "description": [
+          "Device management platforms for STBs and OTT players used by millions of Telefónica customers.",
+          "High-performance REST APIs, Prometheus/Grafana observability, modernisation of legacy multicast STB tools."
+        ],
+        "tags": ["Python", "Sanic", "Prometheus", "C++", "Docker"]
+      }
+    ]
+  },
+  {
+    "period": "2021",
+    "company": "Grupo CPS",
+    "role": "Full Stack Developer",
+    "projects": [
+      {
+        "title": "Maritime Surveillance",
+        "tagline": "Border control and maritime surveillance platform",
+        "tag": "Security",
+        "url": "https://web.guardiacivil.es/es/destacados/eventos/ESPIAS-HOME-2015-ISFB-AG-ESUR-Jefatura-Fiscal-y-de-Fronteras/",
+        "description": [
+          "Real-time integration of AIS feeds, SIVE radar networks and FIWARE/Orion Context Broker for national security agencies.",
+          "Event-driven Redis Streams for high-resilience data pipelines in low-connectivity environments."
+        ],
+        "tags": ["Python", "Django", "Vue.js", "Redis", "FIWARE"]
+      }
+    ]
+  },
+  {
+    "period": "2018 – 2021",
+    "company": "TRISON",
+    "role": "R&D & Projects Engineer",
+    "projects": [
+      {
+        "title": "Porsche Digitalisation",
+        "tagline": "Digital transformation for Porsche Spain dealerships",
+        "tag": "Automotive",
+        "url": "https://trisonworld.com/es/proyectos/porsche/",
+        "description": [
+          "Tech lead for digital transformation across 570 Porsche dealerships worldwide.",
+          "HelpDesk setup, monitoring software, Augmented Reality integrations, DjangoRF and Vue.js."
+        ],
+        "tags": ["DjangoRF", "Vue.js", "AR", "Docker", "Tech Lead"]
+      },
+      {
+        "title": "Multimedia & AV",
+        "tagline": "Enterprise audio-visual integration projects",
+        "tag": "AV Integration",
+        "url": null,
+        "description": [
+          "New multimedia product development in an Open Innovation environment with startup mentoring and partner integrations.",
+          "Technological consultant for the Inditex group — conceptualisation of retail and automotive spaces."
+        ],
+        "tags": ["AI/ML", "AR/VR", "Django", "Audio", "Product"]
+      },
+      {
+        "title": "Inditex HQ",
+        "tagline": "Integrated AV ecosystem for Inditex's global headquarters",
+        "tag": "AV Integration",
+        "url": "https://trisonworld.com/es/proyectos/inditex/",
+        "description": [
+          "Full AV integration across auditorium, press room, immersive creative space and a 15,000 m² innovation building in A Coruña.",
+          "Auditorium features Europe's largest 1.9 mm LED screen (9,280 × 2,060 px), Meyer Sound acoustics, and support for 90 simultaneous displays."
+        ],
+        "tags": ["LED", "AV", "Meyer Sound", "Video Mapping"]
+      },
+      {
+        "title": "Ecoalf Flagship Store",
+        "tagline": "Immersive digital ecosystem for sustainable retail",
+        "tag": "Retail Tech",
+        "url": "https://trisonworld.com/es/proyectos/ecoalf/",
+        "description": [
+          "LED screens, interactive totems and marine projections integrated into Ecoalf's flagship store in Madrid.",
+          "Technology as environmental storytelling — ocean protection, circular production and recycling brought to life."
+        ],
+        "tags": ["LED", "Interactive", "Content", "Retail"]
+      },
+      {
+        "title": "X Madrid",
+        "tagline": "Spain's first anti-shopping center",
+        "tag": "Retail Tech",
+        "url": "https://trisonworld.com/es/proyectos/x-madrid/",
+        "description": [
+          "Immersive AV ecosystem across Spain's most disruptive retail space — LED, lighting, and interactive digital installations.",
+          "Winner of AV Awards 2020 Commercial Project of the Year. European reference for experiential retail."
+        ],
+        "tags": ["LED", "Interactive", "Lighting", "AV Awards"]
+      },
+      {
+        "title": "Arenas de Barcelona",
+        "tagline": "Large-scale LED installation in a landmark shopping centre",
+        "tag": "Digital Signage",
+        "url": "https://trisonworld.com/es/proyectos/arenas-barcelona/",
+        "description": [
+          "Over 180 m² of digital screens — including a 64 m interactive circular floor and a 62 m suspended perimeter display.",
+          "Completed in three weeks of nighttime installations inside a protected heritage building. Winner of Digital Signage Awards 2019."
+        ],
+        "tags": ["LED", "Digital Signage", "Content", "DS Awards"]
+      },
+      {
+        "title": "Baleària Ferry",
+        "tagline": "AV transformation of the world's largest LNG passenger ferry",
+        "tag": "Maritime",
+        "url": "https://trisonworld.com/es/proyectos/balearia/",
+        "description": [
+          "Full audiovisual integration aboard the Eleanor Roosevelt — LED welcome screen, digital signage, interactive kids' area and multi-zone audio across all decks.",
+          "A benchmark for how digitalisation and sustainability can coexist at sea."
+        ],
+        "tags": ["LED", "Digital Signage", "Audio", "Maritime"]
+      },
+      {
+        "title": "AENA — Barajas & El Prat",
+        "tagline": "Digital transformation of Madrid and Barcelona airports",
+        "tag": "Digital Signage",
+        "url": "https://trisonworld.com/es/proyectos/exterior-plus-aena/",
+        "description": [
+          "Large-format LED screens along Terminal 4 walkways at Barajas and vertical LED cubes integrated into El Prat's terminal pillars.",
+          "Benchmark for airport digitalisation balancing aesthetics, architecture and strict safety standards."
+        ],
+        "tags": ["LED", "Digital Signage", "Airport", "High-traffic"]
+      },
+      {
+        "title": "Lagoh Mall Sevilla",
+        "tagline": "Seville's largest mall transformed into an immersive 3.0 experience",
+        "tag": "Retail Tech",
+        "url": "https://trisonworld.com/es/proyectos/lagoh-mall/",
+        "description": [
+          "Transparent LED elevators, holographic fountains, digital facades and a 360° interactive cylinder across Seville's biggest shopping centre.",
+          "Winner of AV Awards 2020 Retail Project of the Year and AV Integration Awards 2021."
+        ],
+        "tags": ["LED", "Holographic", "Interactive", "AV Awards"]
+      }
+    ]
+  },
+  {
+    "period": "2013 – 2018",
+    "company": "Arantia, Televes Corp",
+    "role": "R&D Engineer",
+    "projects": [
+      {
+        "title": "Transcoder/Streamer Live Plus",
+        "tagline": "Multiscreen live transcoder and streamer in a single device",
+        "tag": "Media Tech",
+        "url": "https://www.televes.com/me/832204-transcoder-streamer-live-plus.html",
+        "description": [
+          "Up to 15 simultaneous video inputs, each with 3 adaptive output profiles — streamed via HLS, UDP or RTP to any screen.",
+          "HEVC support for LTE networks, adaptive bitrate, native multi-device web player with Chromecast and Apple TV casting."
+        ],
+        "tags": ["C/C++", "HLS", "HEVC", "Streaming", "Multiscreen"]
+      },
+      {
+        "title": "DVB MPTS Streaming Tools",
+        "tagline": "DVB MPTS stream analysis and manipulation",
+        "tag": "Broadcast",
+        "url": null,
+        "description": [
+          "DVB MPTS stream analysis, manipulation and monitoring tools for broadcast engineering."
+        ],
+        "tags": ["C++", "Python", "DVB", "Broadcast"]
+      },
+      {
+        "title": "Arantia HE-21 IPTV Headend",
+        "tagline": "Compact IPTV headend for operators, hospitality and public venues",
+        "tag": "IPTV",
+        "url": null,
+        "description": [
+          "Multi-standard reception (DVB-T/T2, DVB-S/S2, DVB-C, ATSC, HDMI, SDI, IP) encapsulated and streamed over IPTV networks.",
+          "HEVC & 4K compatible, modular design, web management tool. Deployed in hotels, airports, seaports and TV operators."
+        ],
+        "tags": ["C/C++", "DVB", "IPTV", "HEVC", "Embedded"]
+      }
+    ]
+  },
+  {
+    "period": "2013",
+    "company": "Streaming Galicia",
+    "role": "Developer Student Engineer",
+    "projects": [
+      {
+        "title": "Canal7 Rías Baixas OTT",
+        "tagline": "OTT streaming platform for regional TV",
+        "tag": "OTT",
+        "url": "https://www.canalriasbaixas.com/",
+        "description": [
+          "Deployment of the OTT Kaltura platform on AWS and integration with Wowza streaming server for Canal7 Rías Baixas."
+        ],
+        "tags": ["AWS", "Kaltura", "Wowza", "OTT"]
+      }
+    ]
+  }
+]

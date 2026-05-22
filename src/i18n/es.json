@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "resume": "Currículum",
+    "portfolio": "Portfolio",
+    "contact": "Contacto",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú"
+  },
+  "lang": {
+    "en": "EN",
+    "es": "ES",
+    "gl": "GL",
+    "select": "Idioma"
+  },
+  "section": {
+    "about": "Sobre mí",
+    "resume": "Currículum",
+    "portfolio": "Portfolio",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "scroll_down": "Desplazarse hacia abajo"
+  },
+  "about": {
+    "itsme_title": "Así soy yo",
+    "facts_title": "Algunos números",
+    "gallery_title": "Mi vida en imágenes"
+  },
+  "professional": {
+    "highlights_title": "Puntos fuertes",
+    "experience_title": "Experiencia"
+  },
+  "contact": {
+    "location_label": "Ubicación",
+    "email_label": "Correo",
+    "email_address": "hola@cibran.es",
+    "linkedin_label": "LinkedIn",
+    "languages_label": "Idiomas",
+    "timezone_label": "Hora local",
+    "social_label": "Encuéntrame en"
+  },
+  "meta": {
+    "title": "Cibrán Docampo — Senior Software Developer",
+    "description": "Senior Software Developer en Galicia, España. Sistemas escalables, arquitectura cloud y código abierto."
+  }
+}

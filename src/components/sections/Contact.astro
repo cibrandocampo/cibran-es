@@ -1,0 +1,122 @@
+---
+import { t } from '../../i18n/utils'
+import SectionTitle from '../ui/SectionTitle.astro'
+import BrandIcon from '../ui/BrandIcon.astro'
+import { MapPin, Mail, Clock } from '@lucide/astro'
+import contact from '../../data/contact.json'
+import profile from '../../data/profile.json'
+
+interface Props {
+  locale: 'en' | 'es' | 'gl'
+}
+const { locale } = Astro.props
+---
+
+<section id="contact" class="py-24 bg-zinc-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <SectionTitle title={t(locale, 'section.contact')} />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-3xl mb-16 items-center">
+
+      <!-- Left: Email + Location + Timezone -->
+      <div class="space-y-8">
+
+        <div class="flex items-start gap-4">
+          <Mail size={20} class="text-accent mt-0.5 flex-shrink-0" />
+          <div>
+            <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1">
+              {t(locale, 'contact.email_label')}
+            </p>
+            <a
+              href={`mailto:${t(locale, 'contact.email_address')}`}
+              class="text-zinc-100 hover:text-accent transition-colors"
+            >
+              {t(locale, 'contact.email_address')}
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <MapPin size={20} class="text-accent mt-0.5 flex-shrink-0" />
+          <div>
+            <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1">
+              {t(locale, 'contact.location_label')}
+            </p>
+            <p class="text-zinc-100">{contact.location}</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <Clock size={20} class="text-accent mt-0.5 flex-shrink-0" />
+          <div>
+            <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1">
+              {t(locale, 'contact.timezone_label')}
+            </p>
+            <p class="text-zinc-100">
+              <span id="local-time">--:--</span>
+              <span id="local-offset" class="text-zinc-400 text-sm ml-1"></span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Languages -->
+      <div>
+        <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
+          {t(locale, 'contact.languages_label')}
+        </p>
+        <div class="space-y-4">
+          {profile.languages.map(lang => (
+            <div class="flex items-center justify-between border-b border-zinc-800 pb-4 last:border-0 last:pb-0">
+              <span class="text-zinc-100 font-medium">{lang.name}</span>
+              <span class="text-zinc-400 text-sm">{lang.level}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Social links -->
+    <div>
+      <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
+        {t(locale, 'contact.social_label')}
+      </p>
+      <div class="flex flex-wrap gap-3">
+        {profile.social.map(link => (
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2.5 px-4 py-2.5 bg-accent/25 border border-accent/30 rounded-lg text-zinc-200 hover:bg-accent/40 hover:border-accent/50 transition-all text-sm font-medium"
+            aria-label={link.name}
+          >
+            <BrandIcon icon={link.icon} size={16} />
+            <span>{link.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script is:inline>
+  ;(function () {
+    var TZ = 'Europe/Madrid'
+    function update() {
+      var now = new Date()
+      var time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ })
+      var offset = new Intl.DateTimeFormat('en', { timeZoneName: 'shortOffset', timeZone: TZ })
+        .formatToParts(now)
+        .find(function (p) { return p.type === 'timeZoneName' })
+      var el = document.getElementById('local-time')
+      var oel = document.getElementById('local-offset')
+      if (el) el.textContent = time
+      if (oel) oel.textContent = offset ? '(' + offset.value + ')' : ''
+    }
+    update()
+    setInterval(update, 1000)
+  })()
+</script>

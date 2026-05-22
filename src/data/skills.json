@@ -1,0 +1,108 @@
+{
+  "personal": [
+    "Team leadership",
+    "Communication",
+    "Problem-solving",
+    "Resilience & adaptability",
+    "Organisation & time management",
+    "Working under pressure"
+  ],
+  "professional": [
+    {
+      "category": "Backend",
+      "items": ["Python", "Flask", "Django / DRF", "C / C++", "Java", "Node.js"]
+    },
+    {
+      "category": "Data & Databases",
+      "items": ["PostgreSQL", "DynamoDB", "Redis", "InfluxDB", "Time-series DBs"]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform", "Git"]
+    },
+    {
+      "category": "Observability",
+      "items": ["Grafana", "Prometheus", "ELK Stack", "CloudWatch", "Loki"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["HTML / CSS / JS", "Vue.js", "React", "Astro"]
+    },
+    {
+      "category": "Audio & Video",
+      "items": ["FFmpeg", "HW/SW Transcoding", "DVB / IPTV", "Streaming (HLS, DASH)"]
+    }
+  ],
+  "highlights": [
+    {
+      "icon": "cpu",
+      "tag": { "en": "Software & Data", "es": "Software & Datos", "gl": "Software & Datos" },
+      "name": { "en": "Software & Data Engineering", "es": "Ingeniería de Software & Datos", "gl": "Enxeñaría de Software & Datos" },
+      "description": {
+        "en": [
+          "Over a decade designing and building software across very different sectors — from IPTV and broadcast, through maritime surveillance and e-health, to observability platforms processing hundreds of millions of events a day. That variety has two inevitable effects: a technology list that never stops growing, and an ever-sharper understanding of the real needs of each project and each client.",
+          "My journey covers the full cycle: requirements gathering, technology analysis, architecture design, data modelling, implementation, deployment and operations. With experience across frontend, backend and DevOps — but passionate about backend, large-scale data management and exploitation, and integration with external services to build ecosystems, not just products.",
+          "Beyond work, I am passionate about continuing to learn and giving something back. I have designed, built and run several personal projects in production — because the best way to learn something new is to build it for real.",
+          "I love a well-defined architecture and clean, maintainable, efficient code — without taking it to obsession. And fortunately, a great companion has arrived to help with that. AI."
+        ],
+        "es": [
+          "Más de una década diseñando y construyendo software en sectores muy distintos — desde IPTV y broadcast, pasando por vigilancia marítima o e-health, hasta plataformas de observabilidad que procesan cientos de millones de eventos al día. Esa variedad tiene dos efectos inevitables: una lista de tecnologías que no para de crecer, y una comprensión cada vez más afinada de las necesidades reales de cada proyecto y de cada cliente.",
+          "Mi recorrido cubre el ciclo completo: toma de requisitos, análisis tecnológico, diseño de arquitectura, modelado de datos, implementación, despliegue y operaciones. Con experiencia en frontend, backend y DevOps — pero apasionado del backend, la gestión y explotación masiva de datos, y la integración con servicios externos para construir ecosistemas, no solo productos.",
+          "Más allá del trabajo, me apasiona seguir aprendiendo y aportar a la sociedad. He diseñado, implementado y tengo en producción varios proyectos propios — porque la mejor forma de aprender algo nuevo es construirlo de verdad.",
+          "Me encanta una arquitectura bien definida y un código limpio, mantenible y eficiente — sin llevarlo a la obsesión. Y afortunadamente, ha llegado un compañero genial para ayudarme con eso. La IA."
+        ],
+        "gl": [
+          "Máis dunha década deseñando e construíndo software en sectores moi distintos — desde IPTV e broadcast, pasando por vixilancia marítima ou e-health, ata plataformas de observabilidade que procesan centos de millóns de eventos ao día. Esa variedade ten dous efectos inevitables: unha lista de tecnoloxías que non para de crecer, e unha comprensión cada vez máis afinada das necesidades reais de cada proxecto e de cada cliente.",
+          "O meu percorrido cobre o ciclo completo: toma de requisitos, análise tecnolóxica, deseño de arquitectura, modelado de datos, implementación, despregue e operacións. Con experiencia en frontend, backend e DevOps — pero apaixonado do backend, a xestión e explotación masiva de datos, e a integración con servizos externos para construír ecosistemas, non só produtos.",
+          "Máis alá do traballo, apaixóname seguir aprendendo e achegar algo á sociedade. Deseñei, implementei e teño en produción varios proxectos propios — porque a mellor forma de aprender algo novo é construílo de verdade.",
+          "Encántame unha arquitectura ben definida e un código limpo, mantenible e eficiente — sen levalo á obsesión. E afortunadamente, chegou un compañeiro xenial para axudarme con iso. A IA."
+        ]
+      }
+    },
+    {
+      "icon": "zap",
+      "tag": { "en": "Multimedia & AV", "es": "Multimedia y AV", "gl": "Multimedia e AV" },
+      "name": { "en": "Multimedia & AV Engineering", "es": "Ingeniería Multimedia y AV", "gl": "Enxeñaría Multimedia e AV" },
+      "description": {
+        "en": [
+          "Multimedia engineering is, without doubt, the most exciting part of my career. From acoustic design and venue sound, through audiovisual production and scenography, to low-level video transcoding.",
+          "My main experience has been designing innovative multimedia solutions for special spaces: interactive fashion retail stores, touch-sensitive floors in shopping centres, and VR and AR solutions for car dealerships worldwide."
+        ],
+        "es": [
+          "La ingeniería multimedia es, sin duda, la parte más apasionante de mi trayectoria. Del diseño acústico de auditorios y la sonorización de espacios, a la realización audiovisual, la escenografía y la transcodificación de vídeo a bajo nivel.",
+          "Mi experiencia principal ha sido el diseño de soluciones multimedia innovadoras para espacios singulares: tiendas de moda interactivas, suelos táctiles en centros comerciales, y soluciones de VR y AR para concesionarios de automóviles en todo el mundo."
+        ],
+        "gl": [
+          "A enxeñaría multimedia é, sen dúbida, a parte máis apaixonante da miña traxectoria. Desde o deseño acústico de auditorios e a sonorización de espazos, á realización audiovisual, a escenografía e a transcodificación de vídeo a baixo nivel.",
+          "A miña experiencia principal foi o deseño de solucións multimedia innovadoras para espazos singulares: tendas de moda interactivas, chans táctiles en centros comerciais, e solucións de VR e AR para concesionarios de automóbiles en todo o mundo."
+        ]
+      }
+    },
+    {
+      "icon": "users",
+      "tag": { "en": "Leadership", "es": "Liderazgo", "gl": "Liderado" },
+      "name": {
+        "en": "Tech Lead",
+        "es": "Tech Lead",
+        "gl": "Tech Lead"
+      },
+      "description": {
+        "en": [
+          "Leading is not simply about showing the way. It is about walking alongside, inspiring, and creating the conditions for every person on the team to grow and give their best.",
+          "I have led multidisciplinary teams on high-complexity, high-performance projects, and worked as Team Lead of software development squads — always with the same focus: leaving the team better than I found it.",
+          "Teamwork is not an option. It is the option."
+        ],
+        "es": [
+          "Liderar no es simplemente marcar el camino. Es acompañar, inspirar y crear las condiciones para que cada persona del equipo pueda crecer y dar lo mejor de sí misma.",
+          "He liderado equipos multidisciplinares en proyectos de alta complejidad y altísimo rendimiento, y trabajado como Team Lead de squads en desarrollos de software — siempre con el mismo enfoque: que el equipo salga mejor de lo que entró.",
+          "Trabajar en equipo no es una opción. Es la opción."
+        ],
+        "gl": [
+          "Liderar non é simplemente marcar o camiño. É acompañar, inspirar e crear as condicións para que cada persoa do equipo poida crecer e dar o mellor de si mesma.",
+          "Liderado equipos multidisciplinares en proxectos de alta complexidade e altísimo rendemento, e traballado como Team Lead de squads en desenvolvementos de software — sempre co mesmo enfoque: que o equipo saia mellor do que entrou.",
+          "Traballar en equipo non é unha opción. É a opción."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "formal": [
+    {
+      "degree": "Master's Degree in Teacher Training — Technology and IT",
+      "period": "2022 – 2023",
+      "institution": "UNIR — La Universidad en Internet"
+    },
+    {
+      "degree": "Telecommunication Technical Engineering — Image and Sound",
+      "period": "2009 – 2014",
+      "institution": "Universidad de Vigo",
+      "description": "Adaptive Streaming platform for multiscreen devices and heterogeneous networks."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Scrum Manager Experto",
+      "issuer": "Scrum Manager"
+    },
+    {
+      "name": "Drone Pilot Certificate A1-A3",
+      "issuer": "AESA"
+    },
+    {
+      "name": "Elasticsearch & Kibana for Developers",
+      "issuer": "OpenWebinars"
+    },
+    {
+      "name": "Kubernetes for Developers",
+      "issuer": "OpenWebinars"
+    },
+    {
+      "name": "Quality Management in Testing Laboratories — UNE-EN ISO/IEC 17025",
+      "issuer": "ENAC"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Adaptive Streaming platform for multiscreen devices and heterogeneous networks",
+      "context": "Degree project — Universidad de Vigo, 2014"
+    }
+  ]
+}

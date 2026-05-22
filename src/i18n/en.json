@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "about": "About",
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu"
+  },
+  "lang": {
+    "en": "EN",
+    "es": "ES",
+    "gl": "GL",
+    "select": "Language"
+  },
+  "section": {
+    "about": "About me",
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "scroll_down": "Scroll down"
+  },
+  "about": {
+    "itsme_title": "It's me",
+    "facts_title": "A few numbers",
+    "gallery_title": "My life in images"
+  },
+  "professional": {
+    "highlights_title": "Highlights",
+    "experience_title": "Experience"
+  },
+  "contact": {
+    "location_label": "Location",
+    "email_label": "Email",
+    "email_address": "hello@cibran.es",
+    "linkedin_label": "LinkedIn",
+    "languages_label": "Languages",
+    "timezone_label": "Local time",
+    "social_label": "Find me on"
+  },
+  "meta": {
+    "title": "Cibrán Docampo — Senior Software Developer",
+    "description": "Senior Software Developer based in Galicia, Spain. Scalable systems, cloud architecture, and open source."
+  }
+}

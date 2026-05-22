@@ -1,0 +1,43 @@
+---
+interface Props {
+  id: string
+  label: string
+  image: string
+  type: string
+}
+const { id, label, image, type } = Astro.props
+---
+
+<div class="photo-tile relative w-full h-full overflow-hidden cursor-pointer rounded-sm" data-id={id} data-type={type}>
+  <img
+    src={`/${image}`}
+    alt={label}
+    class="w-full h-full object-cover"
+    loading="lazy"
+  />
+  <div class="tile-label absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 to-transparent">
+    <span class="text-white text-sm font-medium">{label}</span>
+  </div>
+</div>
+
+<style>
+  .photo-tile img {
+    filter: grayscale(100%) brightness(0.6);
+    transition: filter 0.5s ease;
+  }
+  .photo-tile .tile-label {
+    transition: opacity 0.5s ease;
+  }
+  .photo-tile:hover img {
+    filter: grayscale(0) brightness(1);
+  }
+  .photo-tile:hover .tile-label {
+    opacity: 0;
+  }
+  .photo-tile.is-revealed img {
+    filter: grayscale(0) brightness(1);
+  }
+  .photo-tile.is-revealed .tile-label {
+    opacity: 0;
+  }
+</style>

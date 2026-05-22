@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --c-bg: theme('colors.page');
+    --c-surface: theme('colors.zinc.800');
+    --c-border: theme('colors.zinc.700');
+    --c-text: theme('colors.zinc.100');
+    --c-text-2: theme('colors.zinc.400');
+    --c-accent: theme('colors.accent');
+  }
+
+  html {
+    background-color: var(--c-bg);
+    color: var(--c-text);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: theme('fontFamily.sans');
+    -webkit-font-smoothing: antialiased;
+  }
+}

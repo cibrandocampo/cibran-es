@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#1a1a2e"/>
+
+  <!-- Letter C (geometric paths, no font dependency) -->
+  <!-- Left vertical bar -->
+  <rect x="108" y="112" width="82" height="292" rx="6" fill="#e2e8f0"/>
+  <!-- Top arm -->
+  <rect x="108" y="112" width="232" height="82" rx="6" fill="#e2e8f0"/>
+  <!-- Bottom arm -->
+  <rect x="108" y="322" width="232" height="82" rx="6" fill="#e2e8f0"/>
+
+  <!-- Hexagon accent (glucose ring — the core structural unit of carbohydrates) -->
+  <!-- Dark halo for visual separation from the letter -->
+  <circle cx="394" cy="106" r="72" fill="#1a1a2e"/>
+  <!-- Yellow hexagon (pointy-top, mirrors the glucose ring in biochemistry) -->
+  <polygon points="394,51 442,79 442,134 394,161 346,134 346,79" fill="#FCD34D"/>
+</svg>
