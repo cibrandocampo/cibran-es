@@ -54,7 +54,7 @@ A GitHub Actions scheduled workflow rebuilds the site weekly to keep the pull co
 
 ## Built with Claude Code
 
-Developed with [Claude Code](https://claude.ai/code), Anthropic's AI coding assistant.
+This project was developed with the help of [Claude Code](https://claude.ai/code), Anthropic's AI coding assistant. Custom skills and commands live in `.claude/` to maintain project conventions.
 
 ## License
 
