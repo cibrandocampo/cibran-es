@@ -1,11 +1,14 @@
 # Cibrán Docampo — Personal Site
 
 > Senior Software Developer based in Cangas, Galicia, Spain.
-> Over a decade of experience designing and building software across IPTV, broadcast, maritime surveillance, e-health, and large-scale observability platforms.
+> Over a decade of experience designing and building software across IPTV, broadcast,
+> maritime surveillance, e-health, and large-scale observability platforms.
 
 ## About
 
-Cibrán Docampo Piñeiro is a Telecommunications Engineer and Senior Software Developer with deep expertise in backend systems, cloud architecture, and data engineering. He has worked as Tech Lead on high-complexity, high-performance projects across multiple sectors.
+Cibrán Docampo Piñeiro is a Telecommunications Engineer and Senior Software Developer
+with deep expertise in backend systems, cloud architecture, and data engineering. He has
+worked as Tech Lead on high-complexity, high-performance projects across multiple sectors.
 
 ## Core expertise
 
@@ -18,24 +21,91 @@ Cibrán Docampo Piñeiro is a Telecommunications Engineer and Senior Software De
 
 ## Career highlights
 
-- Senior Software Developer at Plexus Tech (2022–present): real-time observability platform processing hundreds of millions of events per day; food delivery integration (Burger King, Popeyes, Telepizza); e-health platform for MAPFRE.
-- Senior Software Developer at Optiva Media (2021–2022): Media & TV streaming platform development.
-- Multimedia & AV Engineering: designed innovative solutions for interactive retail spaces, touch-sensitive floors in shopping centres, and VR/AR experiences for car dealerships worldwide.
-- Tech Lead: led multidisciplinary teams on high-complexity projects; worked as Team Lead of software development squads.
+- Senior Software Developer at Plexus Tech (2022–present): real-time observability platform
+  processing hundreds of millions of events per day; food delivery integration (Burger King,
+  Popeyes, Telepizza); e-health platform for MAPFRE.
+- Senior Software Developer at Optiva Media (2021–2022): Media & TV streaming platform
+  development for Telefónica.
+- Multimedia & AV Engineering at TRISON (2018–2021): designed innovative AV solutions for
+  interactive retail spaces, touch-sensitive floors in shopping centres, and VR/AR
+  experiences for car dealerships worldwide (Porsche, Inditex, Ecoalf, Baleària, AENA).
+- DVB/IPTV Engineering at Arantia/Televes (2013–2018): built professional IPTV headend
+  and hardware/software transcoding systems.
+- Tech Lead: led multidisciplinary software development squads on high-complexity,
+  high-performance projects.
 
 ## Personal projects
 
-Open source projects available on GitHub (github.com/cibrandocampo) and Docker Hub (hub.docker.com/u/cibrandocampo).
+Open source projects on GitHub (github.com/cibrandocampo) and Docker Hub
+(hub.docker.com/u/cibrandocampo).
+
+### Nudge
+
+A gentle reminder app for recurring things — groceries, medications, filters, anything
+you tend to forget. Full-stack PWA with push notifications, sharing, and offline support.
+GitHub: github.com/cibrandocampo/nudge
+URL: nudge.cibran.es
+
+### OVH DynDNS Client
+
+Lightweight DynDNS client for OVH domains. Keeps your DNS record in sync with your
+dynamic public IP — perfect for self-hosted setups behind a residential connection.
+GitHub: github.com/cibrandocampo/ovh-dyndns-client
+URL: ovh-dyndns.cibran.es
+
+### Synology Video Enhancer
+
+Transcoding optimisation tool for Synology Photos. Automatically re-encodes videos to
+H.264 High Profile or H.265/HEVC, fixing the quality issues of Synology's default
+mobile transcoding pipeline.
+GitHub: github.com/cibrandocampo/synology-photos-video-enhancer
+URL: video-enhancer.cibran.es
+
+### YourFisio
+
+Physiotherapy management platform developed at Stickybit. Patient tracking, session
+scheduling and exercise prescription for clinics.
+URL: yourfisio.com
+
+### CarbWise
+
+Carbohydrate calculator built to help people with diabetes manage their diet. Look up
+carb values from official sources and calculate insulin doses — simple, fast and
+mobile-first.
+GitHub: github.com/cibrandocampo/carbwise
+URL: carbwise.cibran.es
+
+### eBird Life List
+
+Bird sightings logged on eBird — Cornell Lab's global citizen science platform.
+Focused on species along the Galician coast, with 124 species logged to date.
+URL: ebird.org/profile/OTIxNTk2OA/world
+
+### HappyWhale
+
+Contributed 50+ individual whale identifications to HappyWhale — a global cetacean
+research database. Fin whales and humpbacks off the Galician coast.
+URL: happywhale.com/user/25322
+
+### Lego Builder
+
+A personal experiment — image recognition tool that identifies Lego bricks and suggests
+possible builds. Because why not?
 
 ## Contact
 
-- Email: hello@cibran.es
+- Email: hola@cibran.es
 - Location: Cangas, Galicia, Spain
 - LinkedIn: linkedin.com/in/cidocampo
 - GitHub: github.com/cibrandocampo
+- Docker Hub: hub.docker.com/u/cibrandocampo
+- HappyWhale: happywhale.com/user/25322
+- eBird: ebird.org (124 species logged)
+- 500px: 500px.com/p/cibrandocampo
 
 ## Languages
 
 - Galician: Native
 - Spanish: Native
-- English: Professional
+- English: Professional working proficiency
+- Portuguese: Basic (conversational)

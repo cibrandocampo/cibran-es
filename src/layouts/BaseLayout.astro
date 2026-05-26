@@ -26,7 +26,8 @@ const jsonLd = {
   name: 'Cibrán Docampo Piñeiro',
   jobTitle: 'Senior Software Developer',
   url: siteUrl,
-  email: 'hello@cibran.es',
+  image: `${siteUrl}/og-image.jpg`,
+  email: 'hola@cibran.es',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Cangas',
@@ -44,6 +45,49 @@ const jsonLd = {
     'Backend Development', 'Cloud Architecture', 'Data Engineering',
     'Observability', 'FFmpeg', 'IPTV', 'HLS', 'DASH',
   ],
+  knowsLanguage: [
+    { '@type': 'Language', name: 'Galician' },
+    { '@type': 'Language', name: 'Spanish' },
+    { '@type': 'Language', name: 'English' },
+    { '@type': 'Language', name: 'Portuguese' },
+  ],
+  alumniOf: [
+    {
+      '@type': 'EducationalOrganization',
+      name: 'Universidad de Vigo',
+      description: 'Telecommunication Technical Engineering — Image and Sound (2009–2014)',
+    },
+    {
+      '@type': 'EducationalOrganization',
+      name: 'UNIR — La Universidad en Internet',
+      description: "Master's Degree in Teacher Training — Technology and IT (2022–2023)",
+    },
+  ],
+  hasCredential: [
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Scrum Manager Experto',
+      credentialCategory: 'certificate',
+      recognizedBy: { '@type': 'Organization', name: 'Scrum Manager' },
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Drone Pilot Certificate A1-A3',
+      credentialCategory: 'license',
+      recognizedBy: { '@type': 'Organization', name: 'AESA' },
+    },
+  ],
+}
+
+const jsonLdWebsite = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  url: siteUrl,
+  name: 'Cibrán Docampo',
+  author: {
+    '@type': 'Person',
+    name: 'Cibrán Docampo Piñeiro',
+  },
 }
 ---
 
@@ -53,6 +97,8 @@ const jsonLd = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={pageDesc} />
+    <meta name="author" content="Cibrán Docampo Piñeiro" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <title>{pageTitle}</title>
 
     <!-- Canonical -->
@@ -78,6 +124,9 @@ const jsonLd = {
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={pageTitle} />
+    <meta property="profile:first_name" content="Cibrán" />
+    <meta property="profile:last_name" content="Docampo Piñeiro" />
+    <meta property="profile:username" content="cibrandocampo" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -85,8 +134,11 @@ const jsonLd = {
     <meta name="twitter:description" content={pageDesc} />
     <meta name="twitter:image" content={ogImage} />
 
-    <!-- JSON-LD -->
+    <!-- JSON-LD — Person -->
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    <!-- JSON-LD — WebSite -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLdWebsite)} />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -98,6 +150,8 @@ const jsonLd = {
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" sizes="any" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
   <body class="bg-zinc-900 text-zinc-100 font-sans antialiased pt-16">
     <!-- Language auto-detection (runs once, stores preference in localStorage) -->
@@ -105,16 +159,18 @@ const jsonLd = {
       ;(function () {
         const stored = localStorage.getItem('lang')
         if (stored) return
-        const lang = (navigator.language || '').toLowerCase()
+        const langs = (navigator.languages && navigator.languages.length ? Array.from(navigator.languages) : [navigator.language]).map(l => (l || '').toLowerCase())
         let target = 'en'
-        if (lang.startsWith('gl')) target = 'gl'
-        else if (lang.startsWith('es')) target = 'es'
+        for (const lang of langs) {
+          if (lang.startsWith('gl')) { target = 'gl'; break }
+          if (lang.startsWith('es') || lang.startsWith('ca') || lang.startsWith('eu')) { target = 'es'; break }
+        }
         localStorage.setItem('lang', target)
         const path = window.location.pathname
         if (target === 'es' && !path.startsWith('/es')) {
-          window.location.replace('/es' + (path === '/' ? '' : path))
+          window.location.replace('/es' + (path === '/' ? '/' : path))
         } else if (target === 'gl' && !path.startsWith('/gl')) {
-          window.location.replace('/gl' + (path === '/' ? '' : path))
+          window.location.replace('/gl' + (path === '/' ? '/' : path))
         }
       })()
     </script>
