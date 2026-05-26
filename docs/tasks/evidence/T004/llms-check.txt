@@ -1,0 +1,6 @@
+DoD1 - email canónico: - Email: hola@cibran.es — PASS
+DoD2 - proyectos (###): 8 — PASS (>=4)
+DoD3 - Portugués: - Portuguese: Basic (conversational) — PASS
+DoD4 - Docker Hub: presente en Contact — PASS
+DoD4 - HappyWhale: presente en Contact y como proyecto — PASS
+DoD5 - sin hello@: ausente — PASS

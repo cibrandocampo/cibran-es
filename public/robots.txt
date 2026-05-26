@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://cibran.es/sitemap.xml
 Sitemap: https://cibran.es/sitemap-index.xml

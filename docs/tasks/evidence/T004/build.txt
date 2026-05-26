@@ -1,0 +1,42 @@
+ Container webpage-web-run-9fbf746143e1 Creating 
+ Container webpage-web-run-9fbf746143e1 Created 
+
+> cibran-es@0.1.0 build
+> astro build
+
+▶ Astro collects anonymous usage data.
+  This information helps us improve Astro.
+  Run "astro telemetry disable" to opt-out.
+  https://astro.build/telemetry
+
+12:01:20 [content] Syncing content
+12:01:20 [content] Synced content
+12:01:20 [types] Generated 16ms
+12:01:20 [build] output: "static"
+12:01:20 [build] mode: "static"
+12:01:20 [build] directory: /app/dist/
+12:01:20 [build] Collecting build info...
+12:01:20 [build] ✓ Completed in 37ms.
+12:01:20 [build] Building static entrypoints...
+
+warn - The utility `` contains an invalid theme value and was not generated.
+12:01:21 [vite] ✓ built in 1.25s
+12:01:21 [build] ✓ Completed in 1.26s.
+
+ generating static routes 
+12:01:21 ▶ src/pages/es/index.astro
+12:01:21   └─ /es/index.html (+1.66s) 
+12:01:23 ▶ src/pages/gl/index.astro
+12:01:23   └─ /gl/index.html (+1.62s) 
+12:01:24 ▶ src/pages/index.astro
+12:01:24   └─ /index.html (+1.60s) 
+12:01:26 ✓ Completed in 4.92s.
+
+12:01:26 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+12:01:26 [build] 3 page(s) built in 6.24s
+12:01:26 [build] Complete!
+npm notice
+npm notice New major version of npm available! 10.9.7 -> 11.15.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.15.0
+npm notice To update run: npm install -g npm@11.15.0
+npm notice

@@ -1,0 +1,24 @@
+=== DoD 2: bloques JSON-LD (ocurrencias, no líneas) ===
+2
+=== DoD 3: email canónico ===
+hola@cibran.es
+=== DoD 4a: knowsLanguage ===
+knowsLanguage
+=== DoD 4b: alumniOf ===
+alumniOf
+=== DoD 4c: hasCredential ===
+hasCredential
+=== DoD 4d: image en JSON-LD ===
+"image":"https://cibran.es/og-image.jpg"
+=== DoD 5: og:profile tags ===
+profile:first_name
+profile:last_name
+profile:username
+=== DoD 6: meta robots ===
+max-snippet:-1
+=== DoD 7: meta author ===
+name="author"
+=== DoD 8 ES: bloques JSON-LD ===
+2
+=== DoD 8 GL: bloques JSON-LD ===
+2

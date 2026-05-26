@@ -1,0 +1,7 @@
+=== DoD 2+3: ficheros en public/ ===
+-rw-r--r-- 1 root root 2.8K May 26 13:56 public/apple-touch-icon.png
+-rw-r--r-- 1 root root 5.4K May 26 13:57 public/favicon.ico
+=== DoD 4+5+6: tags favicon en HTML ===
+rel="icon" type="image/svg+xml" href="/favicon.svg"
+rel="icon" sizes="any" href="/favicon.ico"
+rel="apple-touch-icon" href="/apple-touch-icon.png"
