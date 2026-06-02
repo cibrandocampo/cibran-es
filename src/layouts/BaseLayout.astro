@@ -166,12 +166,6 @@ const jsonLdWebsite = {
           if (lang.startsWith('es') || lang.startsWith('ca') || lang.startsWith('eu')) { target = 'es'; break }
         }
         localStorage.setItem('lang', target)
-        const path = window.location.pathname
-        if (target === 'es' && !path.startsWith('/es')) {
-          window.location.replace('/es' + (path === '/' ? '/' : path))
-        } else if (target === 'gl' && !path.startsWith('/gl')) {
-          window.location.replace('/gl' + (path === '/' ? '/' : path))
-        }
       })()
     </script>
 
