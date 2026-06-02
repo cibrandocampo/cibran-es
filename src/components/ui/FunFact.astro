@@ -1,9 +1,11 @@
 ---
+type I18n = { en: string; es: string; gl: string }
+
 interface Props {
   emoji: string
   value: string
-  label: string
-  note: string
+  label: I18n
+  note: I18n
 }
 const { emoji, value, label, note } = Astro.props
 ---
@@ -12,7 +14,11 @@ const { emoji, value, label, note } = Astro.props
   <div class="flex items-center gap-3">
     <span class="text-xl">{emoji}</span>
     <span class="text-2xl font-bold text-accent">{value}</span>
-    <span class="text-sm font-medium text-zinc-100">{label}</span>
+    <span class="text-sm font-medium text-zinc-100">
+      <span class="i18n-en">{label.en}</span><span class="i18n-es">{label.es}</span><span class="i18n-gl">{label.gl}</span>
+    </span>
   </div>
-  <div class="text-xs text-zinc-500 leading-snug">{note}</div>
+  <div class="text-xs text-zinc-500 leading-snug">
+    <span class="i18n-en">{note.en}</span><span class="i18n-es">{note.es}</span><span class="i18n-gl">{note.gl}</span>
+  </div>
 </div>

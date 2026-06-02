@@ -139,11 +139,14 @@ When a card has a full-card `<a>` overlay (`absolute inset-0 z-10`) AND inner li
 
 ## i18n
 
-Three locales: `en` (default, at `/`), `es` (at `/es/`), `gl` (at `/gl/`).
+Single URL (`/`), three locales: `en` (default), `es`, `gl`. No URL routing.
 
 - UI strings: `src/i18n/en.json`, `es.json`, `gl.json`
-- Data strings: inline per-locale keys in `src/data/*.json` (e.g. `name: { en: "...", es: "...", gl: "..." }`)
-- Helper: `t(locale, 'key')` from `src/i18n/utils.ts`
+- Data strings: inline per-locale keys in `src/data/*.json` (`name: { en: "...", es: "...", gl: "..." }`)
+- **`tAll(key)`** — returns `{ en, es, gl }`; spread directly into `<Tr>`: `<Tr {...tAll('section.about')} />`
+- **`<Tr en es gl />`** (`src/components/ui/Tr.astro`) — renders three `<span class="i18n-XX">` inline; CSS shows only the active locale. Use for inline strings.
+- **Block content** (paragraphs): render `<p class={`i18n-${lang} ...`}>` via `(['en','es','gl'] as const).map(lang => ...)`. Do NOT use `<Tr>` for block-level content.
+- `t(locale, 'key')` still available for static EN-only values (e.g. meta tags, aria-labels)
 
 **Rule**: when adding any user-visible string, add it to all three locales. Never hardcode.
 

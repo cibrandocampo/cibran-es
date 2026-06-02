@@ -1,12 +1,6 @@
 ---
-import { t } from '../../i18n/utils'
 import { ChevronDown } from '@lucide/astro'
 import profile from '../../data/profile.json'
-
-interface Props {
-  locale: 'en' | 'es' | 'gl'
-}
-const { locale } = Astro.props
 ---
 
 <section id="hero" class="min-h-screen flex items-center bg-zinc-900">
@@ -29,7 +23,7 @@ const { locale } = Astro.props
         <a
           href="#about"
           class="inline-flex flex-col items-center gap-1 text-zinc-500 hover:text-zinc-300 transition-colors animate-bounce"
-          aria-label={t(locale, 'hero.scroll_down')}
+          aria-label="Scroll down"
         >
           <ChevronDown size={28} />
         </a>

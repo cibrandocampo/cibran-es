@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --c-bg: theme('colors.page');
-    --c-surface: theme('colors.zinc.800');
-    --c-border: theme('colors.zinc.700');
-    --c-text: theme('colors.zinc.100');
-    --c-text-2: theme('colors.zinc.400');
-    --c-accent: theme('colors.accent');
+    --c-bg: theme("colors.page");
+    --c-surface: theme("colors.zinc.800");
+    --c-border: theme("colors.zinc.700");
+    --c-text: theme("colors.zinc.100");
+    --c-text-2: theme("colors.zinc.400");
+    --c-accent: theme("colors.accent");
   }
 
   html {
@@ -19,7 +19,29 @@
   }
 
   body {
-    font-family: theme('fontFamily.sans');
+    font-family: theme("fontFamily.sans");
     -webkit-font-smoothing: antialiased;
   }
+}
+
+/* Language visibility — default shows English; toggled by lang-XX class on <html> */
+.i18n-es,
+.i18n-gl {
+  display: none;
+}
+
+html.lang-es .i18n-en,
+html.lang-es .i18n-gl {
+  display: none;
+}
+html.lang-es .i18n-es {
+  display: revert;
+}
+
+html.lang-gl .i18n-en,
+html.lang-gl .i18n-es {
+  display: none;
+}
+html.lang-gl .i18n-gl {
+  display: revert;
 }

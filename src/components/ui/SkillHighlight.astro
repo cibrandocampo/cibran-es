@@ -1,14 +1,22 @@
 ---
 import * as LucideIcons from '@lucide/astro'
 
+type I18n = { en: string; es: string; gl: string }
+type I18nBlock = { en: string | string[]; es: string | string[]; gl: string | string[] }
+
 interface Props {
   icon: string
-  tag: string
-  name: string
-  description: string | string[]
+  tag: I18n
+  name: I18n
+  description: I18nBlock
 }
 const { icon, tag, name, description } = Astro.props
-const paragraphs = Array.isArray(description) ? description : [description]
+
+const paragraphs = {
+  en: Array.isArray(description.en) ? description.en : [description.en],
+  es: Array.isArray(description.es) ? description.es : [description.es],
+  gl: Array.isArray(description.gl) ? description.gl : [description.gl],
+}
 
 function toPascalCase(s: string): string {
   return s
@@ -23,9 +31,15 @@ const IconComponent = (LucideIcons as Record<string, any>)[toPascalCase(icon)]
 <div class="flex flex-col gap-4 p-6 bg-zinc-800 border border-zinc-700 rounded-lg h-full">
   {IconComponent && <IconComponent size={24} class="text-accent" />}
   <div>
-    <h3 class="text-base font-semibold text-white">{name}</h3>
+    <h3 class="text-base font-semibold text-white">
+      <span class="i18n-en">{name.en}</span><span class="i18n-es">{name.es}</span><span class="i18n-gl">{name.gl}</span>
+    </h3>
     <div class="mt-2 flex flex-col gap-3">
-      {paragraphs.map(p => <p class="text-sm text-zinc-400 leading-relaxed text-justify">{p}</p>)}
+      {(['en', 'es', 'gl'] as const).map(lang =>
+        paragraphs[lang].map((p: string) => (
+          <p class={`i18n-${lang} text-sm text-zinc-400 leading-relaxed text-justify`}>{p}</p>
+        ))
+      )}
     </div>
   </div>
 </div>

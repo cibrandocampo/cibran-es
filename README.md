@@ -26,7 +26,7 @@
 | Framework | [Astro](https://astro.build) — static site generator, zero JS by default |
 | Styling | [Tailwind CSS](https://tailwindcss.com) — utility-first, dark theme only |
 | Icons | [Lucide](https://lucide.dev) via `@lucide/astro` |
-| i18n | Astro i18n routing — EN (default at `/`), ES (`/es/`), GL (`/gl/`) |
+| i18n | CSS class-based — EN/ES/GL on a single URL (`/`), preference stored in `localStorage` |
 | Serving | Nginx (local) · GitHub Pages (live) |
 | Dev | Docker + bind mounts — HMR without Node on the host |
 | CI/CD | GitHub Actions — builds and deploys on every push to `main` |

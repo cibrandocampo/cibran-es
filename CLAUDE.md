@@ -26,7 +26,7 @@ See `.claude/skills/frontend-patterns` for component and CSS conventions.
 
 - **No CV download**: removed intentionally. LinkedIn + GitHub + contact form is enough.
 - **No phone number**: email only (`hola@cibran.es`).
-- **Multilingual**: EN (default), ES, GL — language detected from browser `navigator.language`. Uses Astro's i18n routing (`/`, `/es/`, `/gl/`). All UI strings must have translations in all three languages.
+- **Multilingual**: EN (default), ES, GL — single URL (`/`), language switching via CSS classes (`lang-en`, `lang-es`, `lang-gl`) on `<html>`. Detection reads `localStorage` first, then `navigator.languages`; stored on first visit. No URL-based routing. All UI strings must have translations in all three languages.
 - **Docker Hub pulls as project metric**: more meaningful than GitHub stars. Fetched at **build time** via Astro `fetch()` in component frontmatter — every `npm run build` hits the Docker Hub API fresh and bakes the numbers into the generated HTML. No client-side JS, no proxy needed. Docker Hub API has no CORS headers so browser-side fetch is not an option.
 - **Weekly auto-rebuild**: GitHub Actions scheduled workflow (copied from nudge repo) triggers a rebuild every week so pull counts stay current. To be configured at the end of the project.
 - **No progress bar skills**: replaced with category tag lists and highlight cards.
@@ -49,10 +49,15 @@ See `.claude/skills/frontend-patterns` for component and CSS conventions.
 
 ## i18n structure
 
-Three locales: `en` (default), `es`, `gl`.
+Three locales: `en` (default), `es`, `gl`. Single URL — no `/es/` or `/gl/` routes.
+
 - UI strings in `src/i18n/en.json`, `src/i18n/es.json`, `src/i18n/gl.json`
-- Content data (`src/data/`) is in English — translated variants go in `src/data/es/` and `src/data/gl/` as needed, or inline per locale key in each JSON if content is short.
-- Language auto-detected from `navigator.language` on first visit; stored in `localStorage`.
+- Content data in `src/data/*.json` uses inline per-locale keys: `{ "en": "...", "es": "...", "gl": "..." }`
+- Language detection: `localStorage` → `navigator.languages` → default `en`
+- **`tAll(key)`** — returns `{ en, es, gl }` for a given i18n key
+- **`<Tr en es gl />`** — renders three `<span class="i18n-XX">` tags; CSS shows only the active locale
+- CSS visibility rules live in `src/styles/global.css`: `.i18n-es, .i18n-gl { display: none }` + `html.lang-XX` overrides
+- Nav language switcher: `<button data-lang="XX" class="lang-btn">` — JS in Nav.astro toggles `lang-XX` class on `<html>` and saves to `localStorage`
 
 ## Sections
 
@@ -93,9 +98,8 @@ src/
   layouts/
     BaseLayout.astro
   pages/
-    index.astro   # en (default)
-    es/index.astro
-    gl/index.astro
+    index.astro   # single page — all languages via CSS
+    404.astro
   data/           # JSON content files
   i18n/           # Translation strings (en, es, gl)
   styles/

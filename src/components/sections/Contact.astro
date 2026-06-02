@@ -1,20 +1,20 @@
 ---
-import { t } from '../../i18n/utils'
+import { t, tAll } from '../../i18n/utils'
+import Tr from '../ui/Tr.astro'
 import SectionTitle from '../ui/SectionTitle.astro'
 import BrandIcon from '../ui/BrandIcon.astro'
 import { MapPin, Mail, Clock } from '@lucide/astro'
 import contact from '../../data/contact.json'
 import profile from '../../data/profile.json'
 
-interface Props {
-  locale: 'en' | 'es' | 'gl'
-}
-const { locale } = Astro.props
+const emailEn = t('en', 'contact.email_address')
+const emailEs = t('es', 'contact.email_address')
+const emailGl = t('gl', 'contact.email_address')
 ---
 
 <section id="contact" class="py-24 bg-zinc-900">
   <div class="max-w-6xl mx-auto px-4">
-    <SectionTitle title={t(locale, 'section.contact')} />
+    <SectionTitle><Tr {...tAll('section.contact')} /></SectionTitle>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-3xl mb-16 items-center">
 
@@ -25,14 +25,11 @@ const { locale } = Astro.props
           <Mail size={20} class="text-accent mt-0.5 flex-shrink-0" />
           <div>
             <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1">
-              {t(locale, 'contact.email_label')}
+              <Tr {...tAll('contact.email_label')} />
             </p>
-            <a
-              href={`mailto:${t(locale, 'contact.email_address')}`}
-              class="text-zinc-100 hover:text-accent transition-colors"
-            >
-              {t(locale, 'contact.email_address')}
-            </a>
+            <a href={`mailto:${emailEn}`} class="i18n-en text-zinc-100 hover:text-accent transition-colors">{emailEn}</a>
+            <a href={`mailto:${emailEs}`} class="i18n-es text-zinc-100 hover:text-accent transition-colors">{emailEs}</a>
+            <a href={`mailto:${emailGl}`} class="i18n-gl text-zinc-100 hover:text-accent transition-colors">{emailGl}</a>
           </div>
         </div>
 
@@ -40,7 +37,7 @@ const { locale } = Astro.props
           <MapPin size={20} class="text-accent mt-0.5 flex-shrink-0" />
           <div>
             <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1">
-              {t(locale, 'contact.location_label')}
+              <Tr {...tAll('contact.location_label')} />
             </p>
             <p class="text-zinc-100">{contact.location}</p>
           </div>
@@ -50,7 +47,7 @@ const { locale } = Astro.props
           <Clock size={20} class="text-accent mt-0.5 flex-shrink-0" />
           <div>
             <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1">
-              {t(locale, 'contact.timezone_label')}
+              <Tr {...tAll('contact.timezone_label')} />
             </p>
             <p class="text-zinc-100">
               <span id="local-time">--:--</span>
@@ -64,7 +61,7 @@ const { locale } = Astro.props
       <!-- Right: Languages -->
       <div>
         <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
-          {t(locale, 'contact.languages_label')}
+          <Tr {...tAll('contact.languages_label')} />
         </p>
         <div class="space-y-4">
           {profile.languages.map(lang => (
@@ -81,7 +78,7 @@ const { locale } = Astro.props
     <!-- Social links -->
     <div>
       <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
-        {t(locale, 'contact.social_label')}
+        <Tr {...tAll('contact.social_label')} />
       </p>
       <div class="flex flex-wrap gap-3">
         {profile.social.map(link => (
