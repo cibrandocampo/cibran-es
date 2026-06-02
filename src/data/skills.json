@@ -14,7 +14,13 @@
     },
     {
       "category": "Data & Databases",
-      "items": ["PostgreSQL", "DynamoDB", "Redis", "InfluxDB", "Time-series DBs"]
+      "items": [
+        "PostgreSQL",
+        "DynamoDB",
+        "Redis",
+        "InfluxDB",
+        "Time-series DBs"
+      ]
     },
     {
       "category": "Cloud & DevOps",
@@ -30,14 +36,27 @@
     },
     {
       "category": "Audio & Video",
-      "items": ["FFmpeg", "HW/SW Transcoding", "DVB / IPTV", "Streaming (HLS, DASH)"]
+      "items": [
+        "FFmpeg",
+        "HW/SW Transcoding",
+        "DVB / IPTV",
+        "Streaming (HLS, DASH)"
+      ]
     }
   ],
   "highlights": [
     {
       "icon": "cpu",
-      "tag": { "en": "Software & Data", "es": "Software & Datos", "gl": "Software & Datos" },
-      "name": { "en": "Software & Data Engineering", "es": "Ingeniería de Software & Datos", "gl": "Enxeñaría de Software & Datos" },
+      "tag": {
+        "en": "Software & Data",
+        "es": "Software & Datos",
+        "gl": "Software & Datos"
+      },
+      "name": {
+        "en": "Software & Data Engineering",
+        "es": "Ingeniería de Software & Datos",
+        "gl": "Enxeñaría de Software & Datos"
+      },
       "description": {
         "en": [
           "Over a decade designing and building software across very different sectors — from IPTV and broadcast, through maritime surveillance and e-health, to observability platforms processing hundreds of millions of events a day. That variety has two inevitable effects: a technology list that never stops growing, and an ever-sharper understanding of the real needs of each project and each client.",
@@ -61,8 +80,16 @@
     },
     {
       "icon": "zap",
-      "tag": { "en": "Multimedia & AV", "es": "Multimedia y AV", "gl": "Multimedia e AV" },
-      "name": { "en": "Multimedia & AV Engineering", "es": "Ingeniería Multimedia y AV", "gl": "Enxeñaría Multimedia e AV" },
+      "tag": {
+        "en": "Multimedia & AV",
+        "es": "Multimedia y AV",
+        "gl": "Multimedia e AV"
+      },
+      "name": {
+        "en": "Multimedia & AV Engineering",
+        "es": "Ingeniería Multimedia y AV",
+        "gl": "Enxeñaría Multimedia e AV"
+      },
       "description": {
         "en": [
           "Multimedia engineering is, without doubt, the most exciting part of my career. From acoustic design and venue sound, through audiovisual production and scenography, to low-level video transcoding.",

@@ -1,52 +1,52 @@
 ---
-import { t } from '../../i18n/utils'
+import { tAll } from '../../i18n/utils'
+import Tr from '../ui/Tr.astro'
 import SectionTitle from '../ui/SectionTitle.astro'
 import SkillHighlight from '../ui/SkillHighlight.astro'
 import AccordionEntry from '../ui/AccordionEntry.astro'
 import profile from '../../data/profile.json'
 import skills from '../../data/skills.json'
 import timeline from '../../data/timeline.json'
-
-interface Props {
-  locale: 'en' | 'es' | 'gl'
-}
-const { locale } = Astro.props
 ---
 
 <section id="professional" class="py-24 bg-zinc-900">
   <div class="max-w-6xl mx-auto px-4 space-y-16">
 
-    <SectionTitle title={t(locale, 'section.resume')} />
+    <SectionTitle><Tr {...tAll('section.resume')} /></SectionTitle>
 
     <!-- Intro -->
     <div class="max-w-3xl -mt-8 flex flex-col gap-3">
-      {profile.resumeBio[locale].map((p: string, i: number, arr: string[]) => (
-        <p class={`leading-relaxed ${i === arr.length - 1 ? 'font-semibold text-white' : 'text-zinc-300'}`}>{p}</p>
-      ))}
+      {(['en', 'es', 'gl'] as const).map(lang =>
+        profile.resumeBio[lang].map((p: string, i: number, arr: string[]) => (
+          <p class={`i18n-${lang} leading-relaxed ${i === arr.length - 1 ? 'font-semibold text-white' : 'text-zinc-300'}`}>
+            {p}
+          </p>
+        ))
+      )}
     </div>
 
     <!-- Block 1: Skill highlights -->
     <div>
       <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
-        {t(locale, 'professional.highlights_title')}
+        <Tr {...tAll('professional.highlights_title')} />
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {skills.highlights[0] && (
           <div class="md:row-span-2 h-full">
             <SkillHighlight
               icon={skills.highlights[0].icon}
-              tag={skills.highlights[0].tag[locale]}
-              name={skills.highlights[0].name[locale]}
-              description={skills.highlights[0].description[locale]}
+              tag={skills.highlights[0].tag}
+              name={skills.highlights[0].name}
+              description={skills.highlights[0].description}
             />
           </div>
         )}
         {skills.highlights.slice(1).map(h => (
           <SkillHighlight
             icon={h.icon}
-            tag={h.tag[locale]}
-            name={h.name[locale]}
-            description={h.description[locale]}
+            tag={h.tag}
+            name={h.name}
+            description={h.description}
           />
         ))}
       </div>
@@ -55,7 +55,7 @@ const { locale } = Astro.props
     <!-- Block 2: Experience accordion -->
     <div>
       <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
-        {t(locale, 'professional.experience_title')}
+        <Tr {...tAll('professional.experience_title')} />
       </h3>
       <div id="accordion" class="border-t border-zinc-700/50">
         {timeline.map((entry, idx) => (
