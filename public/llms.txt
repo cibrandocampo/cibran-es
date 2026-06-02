@@ -26,6 +26,9 @@ worked as Tech Lead on high-complexity, high-performance projects across multipl
   Popeyes, Telepizza); e-health platform for MAPFRE.
 - Senior Software Developer at Optiva Media (2021–2022): Media & TV streaming platform
   development for Telefónica.
+- Full Stack Developer at Grupo CPS (2021): real-time integration of AIS feeds, SIVE
+  radar networks and FIWARE/Orion Context Broker for national security agencies;
+  event-driven Redis Streams pipelines for low-connectivity border surveillance environments.
 - Multimedia & AV Engineering at TRISON (2018–2021): designed innovative AV solutions for
   interactive retail spaces, touch-sensitive floors in shopping centres, and VR/AR
   experiences for car dealerships worldwide (Porsche, Inditex, Ecoalf, Baleària, AENA).
@@ -83,7 +86,7 @@ URL: ebird.org/profile/OTIxNTk2OA/world
 
 ### HappyWhale
 
-Contributed 50+ individual whale identifications to HappyWhale — a global cetacean
+380+ whale encounters logged, 52 uniquely identified on HappyWhale — a global cetacean
 research database. Fin whales and humpbacks off the Galician coast.
 URL: happywhale.com/user/25322
 
@@ -101,7 +104,9 @@ possible builds. Because why not?
 - Docker Hub: hub.docker.com/u/cibrandocampo
 - HappyWhale: happywhale.com/user/25322
 - eBird: ebird.org (124 species logged)
-- 500px: 500px.com/p/cibrandocampo
+- 500px: 500px.com/p/cibran
+- Spotify: open.spotify.com/user/comepedras
+- Instagram: instagram.com/yogurgur
 
 ## Languages
 
