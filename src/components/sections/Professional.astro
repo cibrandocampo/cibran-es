@@ -27,7 +27,7 @@ import timeline from '../../data/timeline.json'
 
     <!-- Block 1: Skill highlights -->
     <div>
-      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
+      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-300 mb-6">
         <Tr {...tAll('professional.highlights_title')} />
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -54,7 +54,7 @@ import timeline from '../../data/timeline.json'
 
     <!-- Block 2: Experience accordion -->
     <div>
-      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-6">
+      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-300 mb-6">
         <Tr {...tAll('professional.experience_title')} />
       </h3>
       <div id="accordion" class="border-t border-zinc-700/50">
@@ -82,11 +82,11 @@ import timeline from '../../data/timeline.json'
       var body = entry.querySelector('.accordion-body')
       var chevron = entry.querySelector('.chevron')
       if (open) {
-        body.style.maxHeight = body.scrollHeight + 'px'
+        body.style.gridTemplateRows = '1fr'
         chevron.style.transform = 'rotate(180deg)'
         entry.dataset.open = 'true'
       } else {
-        body.style.maxHeight = '0'
+        body.style.gridTemplateRows = '0fr'
         chevron.style.transform = 'rotate(0deg)'
         entry.dataset.open = 'false'
       }

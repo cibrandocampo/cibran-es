@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --c-bg: theme("colors.page");
+    --c-bg: theme("colors.zinc.900");
     --c-surface: theme("colors.zinc.800");
     --c-border: theme("colors.zinc.700");
     --c-text: theme("colors.zinc.100");

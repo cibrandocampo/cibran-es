@@ -39,56 +39,62 @@ worked as Tech Lead on high-complexity, high-performance projects across multipl
 
 ## Personal projects
 
-Open source projects on GitHub (github.com/cibrandocampo) and Docker Hub
-(hub.docker.com/u/cibrandocampo).
+Open source projects on [GitHub](https://github.com/cibrandocampo) and [Docker Hub](https://hub.docker.com/u/cibrandocampo).
 
 ### Nudge
 
 A gentle reminder app for recurring things — groceries, medications, filters, anything
 you tend to forget. Full-stack PWA with push notifications, sharing, and offline support.
-GitHub: github.com/cibrandocampo/nudge
-URL: nudge.cibran.es
+
+- [GitHub](https://github.com/cibrandocampo/nudge)
+- [Live site](https://nudge.cibran.es)
 
 ### OVH DynDNS Client
 
 Lightweight DynDNS client for OVH domains. Keeps your DNS record in sync with your
 dynamic public IP — perfect for self-hosted setups behind a residential connection.
-GitHub: github.com/cibrandocampo/ovh-dyndns-client
-URL: ovh-dyndns.cibran.es
+
+- [GitHub](https://github.com/cibrandocampo/ovh-dyndns-client)
+- [Live site](https://ovh-dyndns.cibran.es)
 
 ### Synology Video Enhancer
 
 Transcoding optimisation tool for Synology Photos. Automatically re-encodes videos to
 H.264 High Profile or H.265/HEVC, fixing the quality issues of Synology's default
 mobile transcoding pipeline.
-GitHub: github.com/cibrandocampo/synology-photos-video-enhancer
-URL: video-enhancer.cibran.es
+
+- [GitHub](https://github.com/cibrandocampo/synology-photos-video-enhancer)
+- [Live site](https://video-enhancer.cibran.es)
 
 ### YourFisio
 
 Physiotherapy management platform developed at Stickybit. Patient tracking, session
 scheduling and exercise prescription for clinics.
-URL: yourfisio.com
+
+- [Live site](https://yourfisio.com)
 
 ### CarbWise
 
 Carbohydrate calculator built to help people with diabetes manage their diet. Look up
 carb values from official sources and calculate insulin doses — simple, fast and
 mobile-first.
-GitHub: github.com/cibrandocampo/carbwise
-URL: carbwise.cibran.es
+
+- [GitHub](https://github.com/cibrandocampo/carbwise)
+- [Live site](https://carbwise.cibran.es)
 
 ### eBird Life List
 
 Bird sightings logged on eBird — Cornell Lab's global citizen science platform.
 Focused on species along the Galician coast, with 124 species logged to date.
-URL: ebird.org/profile/OTIxNTk2OA/world
+
+- [My eBird profile](https://ebird.org/profile/OTIxNTk2OA/ES-GA)
 
 ### HappyWhale
 
 380+ whale encounters logged, 52 uniquely identified on HappyWhale — a global cetacean
 research database. Fin whales and humpbacks off the Galician coast.
-URL: happywhale.com/user/25322
+
+- [My HappyWhale profile](https://happywhale.com/user/25322)
 
 ### Lego Builder
 
@@ -97,16 +103,16 @@ possible builds. Because why not?
 
 ## Contact
 
-- Email: hola@cibran.es
+- Email: [hola@cibran.es](mailto:hola@cibran.es)
 - Location: Cangas, Galicia, Spain
-- LinkedIn: linkedin.com/in/cidocampo
-- GitHub: github.com/cibrandocampo
-- Docker Hub: hub.docker.com/u/cibrandocampo
-- HappyWhale: happywhale.com/user/25322
-- eBird: ebird.org (124 species logged)
-- 500px: 500px.com/p/cibran
-- Spotify: open.spotify.com/user/comepedras
-- Instagram: instagram.com/yogurgur
+- [LinkedIn](https://www.linkedin.com/in/cidocampo/)
+- [GitHub](https://github.com/cibrandocampo)
+- [Docker Hub](https://hub.docker.com/u/cibrandocampo)
+- [HappyWhale](https://happywhale.com/user/25322)
+- [eBird](https://ebird.org/profile/OTIxNTk2OA/ES-GA) (124 species logged)
+- [500px](https://500px.com/p/cibran)
+- [Spotify](https://open.spotify.com/user/comepedras)
+- [Instagram](https://www.instagram.com/yogurgur/)
 
 ## Languages
 
