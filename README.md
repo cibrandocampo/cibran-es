@@ -19,6 +19,18 @@
 
 ---
 
+## What's inside
+
+Single-page personal site with five sections:
+
+- **Hero** — name, typed rotating subtitle, profile photo
+- **About** — bio, interests grid (birding, whale watching, drones, LEGO...), and a fun facts panel with real numbers (birds logged on eBird, whales identified on HappyWhale, drone hours, etc.)
+- **Resume** — skill highlight cards, collapsible experience timeline per company, and education/certifications
+- **Portfolio** — project cards with category, tech tags, links, and live Docker Hub pull counts fetched at build time
+- **Contact** — location, email, LinkedIn
+
+Available in **English, Spanish, and Galician** — single URL, no redirects. Language is detected from the browser and stored in `localStorage`; switching is instant via CSS class on `<html>`.
+
 ## Stack
 
 | Layer | Technology |
@@ -48,9 +60,9 @@ All Node/npm commands run inside Docker — no local Node installation needed.
 
 ## Content
 
-All site content lives in `src/data/` as JSON: bio, experience, education, skills, projects, interests, and fun facts. Docker Hub pull counts for portfolio projects are fetched live from the Docker Hub API at build time and baked into the generated HTML — no client-side requests, no proxy.
+All site content lives in `src/data/` as JSON: bio, experience, education, skills, projects, interests, and fun facts. UI strings are in `src/i18n/{en,es,gl}.json`.
 
-A GitHub Actions scheduled workflow rebuilds the site weekly to keep the pull counts current.
+Docker Hub pull counts for portfolio projects are fetched live from the Docker Hub API at build time and baked into the generated HTML — no client-side requests, no proxy. A GitHub Actions scheduled workflow rebuilds the site weekly to keep the counts current.
 
 ## Built with Claude Code
 
