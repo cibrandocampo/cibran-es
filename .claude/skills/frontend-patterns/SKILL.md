@@ -60,7 +60,7 @@ Three custom tokens on top of Tailwind's zinc palette:
 | Token | Hex | Use |
 |-------|-----|-----|
 | `text-brand` / `bg-brand` | `#fcd34d` | Yellow — sparingly: skill icons, project count badges, link icons in portfolio |
-| `text-accent` / `bg-accent` | `#4a56a1` | Blue — section underlines, interest/contact icons, tech tag backgrounds, dates |
+| `text-accent` / `bg-accent` | `#818cf8` | Indigo — section underlines, interest/contact icons, tech tag backgrounds, dates |
 | `text-primary` / `bg-primary` | `#454961` | Blue-grey — secondary accents |
 
 **Dark base**: `bg-zinc-900` (page), `bg-zinc-800` (cards/surfaces), `bg-zinc-700` (borders).
@@ -160,7 +160,7 @@ Font: **Inter** (primary) + **Space Grotesk** (logo/nav only).
 | Card title | `text-base font-semibold text-white` |
 | Body text | `text-sm text-zinc-300 leading-relaxed` |
 | Muted/secondary | `text-sm text-zinc-400` |
-| Label uppercase | `text-xs font-medium uppercase tracking-widest text-zinc-500` |
+| Label uppercase | `text-xs font-medium uppercase tracking-widest text-zinc-300` |
 
 ## Build verification
 

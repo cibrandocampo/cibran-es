@@ -51,9 +51,10 @@ const { period, company, role, projects, open = false } = Astro.props
   </button>
 
   <div
-    class="accordion-body overflow-hidden transition-all duration-300"
-    style={open ? 'max-height: 2000px' : 'max-height: 0'}
+    class="accordion-body transition-[grid-template-rows] duration-300"
+    style={open ? 'grid-template-rows: 1fr' : 'grid-template-rows: 0fr'}
   >
+    <div class="overflow-hidden">
     <div class="pb-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
       {projects.map(project => (
         <div class="relative flex flex-col gap-2 p-3 bg-zinc-800/50 border border-zinc-700/30 rounded-lg hover:border-zinc-600 transition-colors group/proj">
@@ -115,6 +116,7 @@ const { period, company, role, projects, open = false } = Astro.props
           </div>
         </div>
       ))}
+    </div>
     </div>
   </div>
 </div>
