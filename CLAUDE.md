@@ -28,7 +28,7 @@ See `.claude/skills/frontend-patterns` for component and CSS conventions.
 - **No phone number**: email only (`hola@cibran.es`).
 - **Multilingual**: EN (default), ES, GL — single URL (`/`), language switching via CSS classes (`lang-en`, `lang-es`, `lang-gl`) on `<html>`. Detection reads `localStorage` first, then `navigator.languages`; stored on first visit. No URL-based routing. All UI strings must have translations in all three languages.
 - **Docker Hub pulls as project metric**: more meaningful than GitHub stars. Fetched at **build time** via Astro `fetch()` in component frontmatter — every `npm run build` hits the Docker Hub API fresh and bakes the numbers into the generated HTML. No client-side JS, no proxy needed. Docker Hub API has no CORS headers so browser-side fetch is not an option.
-- **Weekly auto-rebuild**: GitHub Actions scheduled workflow (copied from nudge repo) triggers a rebuild every week so pull counts stay current. To be configured at the end of the project.
+- **Weekly auto-rebuild**: the `Deploy to GitHub Pages` workflow runs on a `schedule` cron (Mondays 06:00 UTC) so Docker Hub pull counts stay current. Note: GitHub disables scheduled workflows after 60 days without repo activity — re-enable from the Actions tab if that happens.
 - **No progress bar skills**: replaced with category tag lists and highlight cards.
 - **Dark theme only**: no light mode toggle.
 
