@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        display: ['Cormorant Garamond', 'serif'],
+        display: ['Space Grotesk', 'sans-serif'],
       },
       colors: {
         brand:   '#fcd34d',
