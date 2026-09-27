@@ -1,36 +1,77 @@
-# SEO & Indexability — Pending tasks
+# SEO & Indexabilidad
 
-## Crítico
+Estado del SEO del sitio. Todo lo que aparecía como "pendiente" en versiones
+anteriores de este documento ya está implementado — este archivo documenta
+**qué hay y dónde**, más los trade-offs conocidos del enfoque multilingüe.
 
-### 1. `hreflang`
-Le dice a Google que `/`, `/es/` y `/gl/` son la misma página en distintos idiomas.
-Sin esto, las tres versiones pueden competir entre sí o ser penalizadas como contenido duplicado.
-→ Añadir en `BaseLayout.astro` dentro de `<head>`.
+## Implementado
 
-### 2. Open Graph
-Metaetiquetas `og:title`, `og:description`, `og:image`, `og:locale`, `og:url`.
-Esencial para previews en redes sociales y para que las IAs entiendan el contenido al indexarlo.
-→ Añadir en `BaseLayout.astro` dentro de `<head>`.
+### Metadatos (`src/layouts/BaseLayout.astro`, dentro de `<head>`)
 
-### 3. JSON-LD (Schema.org `Person`)
-Datos estructurados que Google usa para el Knowledge Graph y que las IAs leen directamente.
-Incluir: nombre, título profesional, URL, redes sociales, skills, ubicación.
-→ Añadir como `<script type="application/ld+json">` en `BaseLayout.astro`.
+- **`<title>` + `<meta name="description">`** — desde `src/i18n/*.json` (`meta.title`, `meta.description`).
+- **`<link rel="canonical">`** — apunta a `https://cibran.es`.
+- **`<meta name="robots">`** — `index, follow` con `max-snippet:-1`, `max-image-preview:large`, `max-video-preview:-1`.
+- **`<meta name="author">`**.
 
-## Importante
+### Open Graph
 
-### 4. `sitemap.xml`
-Astro tiene el plugin oficial `@astrojs/sitemap` que lo genera automáticamente con todas las rutas.
-→ Instalar plugin, configurar en `astro.config.mjs` con `site` y los locales.
+`og:type=profile`, `og:site_name`, `og:title`, `og:description`, `og:url`,
+`og:locale` (`en_GB`), `og:image` (1200×630, con `width`/`height`/`alt`), y
+`profile:first_name` / `profile:last_name` / `profile:username`.
 
-### 5. `robots.txt` + `llms.txt`
-- `robots.txt`: controla qué crawlers acceden y enlaza al sitemap.
-- `llms.txt`: estándar emergente (adoptado por Anthropic y otros) — resumen estructurado del sitio para LLMs.
-→ Crear ambos en `public/`.
+### Twitter Card
 
-## Nice to have
+`summary_large_image` con `title`, `description` e `image`.
 
-### 6. `og:image` — Social card
-Imagen 1200×630px para previews en redes y mensajería.
-Sin ella los previews salen en blanco.
-→ Crear imagen estática y referenciarla en el Open Graph.
+### Datos estructurados (JSON-LD)
+
+Dos bloques `<script type="application/ld+json">`:
+
+- **`Person`** — nombre, `jobTitle`, `url`, `image`, `email`, `address`
+  (Cangas, Galicia, ES), `sameAs` (LinkedIn, GitHub, Docker Hub), `knowsAbout`
+  (stack técnico), `knowsLanguage`, `alumniOf` (Universidad de Vigo, UNIR) y
+  `hasCredential` (Scrum Manager, Dron A1-A3).
+- **`WebSite`** — `url`, `name`, `author`.
+
+### Archivos en `public/`
+
+- **`robots.txt`** — `Allow: /` + enlace al sitemap.
+- **`sitemap-index.xml`** / **`sitemap-0.xml`** — generados en build por
+  `@astrojs/sitemap` (configurado en `astro.config.mjs` vía `site`).
+- **`llms.txt`** — resumen estructurado del sitio para LLMs.
+- **`og-image.jpg`** — social card 1200×630.
+- **Favicons** — `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`.
+
+### Rendimiento relevante para SEO
+
+- Fuentes de Google cargadas de forma **no bloqueante**
+  (`media="print"` + `onload`, con fallback `<noscript>`).
+- `preconnect` a `fonts.googleapis.com` y `fonts.gstatic.com`.
+
+## Trade-offs conocidos del enfoque multilingüe
+
+El sitio usa **una única URL** (`/`) con cambio de idioma vía clases CSS
+(`lang-en`, `lang-es`, `lang-gl`) sobre `<html>`. Esto tiene implicaciones SEO
+que son **decisiones aceptadas**, no fallos:
+
+- **`hreflang` no aplica.** No hay URLs alternativas (`/es/`, `/gl/`) que
+  enlazar entre sí, así que no procede. (Las versiones antiguas de este
+  documento lo listaban como pendiente por error.)
+- **El HTML se sirve con `<title>`/`description`/`og` en inglés.** Google
+  indexa la variante en inglés como canónica. El contenido ES/GL no se indexa
+  como páginas independientes.
+- **Las tres traducciones están en el DOM** (ocultas con `display:none` según
+  el idioma activo). Es una técnica legítima para i18n en cliente, pero implica
+  que los crawlers ven texto en los tres idiomas en el mismo documento.
+
+Si en el futuro se quisiera indexación independiente por idioma, habría que
+migrar a rutas por locale (`/`, `/es/`, `/gl/`) y añadir `hreflang` — lo que
+contradice la decisión actual de URL única (ver `CLAUDE.md`).
+
+## Verificación
+
+- Datos estructurados: [Rich Results Test](https://search.google.com/test/rich-results)
+  y [Schema Markup Validator](https://validator.schema.org/).
+- Previews sociales: [OpenGraph.xyz](https://www.opengraph.xyz/) o el validador
+  de cada red.
+- Indexación y cobertura: Google Search Console (propiedad `cibran.es`).
