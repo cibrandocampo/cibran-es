@@ -248,7 +248,11 @@
     "role": "Full Stack Developer",
     "projects": [
       {
-        "title": "Maritime Surveillance",
+        "title": {
+          "en": "Maritime Surveillance",
+          "es": "Vigilancia marítima",
+          "gl": "Vixilancia marítima"
+        },
         "tagline": {
           "en": "Border control and maritime surveillance platform",
           "es": "Plataforma de control fronterizo y vigilancia marítima",
@@ -286,7 +290,11 @@
     },
     "projects": [
       {
-        "title": "Porsche Digitalisation",
+        "title": {
+          "en": "Porsche Digitalisation",
+          "es": "Digitalización Porsche",
+          "gl": "Dixitalización Porsche"
+        },
         "tagline": {
           "en": "Digital transformation for Porsche Spain dealerships",
           "es": "Transformación digital de los concesionarios Porsche",
@@ -313,7 +321,11 @@
         "tags": ["DjangoRF", "Vue.js", "AR", "Docker", "Tech Lead"]
       },
       {
-        "title": "Multimedia & AV",
+        "title": {
+          "en": "Multimedia & AV",
+          "es": "Multimedia y AV",
+          "gl": "Multimedia e AV"
+        },
         "tagline": {
           "en": "Enterprise audio-visual integration projects",
           "es": "Proyectos de integración audiovisual para empresas",
@@ -520,7 +532,7 @@
   },
   {
     "period": "2013 – 2018",
-    "company": "Arantia, Televes Corp",
+    "company": "Arantia, Televés Corporation",
     "role": "Full Stack Developer",
     "projects": [
       {

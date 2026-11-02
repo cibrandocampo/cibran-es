@@ -2,9 +2,9 @@
 import { ChevronDown, Globe } from '@lucide/astro'
 import Tr from './Tr.astro'
 import RichTr from './RichTr.astro'
-import { loc, tAll, formatPeriod, localisePeriod, type Localized } from '../../i18n/utils'
+import { loc, tAll, tagAll, formatPeriod, localisePeriod, type Localized } from '../../i18n/utils'
 interface Project {
-  title: string
+  title: Localized
   start?: string
   end?: string | null
   tagline: Localized
@@ -23,6 +23,12 @@ interface Props {
   open?: boolean
 }
 const { period, company, role, projects, open = false } = Astro.props
+
+// Collapsed header shows each project category once (e.g. TRISON has 9 projects
+// but only a handful of distinct categories)
+const uniqueTags = projects
+  .map(p => p.tag)
+  .filter((tag, i, all) => all.findIndex(t => loc(t).en === loc(tag).en) === i)
 ---
 
 <div
@@ -32,6 +38,7 @@ const { period, company, role, projects, open = false } = Astro.props
   <button
     class="accordion-trigger w-full flex items-center justify-between py-5 text-left gap-4 hover:opacity-80 transition-opacity"
     type="button"
+    aria-expanded={open ? "true" : "false"}
   >
     <div class="flex flex-col gap-0.5">
       <span class="text-xs text-accent uppercase tracking-widest"><Tr {...localisePeriod(period)} /></span>
@@ -43,9 +50,9 @@ const { period, company, role, projects, open = false } = Astro.props
       </div>
       <span class="text-sm text-zinc-400"><Tr {...loc(role)} /></span>
       <div class="accordion-tags-preview flex flex-wrap gap-1 mt-2">
-        {projects.map(project => (
+        {uniqueTags.map(tag => (
           <span class="text-xs text-brand bg-brand/10 border border-brand/25 px-2 py-0.5 rounded-full">
-            <Tr {...loc(project.tag)} />
+            <Tr {...loc(tag)} />
           </span>
         ))}
       </div>
@@ -70,14 +77,15 @@ const { period, company, role, projects, open = false } = Astro.props
               target="_blank"
               rel="noopener noreferrer"
               class="absolute inset-0 z-10 rounded-lg"
-              aria-label={`Visit ${project.title}`}
-            />
+            >
+              <span class="sr-only"><Tr {...tAll('a11y.visit')} /> <Tr {...loc(project.title)} /></span>
+            </a>
           )}
 
           <!-- Header: title + category tag -->
           <div class="flex items-start justify-between gap-2">
             <div class="flex flex-col gap-0.5">
-              <span class="text-sm font-medium text-white leading-snug">{project.title}</span>
+              <span class="text-sm font-medium text-white leading-snug"><Tr {...loc(project.title)} /></span>
               {project.start && (
                 <span class="text-xs text-accent tabular-nums">
                   <Tr {...formatPeriod(project.start, project.end)} />
@@ -97,7 +105,7 @@ const { period, company, role, projects, open = false } = Astro.props
             <ul class="project-summary space-y-1">
               {project.description.map(line => (
                 <li class="text-xs text-zinc-200 leading-relaxed flex gap-1.5">
-                  <span class="text-zinc-500 flex-shrink-0 mt-0.5">›</span>
+                  <span class="text-zinc-400 flex-shrink-0 mt-0.5">›</span>
                   <span><RichTr value={line} strongClass="font-normal" /></span>
                 </li>
               ))}
@@ -128,7 +136,7 @@ const { period, company, role, projects, open = false } = Astro.props
               <div class="flex flex-wrap gap-1">
                 {project.tags.map(tag => (
                   <span class="text-xs text-zinc-200 bg-accent/25 border border-accent/30 px-1.5 py-0.5 rounded">
-                    {tag}
+                    <Tr {...tagAll(tag)} />
                   </span>
                 ))}
               </div>
@@ -139,8 +147,8 @@ const { period, company, role, projects, open = false } = Astro.props
                 target="_blank"
                 rel="noopener noreferrer"
                 class="relative z-20 text-brand hover:text-yellow-300 transition-colors flex-shrink-0"
-                aria-label={`Visit ${project.title}`}
               >
+                <span class="sr-only"><Tr {...tAll('a11y.visit')} /> <Tr {...loc(project.title)} /></span>
                 <Globe size={13} />
               </a>
             )}

@@ -1,43 +1,71 @@
 {
   "formal": [
     {
-      "degree": "Master's Degree in Teacher Training — Technology and IT",
+      "degree": {
+        "en": "Master's Degree in Teacher Training — Technology and IT",
+        "es": "Máster Universitario en Formación del Profesorado — Tecnología e Informática",
+        "gl": "Mestrado Universitario en Formación do Profesorado — Tecnoloxía e Informática"
+      },
       "period": "2022 – 2023",
-      "institution": "UNIR — La Universidad en Internet"
+      "institution": "UNIR — Universidad Internacional de La Rioja"
     },
     {
-      "degree": "Telecommunication Technical Engineering — Image and Sound",
+      "degree": {
+        "en": "Telecommunication Technical Engineering — Image and Sound",
+        "es": "Ingeniería Técnica de Telecomunicación — Imagen y Sonido",
+        "gl": "Enxeñaría Técnica de Telecomunicación — Imaxe e Son"
+      },
       "period": "2009 – 2014",
       "institution": "Universidad de Vigo",
-      "description": "Adaptive Streaming platform for multiscreen devices and heterogeneous networks."
+      "description": {
+        "en": "Final degree project: adaptive streaming platform for multiscreen devices and heterogeneous networks.",
+        "es": "Proyecto fin de carrera: plataforma de streaming adaptativo para dispositivos multipantalla y redes heterogéneas.",
+        "gl": "Proxecto fin de carreira: plataforma de streaming adaptativo para dispositivos multipantalla e redes heteroxéneas."
+      }
     }
   ],
   "certifications": [
     {
+      "name": {
+        "en": "Advanced Programme in Technology Project Management (200 h)",
+        "es": "Programa Superior de Dirección de Proyectos Tecnológicos (200 h)",
+        "gl": "Programa Superior de Dirección de Proxectos Tecnolóxicos (200 h)"
+      },
+      "issuer": "Red.es",
+      "year": 2020
+    },
+    {
       "name": "Scrum Manager Experto",
-      "issuer": "Scrum Manager"
+      "issuer": "Scrum Manager",
+      "year": 2020
     },
     {
-      "name": "Drone Pilot Certificate A1-A3",
-      "issuer": "AESA"
+      "name": "Cisco SMB Product and Positioning Technical",
+      "issuer": "Cisco",
+      "year": 2020
     },
     {
-      "name": "Elasticsearch & Kibana for Developers",
-      "issuer": "OpenWebinars"
+      "name": "LPI Linux Essentials",
+      "issuer": "Linux Professional Institute",
+      "year": 2017
     },
     {
-      "name": "Kubernetes for Developers",
-      "issuer": "OpenWebinars"
+      "name": {
+        "en": "Quality management in testing laboratories — UNE-EN ISO/IEC 17025",
+        "es": "Gestión de la calidad en laboratorios de ensayo — UNE-EN ISO/IEC 17025",
+        "gl": "Xestión da calidade en laboratorios de ensaio — UNE-EN ISO/IEC 17025"
+      },
+      "issuer": "ENAC",
+      "year": 2010
     },
     {
-      "name": "Quality Management in Testing Laboratories — UNE-EN ISO/IEC 17025",
-      "issuer": "ENAC"
-    }
-  ],
-  "publications": [
-    {
-      "title": "Adaptive Streaming platform for multiscreen devices and heterogeneous networks",
-      "context": "Degree project — Universidad de Vigo, 2014"
+      "name": {
+        "en": "Drone pilot certificate A1/A3",
+        "es": "Certificado de piloto de drones A1/A3",
+        "gl": "Certificado de piloto de drons A1/A3"
+      },
+      "issuer": "AESA",
+      "year": 2023
     }
   ]
 }

@@ -125,3 +125,16 @@ export function localisePeriod(period: string): {
     gl: period.replace("Present", PRESENT.gl),
   };
 }
+
+/**
+ * Tags are mostly technology names (kept as-is). Descriptive tags can be
+ * translated via the `tags` map in src/i18n/{es,gl}.json; missing → original.
+ */
+export function tagAll(tag: string): { en: string; es: string; gl: string } {
+  const lookup = (l: "es" | "gl") =>
+    (
+      (translations[l] as Record<string, unknown>).tags as
+        Record<string, string> | undefined
+    )?.[tag] ?? tag;
+  return { en: tag, es: lookup("es"), gl: lookup("gl") };
+}

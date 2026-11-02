@@ -68,8 +68,24 @@ validates.
 - Multimedia & AV Engineering at TRISON (2018–2021): designed innovative AV solutions for
   interactive retail spaces, touch-sensitive floors in shopping centres, and VR/AR
   experiences for car dealerships worldwide (Porsche, Inditex, Ecoalf, Baleària, AENA).
-- Full Stack Developer at Arantia/Televes (2013–2018): professional IPTV headend and
+- Full Stack Developer at Arantia (Televés) (2013–2018): professional IPTV headend and
   hardware/software transcoding and streaming products.
+
+
+## Education
+
+- Master's Degree in Teacher Training — Technology and IT, UNIR (2022–2023).
+- Telecommunication Technical Engineering — Image and Sound, Universidad de Vigo (2009–2014).
+  Final degree project: adaptive streaming platform for multiscreen devices and heterogeneous networks.
+
+## Courses and certifications
+
+- Advanced Programme in Technology Project Management, 200 h (Red.es, 2020)
+- Scrum Manager Experto (Scrum Manager, 2020)
+- Cisco SMB Product and Positioning Technical (Cisco, 2020)
+- LPI Linux Essentials (Linux Professional Institute, 2017)
+- Quality management in testing laboratories — UNE-EN ISO/IEC 17025 (ENAC, 2010)
+- Drone pilot certificate A1/A3 (AESA, 2023)
 
 ## Personal projects
 
@@ -150,7 +166,7 @@ possible builds. Because why not?
 
 ## Languages
 
-- Galician: Native
+- Galician: Native (CELGA 5)
 - Spanish: Native
-- English: Professional working proficiency
+- English: Professional working proficiency (B1, EOI)
 - Portuguese: Basic (conversational)

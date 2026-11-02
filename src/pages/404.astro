@@ -1,14 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Tr from '../components/ui/Tr.astro'
+import { tAll } from '../i18n/utils'
 ---
 
 <BaseLayout title="Page not found — Cibrán Docampo" description="The page you were looking for does not exist.">
-  <main class="min-h-screen flex flex-col items-center justify-center px-4 text-center">
+  <main id="main" class="min-h-screen flex flex-col items-center justify-center px-4 text-center">
     <p class="text-8xl font-bold text-accent mb-4" style="font-family: 'Space Grotesk', sans-serif">404</p>
-    <h1 class="text-2xl font-semibold text-white mb-2">Page not found</h1>
-    <p class="text-sm text-zinc-400 mb-8">The page you were looking for doesn't exist or has been moved.</p>
+    <h1 class="text-2xl font-semibold text-white mb-2"><Tr {...tAll('notfound.title')} /></h1>
+    <p class="text-sm text-zinc-400 mb-8"><Tr {...tAll('notfound.text')} /></p>
     <a href="/" class="text-sm font-medium px-4 py-2 rounded bg-accent/25 border border-accent/30 text-zinc-200 hover:bg-accent/40 transition-colors">
-      Go home
+      <Tr {...tAll('notfound.home')} />
     </a>
   </main>
 </BaseLayout>

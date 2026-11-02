@@ -31,7 +31,10 @@
   "professional": {
     "highlights_title": "Highlights",
     "experience_title": "Experience",
-    "read_more": "Read more"
+    "read_more": "Read more",
+    "education_title": "Education",
+    "degrees_title": "Degrees",
+    "courses_title": "Courses & certifications"
   },
   "contact": {
     "location_label": "Location",
@@ -45,5 +48,19 @@
   "meta": {
     "title": "Cibrán Docampo — Senior Software Developer",
     "description": "Senior Software Developer based in Galicia, Spain. Scalable systems, cloud architecture, and open source."
+  },
+  "notfound": {
+    "title": "Page not found",
+    "text": "The page you were looking for doesn't exist or has been moved.",
+    "home": "Go home"
+  },
+  "a11y": {
+    "menu": "Menu",
+    "scroll_down": "Scroll down",
+    "visit": "Visit",
+    "github": "GitHub repository",
+    "profile": "My profile",
+    "website": "Project website",
+    "skip": "Skip to content"
   }
 }
