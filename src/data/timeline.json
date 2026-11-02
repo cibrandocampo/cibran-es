@@ -2,58 +2,243 @@
   {
     "period": "2022 – Present",
     "company": "Plexus Tech",
-    "role": "Senior Software Developer",
+    "role": "Senior Backend Developer",
     "projects": [
       {
         "title": "Obsly",
-        "tagline": "Real-time observability & business intelligence platform",
+        "start": "2025-07",
+        "end": null,
+        "tagline": {
+          "en": "Large-scale observability & UX analytics platform",
+          "es": "Plataforma de observabilidad y analítica UX a gran escala",
+          "gl": "Plataforma de observabilidade e analítica UX a grande escala"
+        },
         "tag": "Business Intelligence",
         "url": "https://obsly.io/",
         "description": [
-          "Building new platform features and analytics dashboards for real-time event processing at scale.",
-          "Event-driven architecture, time-series databases, LLM-powered natural language query generation."
+          {
+            "en": "**Multi-tenant observability platform** for web and mobile apps — **billions of events per day**.",
+            "es": "**Plataforma de observabilidad multi-tenant** para apps web y móviles — **miles de millones de eventos al día**.",
+            "gl": "**Plataforma de observabilidade multi-tenant** para apps web e móbiles — **miles de millóns de eventos ao día**."
+          },
+          {
+            "en": "**Elasticsearch → ClickHouse**, **large-scale analytics** and **LLM → SQL**, built by **mini-squads** with an **AI-native workflow**.",
+            "es": "**Elasticsearch → ClickHouse**, **analítica a gran escala** y **LLM → SQL**, en **mini-squads** con un **flujo de trabajo nativo en IA**.",
+            "gl": "**Elasticsearch → ClickHouse**, **analítica a grande escala** e **LLM → SQL**, en **mini-squads** cun **fluxo de traballo nativo en IA**."
+          }
         ],
-        "tags": ["Python", "PostgreSQL", "Event-driven", "LLM", "Observability"]
+        "tags": [
+          "Python",
+          "FastAPI",
+          "ClickHouse",
+          "Kafka",
+          "LLM",
+          "Kubernetes"
+        ],
+        "details": [
+          {
+            "en": "**Multi-tenant SaaS** observability and UX analytics platform for web and mobile apps — **billions of events per day**.",
+            "es": "**SaaS multi-tenant** de observabilidad y analítica UX para apps web y móviles — **miles de millones de eventos al día**.",
+            "gl": "**SaaS multi-tenant** de observabilidade e analítica UX para apps web e móbiles — **miles de millóns de eventos ao día**."
+          },
+          {
+            "en": "**Elasticsearch → ClickHouse migration** — data modelling, materialised views, pre-aggregations and sharding: more performance and flexibility at **lower infrastructure cost**.",
+            "es": "**Migración de Elasticsearch a ClickHouse** — modelado de datos, vistas materializadas, preagregaciones y sharding: más rendimiento y flexibilidad con **menor coste de infraestructura**.",
+            "gl": "**Migración de Elasticsearch a ClickHouse** — modelado de datos, vistas materializadas, preagregacións e sharding: máis rendemento e flexibilidade con **menor custo de infraestrutura**."
+          },
+          {
+            "en": "**Large-scale analytics** — behavioural and conversion analysis, business-impact metrics and SLOs.",
+            "es": "**Analítica a gran escala** — análisis de comportamiento y conversión, métricas de impacto en negocio y SLOs.",
+            "gl": "**Analítica a grande escala** — análise de comportamento e conversión, métricas de impacto no negocio e SLOs."
+          },
+          {
+            "en": "**LLM integration** — natural-language questions turned into safe, validated SQL queries.",
+            "es": "**Integración de LLMs** — preguntas en lenguaje natural convertidas en consultas SQL seguras y validadas.",
+            "gl": "**Integración de LLMs** — preguntas en linguaxe natural convertidas en consultas SQL seguras e validadas."
+          },
+          {
+            "en": "**Platform** — event-driven alerting, multi-channel notifications, SSO/RBAC, Kubernetes and CI/CD.",
+            "es": "**Plataforma** — alertas orientadas a eventos, notificaciones multicanal, SSO/RBAC, Kubernetes y CI/CD.",
+            "gl": "**Plataforma** — alertas orientadas a eventos, notificacións multicanle, SSO/RBAC, Kubernetes e CI/CD."
+          },
+          {
+            "en": "**Mini-squads of 2–3 engineers** — joint analysis and design, cross code reviews and QA.",
+            "es": "**Mini-squads de 2–3 ingenieros** — análisis y diseño conjunto, revisiones de código cruzadas y QA.",
+            "gl": "**Mini-squads de 2–3 enxeñeiros** — análise e deseño conxunto, revisións de código cruzadas e QA."
+          },
+          {
+            "en": "**AI-native workflow** — planning, development and QA with Claude Code, custom skills, commands, sub-agents and MCP.",
+            "es": "**Flujo de trabajo nativo en IA** — planificación, desarrollo y QA con Claude Code, skills, commands, subagentes y MCP propios.",
+            "gl": "**Fluxo de traballo nativo en IA** — planificación, desenvolvemento e QA con Claude Code, skills, commands, subaxentes e MCP propios."
+          }
+        ]
       },
       {
         "title": "WinDelivery by Glovo",
-        "tagline": "Food delivery integration for restaurant chains",
+        "start": "2022-10",
+        "end": "2025-07",
+        "tagline": {
+          "en": "Food delivery integration platform for restaurant chains",
+          "es": "Plataforma de integración de delivery para cadenas de restauración",
+          "gl": "Plataforma de integración de delivery para cadeas de restauración"
+        },
         "tag": "Delivery",
         "url": "https://www.linkedin.com/company/windelivery/",
         "description": [
-          "Tech lead for an integration platform connecting brands like Burger King, Popeyes and Telepizza with POS systems and delivery aggregators.",
-          "Scalable event-driven architecture on AWS (Lambda, DynamoDB, SQS). CI/CD and CloudWatch monitoring."
+          {
+            "en": "**Integration Tech Lead** connecting restaurant chains like Burger King, VIPS or Telepizza with POS systems, delivery aggregators and logistics — **tens of millions of orders**.",
+            "es": "**Integration Tech Lead** conectando cadenas como Burger King, VIPS o Telepizza con TPVs, agregadores de delivery y logística — **decenas de millones de pedidos**.",
+            "gl": "**Integration Tech Lead** conectando cadeas como Burger King, VIPS ou Telepizza con TPVs, agregadores de delivery e loxística — **decenas de millóns de pedidos**."
+          },
+          {
+            "en": "**Custom Python ESB**, **serverless AWS** architecture and **production operations**.",
+            "es": "**ESB propio en Python**, arquitectura **serverless en AWS** y **operación en producción**.",
+            "gl": "**ESB propio en Python**, arquitectura **serverless en AWS** e **operación en produción**."
+          }
         ],
-        "tags": ["Python", "Flask", "AWS", "Event-driven", "Tech Lead"]
+        "tags": [
+          "Python",
+          "AWS",
+          "Serverless",
+          "Event-driven",
+          "Integrations",
+          "Tech Lead"
+        ],
+        "details": [
+          {
+            "en": "**Integration Tech Lead** — restaurant groups **RB Iberia** (Burger King, Popeyes), **ALSEA** (VIPS, Foster's Hollywood, Ginos), **FDB** (Telepizza) and **NRSur** (Dunkin' Donuts) connected with POS systems, delivery aggregators and last-mile logistics.",
+            "es": "**Integration Tech Lead** — grupos de restauración **RB Iberia** (Burger King, Popeyes), **ALSEA** (VIPS, Foster's Hollywood, Ginos), **FDB** (Telepizza) y **NRSur** (Dunkin' Donuts) conectados con TPVs, agregadores de delivery y logística de última milla.",
+            "gl": "**Integration Tech Lead** — grupos de restauración **RB Iberia** (Burger King, Popeyes), **ALSEA** (VIPS, Foster's Hollywood, Ginos), **FDB** (Telepizza) e **NRSur** (Dunkin' Donuts) conectados con TPVs, agregadores de delivery e loxística de última milla."
+          },
+          {
+            "en": "**Tens of millions of orders** processed in real time.",
+            "es": "**Decenas de millones de pedidos** procesados en tiempo real.",
+            "gl": "**Decenas de millóns de pedidos** procesados en tempo real."
+          },
+          {
+            "en": "**Custom ESB** built in plain Python to integrate heterogeneous third-party services.",
+            "es": "**ESB propio** construido en Python puro para integrar servicios de terceros heterogéneos.",
+            "gl": "**ESB propio** construído en Python puro para integrar servizos de terceiros heteroxéneos."
+          },
+          {
+            "en": "**Serverless, event-driven AWS** — API Gateway, Lambda, DynamoDB, S3, SQS/SNS — built and maintained with the DevOps team.",
+            "es": "**AWS serverless y orientado a eventos** — API Gateway, Lambda, DynamoDB, S3, SQS/SNS — construido y mantenido junto al equipo de DevOps.",
+            "gl": "**AWS serverless e orientado a eventos** — API Gateway, Lambda, DynamoDB, S3, SQS/SNS — construído e mantido xunto ao equipo de DevOps."
+          },
+          {
+            "en": "**Production operations** — daily review of the previous day's issues and critical incident response during restaurant opening hours.",
+            "es": "**Operación en producción** — revisión diaria de los problemas del día anterior y atención de incidencias críticas en horario de restaurante.",
+            "gl": "**Operación en produción** — revisión diaria dos problemas do día anterior e atención de incidencias críticas en horario de restaurante."
+          }
+        ]
       },
       {
         "title": "Savia — MAPFRE",
-        "tagline": "Health insurance and e-health platform",
+        "start": "2022-03",
+        "end": "2022-10",
+        "tagline": {
+          "en": "Health insurance and e-health platform",
+          "es": "Plataforma de seguros de salud y e-health",
+          "gl": "Plataforma de seguros de saúde e e-health"
+        },
         "tag": "eHealth",
         "url": "https://www.saludsavia.com/",
         "description": [
-          "Backend team on the redesign of MAPFRE's health platform towards a modular, multi-vertical architecture.",
-          "Python, Django REST Framework, Oscar Commerce, Stripe, Celery."
+          {
+            "en": "**Full stack** on the redesign of MAPFRE's health platform towards a **modular, multi-vertical architecture**.",
+            "es": "**Full stack** en el rediseño de la plataforma de salud de MAPFRE hacia una **arquitectura modular y multivertical**.",
+            "gl": "**Full stack** no redeseño da plataforma de saúde de MAPFRE cara a unha **arquitectura modular e multivertical**."
+          },
+          {
+            "en": "**Django Oscar e-commerce**, **REST APIs** and **Stripe payments**.",
+            "es": "**E-commerce con Django Oscar**, **APIs REST** y **pagos con Stripe**.",
+            "gl": "**E-commerce con Django Oscar**, **APIs REST** e **pagamentos con Stripe**."
+          }
         ],
-        "tags": ["Python", "Django", "DRF", "Celery", "Docker"]
+        "tags": ["Python", "Django", "Django Oscar", "DRF", "Celery", "Stripe"],
+        "details": [
+          {
+            "en": "**Full stack development** in the team redesigning Savia, MAPFRE's health insurance and e-health platform.",
+            "es": "**Desarrollo full stack** en el equipo que rediseñó Savia, la plataforma de seguros de salud y e-health de MAPFRE.",
+            "gl": "**Desenvolvemento full stack** no equipo que redeseñou Savia, a plataforma de seguros de saúde e e-health de MAPFRE."
+          },
+          {
+            "en": "**Modular, reusable architecture** able to support multiple business verticals.",
+            "es": "**Arquitectura modular y reutilizable** capaz de dar soporte a varias verticales de negocio.",
+            "gl": "**Arquitectura modular e reutilizable** capaz de dar soporte a varias verticais de negocio."
+          },
+          {
+            "en": "**E-commerce with Django Oscar** — server-side templates, Bootstrap and jQuery.",
+            "es": "**E-commerce con Django Oscar** — plantillas renderizadas en servidor, Bootstrap y jQuery.",
+            "gl": "**E-commerce con Django Oscar** — modelos renderizados no servidor, Bootstrap e jQuery."
+          },
+          {
+            "en": "**Backend** — Django REST Framework, Stripe payments and Celery; Docker and Jenkins.",
+            "es": "**Backend** — Django REST Framework, pagos con Stripe y Celery; Docker y Jenkins.",
+            "gl": "**Backend** — Django REST Framework, pagamentos con Stripe e Celery; Docker e Jenkins."
+          }
+        ]
       }
     ]
   },
   {
     "period": "2021 – 2022",
     "company": "Optiva Media",
-    "role": "Senior Software Developer",
+    "role": "Senior Backend Developer",
     "projects": [
       {
-        "title": "Telefónica R&D",
-        "tagline": "Device management for set-top boxes and OTT players",
-        "tag": "Media & TV",
+        "title": "Telefónica — Movistar+",
+        "tagline": {
+          "en": "Device management for Movistar+ set-top boxes and OTT players",
+          "es": "Gestión de decodificadores y reproductores OTT de Movistar+",
+          "gl": "Xestión de descodificadores e reprodutores OTT de Movistar+"
+        },
+        "tag": {
+          "en": "Media & TV",
+          "es": "Medios y TV",
+          "gl": "Medios e TV"
+        },
         "url": null,
         "description": [
-          "Device management platforms for STBs and OTT players used by millions of Telefónica customers.",
-          "High-performance REST APIs, Prometheus/Grafana observability, modernisation of legacy multicast STB tools."
+          {
+            "en": "**Movistar+ set-top boxes and OTT players** in Spain and Latin America — **millions of customers**.",
+            "es": "**Decodificadores y reproductores OTT de Movistar+** en España y Latinoamérica — **millones de clientes**.",
+            "gl": "**Descodificadores e reprodutores OTT de Movistar+** en España e Latinoamérica — **millóns de clientes**."
+          },
+          {
+            "en": "**Legacy multicast → dockerised C++** and first steps of an **async Python** device platform.",
+            "es": "**Multicast legacy → C++ dockerizado** y primeros pasos de una plataforma de dispositivos en **Python asíncrono**.",
+            "gl": "**Multicast legacy → C++ dockerizado** e primeiros pasos dunha plataforma de dispositivos en **Python asíncrono**."
+          }
         ],
-        "tags": ["Python", "Sanic", "Prometheus", "C++", "Docker"]
+        "tags": ["C++", "Python", "Sanic", "Docker", "Prometheus", "Jenkins"],
+        "details": [
+          {
+            "en": "**Device management** for Movistar+ set-top boxes and OTT players in **Spain and Latin America**, used by **millions of customers**.",
+            "es": "**Gestión de dispositivos** para decodificadores y reproductores OTT de Movistar+ en **España y Latinoamérica**, usados por **millones de clientes**.",
+            "gl": "**Xestión de dispositivos** para descodificadores e reprodutores OTT de Movistar+ en **España e Latinoamérica**, usados por **millóns de clientes**."
+          },
+          {
+            "en": "**Channel lists, permissions, updates and configuration** delivered to the devices.",
+            "es": "**Listas de canales, permisos, actualizaciones y configuración** enviadas a los dispositivos.",
+            "gl": "**Listas de canles, permisos, actualizacións e configuración** enviadas aos dispositivos."
+          },
+          {
+            "en": "**Legacy multicast software migrated to modern C++** — dockerised, with metrics, tracing and monitoring (Prometheus, Grafana).",
+            "es": "**Software multicast legacy migrado a C++ moderno** — dockerizado, con métricas, trazas y monitorización (Prometheus, Grafana).",
+            "gl": "**Software multicast legacy migrado a C++ moderno** — dockerizado, con métricas, trazas e monitorización (Prometheus, Grafana)."
+          },
+          {
+            "en": "**Single device management platform** — initial phase in async Python (Sanic) with caching, reducing data-centre footprint.",
+            "es": "**Plataforma única de gestión de dispositivos** — fase inicial en Python asíncrono (Sanic) con cachés, reduciendo la dependencia de grandes centros de datos.",
+            "gl": "**Plataforma única de xestión de dispositivos** — fase inicial en Python asíncrono (Sanic) con cachés, reducindo a dependencia de grandes centros de datos."
+          },
+          {
+            "en": "**CI/CD** with Jenkins.",
+            "es": "**CI/CD** con Jenkins.",
+            "gl": "**CI/CD** con Jenkins."
+          }
+        ]
       }
     ]
   },
@@ -64,12 +249,28 @@
     "projects": [
       {
         "title": "Maritime Surveillance",
-        "tagline": "Border control and maritime surveillance platform",
-        "tag": "Security",
+        "tagline": {
+          "en": "Border control and maritime surveillance platform",
+          "es": "Plataforma de control fronterizo y vigilancia marítima",
+          "gl": "Plataforma de control fronteirizo e vixilancia marítima"
+        },
+        "tag": {
+          "en": "Security",
+          "es": "Seguridad",
+          "gl": "Seguridade"
+        },
         "url": "https://web.guardiacivil.es/es/destacados/eventos/ESPIAS-HOME-2015-ISFB-AG-ESUR-Jefatura-Fiscal-y-de-Fronteras/",
         "description": [
-          "Real-time integration of AIS feeds, SIVE radar networks and FIWARE/Orion Context Broker for national security agencies.",
-          "Event-driven Redis Streams for high-resilience data pipelines in low-connectivity environments."
+          {
+            "en": "Real-time integration of **AIS feeds**, **SIVE radar networks** and **FIWARE/Orion Context Broker** for **national security agencies**.",
+            "es": "Integración en tiempo real de **señales AIS**, **redes de radar SIVE** y **FIWARE/Orion Context Broker** para **agencias de seguridad nacional**.",
+            "gl": "Integración en tempo real de **sinais AIS**, **redes de radar SIVE** e **FIWARE/Orion Context Broker** para **axencias de seguridade nacional**."
+          },
+          {
+            "en": "**Event-driven Redis Streams** for high-resilience data pipelines in **low-connectivity environments**.",
+            "es": "**Redis Streams orientado a eventos** para pipelines de datos de alta resiliencia en **entornos de baja conectividad**.",
+            "gl": "**Redis Streams orientado a eventos** para pipelines de datos de alta resiliencia en **contornos de baixa conectividade**."
+          }
         ],
         "tags": ["Python", "Django", "Vue.js", "Redis", "FIWARE"]
       }
@@ -78,104 +279,240 @@
   {
     "period": "2018 – 2021",
     "company": "TRISON",
-    "role": "R&D & Projects Engineer",
+    "role": {
+      "en": "R&D & Projects Engineer",
+      "es": "Ingeniero de I+D y Proyectos",
+      "gl": "Enxeñeiro de I+D e Proxectos"
+    },
     "projects": [
       {
         "title": "Porsche Digitalisation",
-        "tagline": "Digital transformation for Porsche Spain dealerships",
-        "tag": "Automotive",
+        "tagline": {
+          "en": "Digital transformation for Porsche Spain dealerships",
+          "es": "Transformación digital de los concesionarios Porsche",
+          "gl": "Transformación dixital dos concesionarios Porsche"
+        },
+        "tag": {
+          "en": "Automotive",
+          "es": "Automoción",
+          "gl": "Automoción"
+        },
         "url": "https://trisonworld.com/es/proyectos/porsche/",
         "description": [
-          "Tech lead for digital transformation across 570 Porsche dealerships worldwide.",
-          "HelpDesk setup, monitoring software, Augmented Reality integrations, DjangoRF and Vue.js."
+          {
+            "en": "**Tech lead** for digital transformation across **570 Porsche dealerships** worldwide.",
+            "es": "**Tech lead** de la transformación digital de **570 concesionarios Porsche** en todo el mundo.",
+            "gl": "**Tech lead** da transformación dixital de **570 concesionarios Porsche** en todo o mundo."
+          },
+          {
+            "en": "HelpDesk setup, monitoring software, **Augmented Reality** integrations, DjangoRF and Vue.js.",
+            "es": "Puesta en marcha del HelpDesk, software de monitorización, integraciones de **Realidad Aumentada**, DjangoRF y Vue.js.",
+            "gl": "Posta en marcha do HelpDesk, software de monitorización, integracións de **Realidade Aumentada**, DjangoRF e Vue.js."
+          }
         ],
         "tags": ["DjangoRF", "Vue.js", "AR", "Docker", "Tech Lead"]
       },
       {
         "title": "Multimedia & AV",
-        "tagline": "Enterprise audio-visual integration projects",
-        "tag": "AV Integration",
+        "tagline": {
+          "en": "Enterprise audio-visual integration projects",
+          "es": "Proyectos de integración audiovisual para empresas",
+          "gl": "Proxectos de integración audiovisual para empresas"
+        },
+        "tag": {
+          "en": "AV Integration",
+          "es": "Integración AV",
+          "gl": "Integración AV"
+        },
         "url": null,
         "description": [
-          "New multimedia product development in an Open Innovation environment with startup mentoring and partner integrations.",
-          "Technological consultant for the Inditex group — conceptualisation of retail and automotive spaces."
+          {
+            "en": "**New multimedia product development** in an **Open Innovation** environment with startup mentoring and partner integrations.",
+            "es": "**Desarrollo de nuevos productos multimedia** en un entorno de **Open Innovation**, con mentorización de startups e integración de partners.",
+            "gl": "**Desenvolvemento de novos produtos multimedia** nun contorno de **Open Innovation**, con mentorización de startups e integración de partners."
+          },
+          {
+            "en": "**Technological consultant for the Inditex group** — conceptualisation of retail and automotive spaces.",
+            "es": "**Consultor tecnológico para el grupo Inditex** — conceptualización de espacios retail y de automoción.",
+            "gl": "**Consultor tecnolóxico para o grupo Inditex** — conceptualización de espazos retail e de automoción."
+          }
         ],
         "tags": ["AI/ML", "AR/VR", "Django", "Audio", "Product"]
       },
       {
         "title": "Inditex HQ",
-        "tagline": "Integrated AV ecosystem for Inditex's global headquarters",
-        "tag": "AV Integration",
+        "tagline": {
+          "en": "Integrated AV ecosystem for Inditex's global headquarters",
+          "es": "Ecosistema AV integrado para la sede central de Inditex",
+          "gl": "Ecosistema AV integrado para a sede central de Inditex"
+        },
+        "tag": {
+          "en": "AV Integration",
+          "es": "Integración AV",
+          "gl": "Integración AV"
+        },
         "url": "https://trisonworld.com/es/proyectos/inditex/",
         "description": [
-          "Full AV integration across auditorium, press room, immersive creative space and a 15,000 m² innovation building in A Coruña.",
-          "Auditorium features Europe's largest 1.9 mm LED screen (9,280 × 2,060 px), Meyer Sound acoustics, and support for 90 simultaneous displays."
+          {
+            "en": "**Full AV integration** across auditorium, press room, immersive creative space and a **15,000 m² innovation building** in A Coruña.",
+            "es": "**Integración AV completa** en auditorio, sala de prensa, espacio creativo inmersivo y un **edificio de innovación de 15.000 m²** en A Coruña.",
+            "gl": "**Integración AV completa** en auditorio, sala de prensa, espazo creativo inmersivo e un **edificio de innovación de 15.000 m²** na Coruña."
+          },
+          {
+            "en": "Auditorium features **Europe's largest 1.9 mm LED screen** (9,280 × 2,060 px), Meyer Sound acoustics, and support for **90 simultaneous displays**.",
+            "es": "El auditorio cuenta con **la mayor pantalla LED de 1,9 mm de Europa** (9.280 × 2.060 px), acústica Meyer Sound y soporte para **90 pantallas simultáneas**.",
+            "gl": "O auditorio conta coa **maior pantalla LED de 1,9 mm de Europa** (9.280 × 2.060 px), acústica Meyer Sound e soporte para **90 pantallas simultáneas**."
+          }
         ],
         "tags": ["LED", "AV", "Meyer Sound", "Video Mapping"]
       },
       {
         "title": "Ecoalf Flagship Store",
-        "tagline": "Immersive digital ecosystem for sustainable retail",
+        "tagline": {
+          "en": "Immersive digital ecosystem for sustainable retail",
+          "es": "Ecosistema digital inmersivo para retail sostenible",
+          "gl": "Ecosistema dixital inmersivo para retail sostible"
+        },
         "tag": "Retail Tech",
         "url": "https://trisonworld.com/es/proyectos/ecoalf/",
         "description": [
-          "LED screens, interactive totems and marine projections integrated into Ecoalf's flagship store in Madrid.",
-          "Technology as environmental storytelling — ocean protection, circular production and recycling brought to life."
+          {
+            "en": "**LED screens, interactive totems and marine projections** integrated into Ecoalf's **flagship store in Madrid**.",
+            "es": "**Pantallas LED, tótems interactivos y proyecciones marinas** integradas en la **flagship store de Ecoalf en Madrid**.",
+            "gl": "**Pantallas LED, tótems interactivos e proxeccións mariñas** integradas na **flagship store de Ecoalf en Madrid**."
+          },
+          {
+            "en": "Technology as environmental storytelling — ocean protection, circular production and recycling brought to life.",
+            "es": "La tecnología como relato medioambiental — protección de los océanos, producción circular y reciclaje cobran vida.",
+            "gl": "A tecnoloxía como relato ambiental — protección dos océanos, produción circular e reciclaxe cobran vida."
+          }
         ],
         "tags": ["LED", "Interactive", "Content", "Retail"]
       },
       {
         "title": "X Madrid",
-        "tagline": "Spain's first anti-shopping center",
+        "tagline": {
+          "en": "Spain's first anti-shopping center",
+          "es": "El primer anti-centro comercial de España",
+          "gl": "O primeiro anti-centro comercial de España"
+        },
         "tag": "Retail Tech",
         "url": "https://trisonworld.com/es/proyectos/x-madrid/",
         "description": [
-          "Immersive AV ecosystem across Spain's most disruptive retail space — LED, lighting, and interactive digital installations.",
-          "Winner of AV Awards 2020 Commercial Project of the Year. European reference for experiential retail."
+          {
+            "en": "**Immersive AV ecosystem** across Spain's most disruptive retail space — LED, lighting, and interactive digital installations.",
+            "es": "**Ecosistema AV inmersivo** en el espacio retail más disruptivo de España — LED, iluminación e instalaciones digitales interactivas.",
+            "gl": "**Ecosistema AV inmersivo** no espazo retail máis disruptivo de España — LED, iluminación e instalacións dixitais interactivas."
+          },
+          {
+            "en": "Winner of **AV Awards 2020 Commercial Project of the Year**. European reference for experiential retail.",
+            "es": "Ganador del **AV Awards 2020 al Proyecto Comercial del Año**. Referente europeo del retail experiencial.",
+            "gl": "Gañador do **AV Awards 2020 ao Proxecto Comercial do Ano**. Referente europeo do retail experiencial."
+          }
         ],
         "tags": ["LED", "Interactive", "Lighting", "AV Awards"]
       },
       {
         "title": "Arenas de Barcelona",
-        "tagline": "Large-scale LED installation in a landmark shopping centre",
-        "tag": "Digital Signage",
+        "tagline": {
+          "en": "Large-scale LED installation in a landmark shopping centre",
+          "es": "Gran instalación LED en un centro comercial emblemático",
+          "gl": "Gran instalación LED nun centro comercial emblemático"
+        },
+        "tag": {
+          "en": "Digital Signage",
+          "es": "Cartelería digital",
+          "gl": "Cartelaría dixital"
+        },
         "url": "https://trisonworld.com/es/proyectos/arenas-barcelona/",
         "description": [
-          "Over 180 m² of digital screens — including a 64 m interactive circular floor and a 62 m suspended perimeter display.",
-          "Completed in three weeks of nighttime installations inside a protected heritage building. Winner of Digital Signage Awards 2019."
+          {
+            "en": "**Over 180 m² of digital screens** — including a **64 m interactive circular floor** and a 62 m suspended perimeter display.",
+            "es": "**Más de 180 m² de pantallas digitales** — incluido un **suelo circular interactivo de 64 m** y una pantalla perimetral suspendida de 62 m.",
+            "gl": "**Máis de 180 m² de pantallas dixitais** — incluído un **chan circular interactivo de 64 m** e unha pantalla perimetral suspendida de 62 m."
+          },
+          {
+            "en": "Completed in **three weeks of nighttime installations** inside a protected heritage building. Winner of **Digital Signage Awards 2019**.",
+            "es": "Ejecutado en **tres semanas de instalación nocturna** dentro de un edificio protegido. Ganador de los **Digital Signage Awards 2019**.",
+            "gl": "Executado en **tres semanas de instalación nocturna** dentro dun edificio protexido. Gañador dos **Digital Signage Awards 2019**."
+          }
         ],
         "tags": ["LED", "Digital Signage", "Content", "DS Awards"]
       },
       {
         "title": "Baleària Ferry",
-        "tagline": "AV transformation of the world's largest LNG passenger ferry",
-        "tag": "Maritime",
+        "tagline": {
+          "en": "AV transformation of the world's largest LNG passenger ferry",
+          "es": "Transformación AV del mayor ferry de pasajeros propulsado por GNL del mundo",
+          "gl": "Transformación AV do maior ferry de pasaxeiros propulsado por GNL do mundo"
+        },
+        "tag": {
+          "en": "Maritime",
+          "es": "Marítimo",
+          "gl": "Marítimo"
+        },
         "url": "https://trisonworld.com/es/proyectos/balearia/",
         "description": [
-          "Full audiovisual integration aboard the Eleanor Roosevelt — LED welcome screen, digital signage, interactive kids' area and multi-zone audio across all decks.",
-          "A benchmark for how digitalisation and sustainability can coexist at sea."
+          {
+            "en": "**Full audiovisual integration** aboard the **Eleanor Roosevelt** — LED welcome screen, digital signage, interactive kids' area and multi-zone audio across all decks.",
+            "es": "**Integración audiovisual completa** a bordo del **Eleanor Roosevelt** — pantalla LED de bienvenida, cartelería digital, zona infantil interactiva y audio multizona en todas las cubiertas.",
+            "gl": "**Integración audiovisual completa** a bordo do **Eleanor Roosevelt** — pantalla LED de benvida, cartelaría dixital, zona infantil interactiva e audio multizona en todas as cubertas."
+          },
+          {
+            "en": "A benchmark for how digitalisation and sustainability can coexist at sea.",
+            "es": "Un referente de cómo digitalización y sostenibilidad pueden convivir en el mar.",
+            "gl": "Un referente de como dixitalización e sustentabilidade poden convivir no mar."
+          }
         ],
         "tags": ["LED", "Digital Signage", "Audio", "Maritime"]
       },
       {
         "title": "AENA — Barajas & El Prat",
-        "tagline": "Digital transformation of Madrid and Barcelona airports",
-        "tag": "Digital Signage",
+        "tagline": {
+          "en": "Digital transformation of Madrid and Barcelona airports",
+          "es": "Transformación digital de los aeropuertos de Madrid y Barcelona",
+          "gl": "Transformación dixital dos aeroportos de Madrid e Barcelona"
+        },
+        "tag": {
+          "en": "Digital Signage",
+          "es": "Cartelería digital",
+          "gl": "Cartelaría dixital"
+        },
         "url": "https://trisonworld.com/es/proyectos/exterior-plus-aena/",
         "description": [
-          "Large-format LED screens along Terminal 4 walkways at Barajas and vertical LED cubes integrated into El Prat's terminal pillars.",
-          "Benchmark for airport digitalisation balancing aesthetics, architecture and strict safety standards."
+          {
+            "en": "**Large-format LED screens** along Terminal 4 walkways at Barajas and **vertical LED cubes** integrated into El Prat's terminal pillars.",
+            "es": "**Pantallas LED de gran formato** en los pasillos de la Terminal 4 de Barajas y **cubos LED verticales** integrados en los pilares de la terminal de El Prat.",
+            "gl": "**Pantallas LED de gran formato** nos corredores da Terminal 4 de Barajas e **cubos LED verticais** integrados nos piares da terminal do Prat."
+          },
+          {
+            "en": "Benchmark for airport digitalisation balancing aesthetics, architecture and strict safety standards.",
+            "es": "Referente en digitalización aeroportuaria, equilibrando estética, arquitectura y estrictas normas de seguridad.",
+            "gl": "Referente en dixitalización aeroportuaria, equilibrando estética, arquitectura e estritas normas de seguridade."
+          }
         ],
         "tags": ["LED", "Digital Signage", "Airport", "High-traffic"]
       },
       {
         "title": "Lagoh Mall Sevilla",
-        "tagline": "Seville's largest mall transformed into an immersive 3.0 experience",
+        "tagline": {
+          "en": "Seville's largest mall transformed into an immersive 3.0 experience",
+          "es": "El mayor centro comercial de Sevilla convertido en una experiencia inmersiva 3.0",
+          "gl": "O maior centro comercial de Sevilla convertido nunha experiencia inmersiva 3.0"
+        },
         "tag": "Retail Tech",
         "url": "https://trisonworld.com/es/proyectos/lagoh-mall/",
         "description": [
-          "Transparent LED elevators, holographic fountains, digital facades and a 360° interactive cylinder across Seville's biggest shopping centre.",
-          "Winner of AV Awards 2020 Retail Project of the Year and AV Integration Awards 2021."
+          {
+            "en": "**Transparent LED elevators, holographic fountains**, digital facades and a **360° interactive cylinder** across Seville's biggest shopping centre.",
+            "es": "**Ascensores LED transparentes, fuentes holográficas**, fachadas digitales y un **cilindro interactivo de 360°** en el mayor centro comercial de Sevilla.",
+            "gl": "**Ascensores LED transparentes, fontes holográficas**, fachadas dixitais e un **cilindro interactivo de 360°** no maior centro comercial de Sevilla."
+          },
+          {
+            "en": "Winner of **AV Awards 2020 Retail Project of the Year** and **AV Integration Awards 2021**.",
+            "es": "Ganador del **AV Awards 2020 al Proyecto Retail del Año** y de los **AV Integration Awards 2021**.",
+            "gl": "Gañador do **AV Awards 2020 ao Proxecto Retail do Ano** e dos **AV Integration Awards 2021**."
+          }
         ],
         "tags": ["LED", "Holographic", "Interactive", "AV Awards"]
       }
@@ -184,37 +521,69 @@
   {
     "period": "2013 – 2018",
     "company": "Arantia, Televes Corp",
-    "role": "R&D Engineer",
+    "role": "Full Stack Developer",
     "projects": [
       {
         "title": "Transcoder/Streamer Live Plus",
-        "tagline": "Multiscreen live transcoder and streamer in a single device",
+        "tagline": {
+          "en": "Multiscreen live transcoder and streamer in a single device",
+          "es": "Transcodificador y streamer multipantalla en directo en un único equipo",
+          "gl": "Transcodificador e streamer multipantalla en directo nun único equipo"
+        },
         "tag": "Media Tech",
         "url": "https://www.televes.com/me/832204-transcoder-streamer-live-plus.html",
         "description": [
-          "Up to 15 simultaneous video inputs, each with 3 adaptive output profiles — streamed via HLS, UDP or RTP to any screen.",
-          "HEVC support for LTE networks, adaptive bitrate, native multi-device web player with Chromecast and Apple TV casting."
+          {
+            "en": "Up to **15 simultaneous video inputs**, each with **3 adaptive output profiles** — streamed via HLS, UDP or RTP to any screen.",
+            "es": "Hasta **15 entradas de vídeo simultáneas**, cada una con **3 perfiles de salida adaptativos** — emitidas por HLS, UDP o RTP a cualquier pantalla.",
+            "gl": "Ata **15 entradas de vídeo simultáneas**, cada unha con **3 perfís de saída adaptativos** — emitidas por HLS, UDP ou RTP a calquera pantalla."
+          },
+          {
+            "en": "**HEVC support** for LTE networks, **adaptive bitrate**, native multi-device web player with **Chromecast and Apple TV** casting.",
+            "es": "**Soporte HEVC** para redes LTE, **bitrate adaptativo** y reproductor web multidispositivo nativo con envío a **Chromecast y Apple TV**.",
+            "gl": "**Soporte HEVC** para redes LTE, **bitrate adaptativo** e reprodutor web multidispositivo nativo con envío a **Chromecast e Apple TV**."
+          }
         ],
         "tags": ["C/C++", "HLS", "HEVC", "Streaming", "Multiscreen"]
       },
       {
         "title": "DVB MPTS Streaming Tools",
-        "tagline": "DVB MPTS stream analysis and manipulation",
+        "tagline": {
+          "en": "DVB MPTS stream analysis and manipulation",
+          "es": "Análisis y manipulación de flujos DVB MPTS",
+          "gl": "Análise e manipulación de fluxos DVB MPTS"
+        },
         "tag": "Broadcast",
         "url": null,
         "description": [
-          "DVB MPTS stream analysis, manipulation and monitoring tools for broadcast engineering."
+          {
+            "en": "**DVB MPTS stream analysis, manipulation and monitoring** tools for broadcast engineering.",
+            "es": "Herramientas de **análisis, manipulación y monitorización de flujos DVB MPTS** para ingeniería de broadcast.",
+            "gl": "Ferramentas de **análise, manipulación e monitorización de fluxos DVB MPTS** para enxeñaría de broadcast."
+          }
         ],
         "tags": ["C++", "Python", "DVB", "Broadcast"]
       },
       {
         "title": "Arantia HE-21 IPTV Headend",
-        "tagline": "Compact IPTV headend for operators, hospitality and public venues",
+        "tagline": {
+          "en": "Compact IPTV headend for operators, hospitality and public venues",
+          "es": "Cabecera IPTV compacta para operadores, hostelería y espacios públicos",
+          "gl": "Cabeceira IPTV compacta para operadores, hostalaría e espazos públicos"
+        },
         "tag": "IPTV",
         "url": null,
         "description": [
-          "Multi-standard reception (DVB-T/T2, DVB-S/S2, DVB-C, ATSC, HDMI, SDI, IP) encapsulated and streamed over IPTV networks.",
-          "HEVC & 4K compatible, modular design, web management tool. Deployed in hotels, airports, seaports and TV operators."
+          {
+            "en": "**Multi-standard reception** (DVB-T/T2, DVB-S/S2, DVB-C, ATSC, HDMI, SDI, IP) encapsulated and streamed over **IPTV networks**.",
+            "es": "**Recepción multiestándar** (DVB-T/T2, DVB-S/S2, DVB-C, ATSC, HDMI, SDI, IP) encapsulada y distribuida por **redes IPTV**.",
+            "gl": "**Recepción multiestándar** (DVB-T/T2, DVB-S/S2, DVB-C, ATSC, HDMI, SDI, IP) encapsulada e distribuída por **redes IPTV**."
+          },
+          {
+            "en": "**HEVC & 4K** compatible, modular design, web management tool. Deployed in **hotels, airports, seaports and TV operators**.",
+            "es": "Compatible con **HEVC y 4K**, diseño modular y gestión web. Desplegada en **hoteles, aeropuertos, puertos y operadores de TV**.",
+            "gl": "Compatible con **HEVC e 4K**, deseño modular e xestión web. Despregada en **hoteis, aeroportos, portos e operadores de TV**."
+          }
         ],
         "tags": ["C/C++", "DVB", "IPTV", "HEVC", "Embedded"]
       }
@@ -223,15 +592,27 @@
   {
     "period": "2013",
     "company": "Streaming Galicia",
-    "role": "Developer Student Engineer",
+    "role": {
+      "en": "Developer Student Engineer",
+      "es": "Ingeniero en prácticas (desarrollo)",
+      "gl": "Enxeñeiro en prácticas (desenvolvemento)"
+    },
     "projects": [
       {
         "title": "Canal7 Rías Baixas OTT",
-        "tagline": "OTT streaming platform for regional TV",
+        "tagline": {
+          "en": "OTT streaming platform for regional TV",
+          "es": "Plataforma de streaming OTT para una televisión regional",
+          "gl": "Plataforma de streaming OTT para unha televisión rexional"
+        },
         "tag": "OTT",
         "url": "https://www.canalriasbaixas.com/",
         "description": [
-          "Deployment of the OTT Kaltura platform on AWS and integration with Wowza streaming server for Canal7 Rías Baixas."
+          {
+            "en": "Deployment of the **OTT Kaltura platform on AWS** and integration with **Wowza streaming server** for Canal7 Rías Baixas.",
+            "es": "Despliegue de la **plataforma OTT Kaltura en AWS** e integración con el **servidor de streaming Wowza** para Canal7 Rías Baixas.",
+            "gl": "Despregue da **plataforma OTT Kaltura en AWS** e integración co **servidor de streaming Wowza** para Canal7 Rías Baixas."
+          }
         ],
         "tags": ["AWS", "Kaltura", "Wowza", "OTT"]
       }

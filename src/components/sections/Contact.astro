@@ -1,5 +1,5 @@
 ---
-import { t, tAll } from '../../i18n/utils'
+import { t, tAll, loc } from '../../i18n/utils'
 import Tr from '../ui/Tr.astro'
 import SectionTitle from '../ui/SectionTitle.astro'
 import BrandIcon from '../ui/BrandIcon.astro'
@@ -27,9 +27,9 @@ const emailGl = t('gl', 'contact.email_address')
             <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1">
               <Tr {...tAll('contact.email_label')} />
             </p>
-            <a href={`mailto:${emailEn}`} class="i18n-en text-zinc-100 hover:text-accent transition-colors">{emailEn}</a>
-            <a href={`mailto:${emailEs}`} class="i18n-es text-zinc-100 hover:text-accent transition-colors">{emailEs}</a>
-            <a href={`mailto:${emailGl}`} class="i18n-gl text-zinc-100 hover:text-accent transition-colors">{emailGl}</a>
+            <a href={`mailto:${emailEn}`} lang="en" class="i18n-en text-zinc-100 hover:text-accent transition-colors">{emailEn}</a>
+            <a href={`mailto:${emailEs}`} lang="es" class="i18n-es text-zinc-100 hover:text-accent transition-colors">{emailEs}</a>
+            <a href={`mailto:${emailGl}`} lang="gl" class="i18n-gl text-zinc-100 hover:text-accent transition-colors">{emailGl}</a>
           </div>
         </div>
 
@@ -39,7 +39,7 @@ const emailGl = t('gl', 'contact.email_address')
             <p class="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-1">
               <Tr {...tAll('contact.location_label')} />
             </p>
-            <p class="text-zinc-100">{contact.location}</p>
+            <p class="text-zinc-100"><Tr {...loc(contact.location)} /></p>
           </div>
         </div>
 
@@ -65,9 +65,9 @@ const emailGl = t('gl', 'contact.email_address')
         </p>
         <div class="space-y-4">
           {profile.languages.map(lang => (
-            <div class="flex items-center justify-between border-b border-zinc-800 pb-4 last:border-0 last:pb-0">
-              <span class="text-zinc-100 font-medium">{lang.name}</span>
-              <span class="text-zinc-400 text-sm">{lang.level}</span>
+            <div class="flex items-center justify-between gap-6 border-b border-zinc-800 pb-4 last:border-0 last:pb-0">
+              <span class="text-zinc-100 font-medium shrink-0"><Tr {...loc(lang.name)} /></span>
+              <span class="text-zinc-400 text-sm text-right max-w-[16rem]"><Tr {...loc(lang.level)} /></span>
             </div>
           ))}
         </div>

@@ -18,7 +18,7 @@ import timeline from '../../data/timeline.json'
     <div class="max-w-3xl -mt-8 flex flex-col gap-3">
       {(['en', 'es', 'gl'] as const).map(lang =>
         profile.resumeBio[lang].map((p: string, i: number, arr: string[]) => (
-          <p class={`i18n-${lang} leading-relaxed ${i === arr.length - 1 ? 'font-semibold text-white' : 'text-zinc-300'}`}>
+          <p lang={lang} class={`i18n-${lang} leading-relaxed ${i === arr.length - 1 ? 'font-semibold text-white' : 'text-zinc-300'}`}>
             {p}
           </p>
         ))
@@ -86,6 +86,10 @@ import timeline from '../../data/timeline.json'
         chevron.style.transform = 'rotate(180deg)'
         entry.dataset.open = 'true'
       } else {
+        // Collapse "Read more" details when the company block closes
+        entry.querySelectorAll('.project-details').forEach(function (d) {
+          d.open = false
+        })
         body.style.gridTemplateRows = '0fr'
         chevron.style.transform = 'rotate(0deg)'
         entry.dataset.open = 'false'
@@ -102,6 +106,17 @@ import timeline from '../../data/timeline.json'
         })
         // Open the clicked one if it was closed
         if (!isOpen) setOpen(entry, true)
+      })
+    })
+
+    // "Read more" on any card expands every card of the same company block
+    accordion.querySelectorAll('.project-details > summary').forEach(function (summary) {
+      summary.addEventListener('click', function (e) {
+        e.preventDefault()
+        var entry = summary.closest('.accordion-entry')
+        entry.querySelectorAll('.project-details').forEach(function (d) {
+          d.open = true
+        })
       })
     })
 

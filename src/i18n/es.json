@@ -20,6 +20,7 @@
     "contact": "Contacto"
   },
   "hero": {
+    "greeting": "Hola, soy",
     "scroll_down": "Desplazarse hacia abajo"
   },
   "about": {
@@ -29,7 +30,8 @@
   },
   "professional": {
     "highlights_title": "Puntos fuertes",
-    "experience_title": "Experiencia"
+    "experience_title": "Experiencia",
+    "read_more": "Saber más"
   },
   "contact": {
     "location_label": "Ubicación",

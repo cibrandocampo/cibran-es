@@ -36,16 +36,19 @@
   },
   "resumeBio": {
     "en": [
-      "Telecommunications engineer with over a decade across very different domains — IPTV and video streaming, digital signage, border security, big data and last-mile delivery. That variety has meant working with a wide mix of technologies, languages, frameworks, databases and infrastructure stacks.",
-      "The only constant is change. I've learned to enjoy that."
+      "I'm a telecommunications engineer and I've been building software for over a decade — from IPTV and video streaming to digital signage, maritime surveillance, food delivery and, more recently, large-scale observability.",
+      "These days I focus mostly on the backend: data at scale, integrations and the platforms that hold everything together. And, like most of us, I've changed the way I work: AI is now part of every step, from the first idea to the final review, which leaves more time for what really matters — understanding the problem and designing a good solution.",
+      "Same curiosity as on day one. Just better tools."
     ],
     "es": [
-      "Ingeniero de telecomunicaciones con más de una década de experiencia en ámbitos muy distintos — IPTV y streaming de vídeo, señalética digital, seguridad fronteriza, big data y logística de última milla. Esa variedad me ha llevado a trabajar con un amplio abanico de tecnologías, lenguajes, frameworks, bases de datos e infraestructuras.",
-      "La única constante es el cambio. Y he aprendido a disfrutarlo."
+      "Soy ingeniero de telecomunicaciones y llevo más de una década construyendo software: de IPTV y streaming de vídeo a señalética digital, vigilancia marítima, delivery y, últimamente, observabilidad a gran escala.",
+      "Hoy me centro sobre todo en el backend: datos a gran escala, integraciones y las plataformas que lo sostienen todo. Y, como casi todos, he cambiado mi forma de trabajar: la IA está en cada paso, desde la primera idea hasta la revisión final, y eso me deja más tiempo para lo importante: entender bien el problema y diseñar una buena solución.",
+      "La misma curiosidad del primer día. Con mejores herramientas."
     ],
     "gl": [
-      "Enxeñeiro de telecomunicacións con máis dunha década de experiencia en ámbitos moi distintos — IPTV e streaming de vídeo, sinalización dixital, seguridade fronteiriza, big data e loxística de última milla. Esa variedade levoume a traballar cun amplo abano de tecnoloxías, linguaxes, frameworks, bases de datos e infraestruturas.",
-      "A única constante é o cambio. E aprendín a gozalo."
+      "Son enxeñeiro de telecomunicacións e levo máis dunha década construíndo software: de IPTV e streaming de vídeo a sinalización dixital, vixilancia marítima, delivery e, ultimamente, observabilidade a grande escala.",
+      "Hoxe céntrome sobre todo no backend: datos a grande escala, integracións e as plataformas que o sosteñen todo. E, coma case todos, cambiei a miña forma de traballar: a IA está en cada paso, desde a primeira idea ata a revisión final, e iso déixame máis tempo para o importante: entender ben o problema e deseñar unha boa solución.",
+      "A mesma curiosidade do primeiro día. Con mellores ferramentas."
     ]
   },
   "typedTitles": [
@@ -56,20 +59,52 @@
   ],
   "languages": [
     {
-      "name": "Galician",
-      "level": "Native"
+      "name": {
+        "en": "Galician",
+        "es": "Gallego",
+        "gl": "Galego"
+      },
+      "level": {
+        "en": "Native",
+        "es": "Nativo",
+        "gl": "Nativo"
+      }
     },
     {
-      "name": "Spanish",
-      "level": "Native"
+      "name": {
+        "en": "Spanish",
+        "es": "Castellano",
+        "gl": "Castelán"
+      },
+      "level": {
+        "en": "Native",
+        "es": "Nativo",
+        "gl": "Nativo"
+      }
     },
     {
-      "name": "English",
-      "level": "Professional"
+      "name": {
+        "en": "English",
+        "es": "Inglés",
+        "gl": "Inglés"
+      },
+      "level": {
+        "en": "Professional",
+        "es": "Profesional",
+        "gl": "Profesional"
+      }
     },
     {
-      "name": "Portuguese",
-      "level": "Enough to order coffee politely. Barely."
+      "name": {
+        "en": "Portuguese",
+        "es": "Portugués",
+        "gl": "Portugués"
+      },
+      "level": {
+        "en": "Enough to order coffee politely.",
+        "es": "Lo justo para pedir un café con educación.",
+        "gl": "O xusto para pedir un café con educación."
+      }
     }
   ],
   "social": [

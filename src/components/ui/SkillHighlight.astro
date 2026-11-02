@@ -18,6 +18,12 @@ const paragraphs = {
   gl: Array.isArray(description.gl) ? description.gl : [description.gl],
 }
 
+// A paragraph may start with a bold lead: "**Lead.** rest of the text"
+function splitLead(p: string): { lead: string | null; text: string } {
+  const m = p.match(/^\*\*(.+?)\*\*\s*(.*)$/s)
+  return m ? { lead: m[1], text: m[2] } : { lead: null, text: p }
+}
+
 function toPascalCase(s: string): string {
   return s
     .split('-')
@@ -32,12 +38,15 @@ const IconComponent = (LucideIcons as Record<string, any>)[toPascalCase(icon)]
   {IconComponent && <IconComponent size={24} class="text-accent" />}
   <div>
     <h3 class="text-base font-semibold text-white">
-      <span class="i18n-en">{name.en}</span><span class="i18n-es">{name.es}</span><span class="i18n-gl">{name.gl}</span>
+      <span class="i18n-en" lang="en">{name.en}</span>{' '}<span class="i18n-es" lang="es">{name.es}</span>{' '}<span class="i18n-gl" lang="gl">{name.gl}</span>
     </h3>
     <div class="mt-2 flex flex-col gap-3">
       {(['en', 'es', 'gl'] as const).map(lang =>
         paragraphs[lang].map((p: string) => (
-          <p class={`i18n-${lang} text-sm text-zinc-400 leading-relaxed text-justify`}>{p}</p>
+          <p lang={lang} class={`i18n-${lang} text-sm text-zinc-400 leading-relaxed text-justify`}>
+            {splitLead(p).lead && <strong class="font-semibold text-zinc-100">{splitLead(p).lead} </strong>}
+            {splitLead(p).text}
+          </p>
         ))
       )}
     </div>

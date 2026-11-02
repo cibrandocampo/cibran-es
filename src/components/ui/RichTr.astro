@@ -1,0 +1,34 @@
+---
+/**
+ * Like <Tr>, but supports inline **bold** highlights inside the text.
+ * Accepts a plain string or an `{ en, es, gl }` object.
+ */
+import { loc, type Localized } from '../../i18n/utils'
+
+interface Props {
+  value: Localized
+  strongClass?: string
+}
+const { value, strongClass = 'font-medium text-zinc-200' } = Astro.props
+const v = loc(value)
+
+function segments(s: string) {
+  return s
+    .split(/(\*\*[^*]+\*\*)/)
+    .filter(Boolean)
+    .map(p =>
+      p.startsWith('**') && p.endsWith('**')
+        ? { bold: true, text: p.slice(2, -2) }
+        : { bold: false, text: p },
+    )
+}
+---
+{v.en === v.es && v.es === v.gl ? (
+  <span>{segments(v.en).map(s => (s.bold ? <strong class={strongClass}>{s.text}</strong> : s.text))}</span>
+) : (['en', 'es', 'gl'] as const).map(lang => (
+  <>
+    <span class={`i18n-${lang}`} lang={lang}>
+      {segments(v[lang]).map(s => (s.bold ? <strong class={strongClass}>{s.text}</strong> : s.text))}
+    </span>{' '}
+  </>
+))}

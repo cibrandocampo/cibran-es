@@ -1,41 +1,75 @@
 # Cibrán Docampo — Personal Site
 
-> Senior Software Developer based in Cangas, Galicia, Spain.
-> Over a decade of experience designing and building software across IPTV, broadcast,
-> maritime surveillance, e-health, and large-scale observability platforms.
+> Senior Software Developer (backend focus) based in Cangas, Galicia, Spain.
+> Telecommunications Engineer with over a decade building software across IPTV and video
+> streaming, digital signage, maritime surveillance, e-health, food delivery and large-scale
+> observability platforms.
 
 ## About
 
-Cibrán Docampo Piñeiro is a Telecommunications Engineer and Senior Software Developer
-with deep expertise in backend systems, cloud architecture, and data engineering. He has
-worked as Tech Lead on high-complexity, high-performance projects across multiple sectors.
+Cibrán Docampo Piñeiro is a Telecommunications Engineer and Senior Backend Developer.
+His work focuses on data at scale, complex third-party integrations and the platforms that
+hold them together. He works in small, high-performance squads of 2–3 engineers (shared
+analysis and design, cross code reviews, close coordination with infrastructure and product
+teams) and uses an AI-native engineering workflow: brainstorming and planning with AI,
+development with Claude Code and a QA gate before every merge, supported by custom skills,
+slash commands, sub-agents and MCP integrations. AI accelerates; the team designs and
+validates.
+
+## Core strengths
+
+- Big Data at scale: software that ingests, stores and exploits massive event volumes
+  (billions of events per day); data modelling, analytical (columnar/OLAP) databases,
+  materialised views and pre-aggregations to keep queries fast, flexible and cost-efficient.
+- Complex integrations: heterogeneous third-party systems with different protocols,
+  formats and latencies in 24/7 high-availability, real-time environments, including a
+  custom-built ESB when existing tools did not meet the needs.
+- Architecture and cloud: serverless, event-driven solutions on AWS and platforms
+  deployed on Kubernetes, in coordination with infrastructure/DevOps teams.
+- High performance: from C++ close to the hardware to asynchronous APIs serving millions
+  of devices.
+- Full lifecycle: requirements, architecture, development, deployment, production
+  operations and critical incident resolution.
+- LLM integration: natural-language questions turned into safe, validated SQL queries.
 
 ## Core expertise
 
-- Backend: Python, Flask, Django/DRF, Node.js, C/C++, Java
-- Data & Databases: PostgreSQL, DynamoDB, Redis, InfluxDB, time-series databases
-- Cloud & DevOps: AWS, Docker, Kubernetes, Terraform, CI/CD
+- Backend: Python, FastAPI, Celery, Flask, Django/DRF, Node.js, C/C++, Java
+- Data & Databases: PostgreSQL, ClickHouse, Kafka, DynamoDB, Redis, InfluxDB, time-series databases
+- Cloud & DevOps: AWS (API Gateway, Lambda, DynamoDB, S3, SQS/SNS), Docker, Kubernetes, Helm, GitLab CI, Jenkins, Keycloak
 - Observability: Grafana, Prometheus, ELK Stack, CloudWatch, Loki
+- AI: LLM integration, Claude Code, AI-assisted software engineering
 - Multimedia & AV: FFmpeg, HW/SW transcoding, DVB/IPTV, HLS/DASH streaming
 - Frontend: Vue.js, React, Astro
 
 ## Career highlights
 
-- Senior Software Developer at Plexus Tech (2022–present): real-time observability platform
-  processing hundreds of millions of events per day; food delivery integration (Burger King,
-  Popeyes, Telepizza); e-health platform for MAPFRE.
-- Senior Software Developer at Optiva Media (2021–2022): Media & TV streaming platform
-  development for Telefónica.
+- Senior Backend Developer at Plexus Tech (2022–present):
+  - Obsly (2025–present): multi-tenant SaaS observability and UX analytics platform for web
+    and mobile apps, processing billions of events per day. Elasticsearch → ClickHouse
+    migration (materialised views, pre-aggregations, sharding) for more performance and
+    flexibility at lower infrastructure cost; large-scale analytics; LLM natural-language
+    to SQL; alerting and multi-channel notifications; SSO/RBAC; Kubernetes and CI/CD.
+  - WinDelivery by Glovo (2022–2025), as Integration Tech Lead: food delivery integration
+    platform connecting restaurant groups RB Iberia (Burger King, Popeyes), ALSEA (VIPS,
+    Foster's Hollywood, Ginos), FDB (Telepizza) and NRSur (Dunkin' Donuts) with POS systems,
+    delivery aggregators and last-mile logistics — tens of millions of orders. Custom ESB in
+    plain Python, serverless event-driven AWS architecture, production operations.
+  - Savia — MAPFRE (2022), full stack: redesign of MAPFRE's health insurance and e-health
+    platform towards a modular, multi-vertical architecture (Django, Django Oscar, DRF,
+    Stripe, Celery).
+- Senior Backend Developer at Optiva Media (2021–2022): device management for Movistar+
+  set-top boxes and OTT players in Spain and Latin America (channel lists, permissions,
+  updates); legacy multicast tooling migrated to dockerised, monitored C++, and the first
+  steps of a single async Python (Sanic) device management platform.
 - Full Stack Developer at Grupo CPS (2021): real-time integration of AIS feeds, SIVE
   radar networks and FIWARE/Orion Context Broker for national security agencies;
   event-driven Redis Streams pipelines for low-connectivity border surveillance environments.
 - Multimedia & AV Engineering at TRISON (2018–2021): designed innovative AV solutions for
   interactive retail spaces, touch-sensitive floors in shopping centres, and VR/AR
   experiences for car dealerships worldwide (Porsche, Inditex, Ecoalf, Baleària, AENA).
-- DVB/IPTV Engineering at Arantia/Televes (2013–2018): built professional IPTV headend
-  and hardware/software transcoding systems.
-- Tech Lead: led multidisciplinary software development squads on high-complexity,
-  high-performance projects.
+- Full Stack Developer at Arantia/Televes (2013–2018): professional IPTV headend and
+  hardware/software transcoding and streaming products.
 
 ## Personal projects
 
@@ -85,13 +119,13 @@ mobile-first.
 ### eBird Life List
 
 Bird sightings logged on eBird — Cornell Lab's global citizen science platform.
-Focused on species along the Galician coast, with 124 species logged to date.
+214 species logged to date.
 
-- [My eBird profile](https://ebird.org/profile/OTIxNTk2OA/ES-GA)
+- [My eBird profile](https://ebird.org/profile/OTIxNTk2OA/world)
 
 ### HappyWhale
 
-380+ whale encounters logged, 52 uniquely identified on HappyWhale — a global cetacean
+380+ whale encounters logged, 56 uniquely identified on HappyWhale — a global cetacean
 research database. Fin whales and humpbacks off the Galician coast.
 
 - [My HappyWhale profile](https://happywhale.com/user/25322)
@@ -109,7 +143,7 @@ possible builds. Because why not?
 - [GitHub](https://github.com/cibrandocampo)
 - [Docker Hub](https://hub.docker.com/u/cibrandocampo)
 - [HappyWhale](https://happywhale.com/user/25322)
-- [eBird](https://ebird.org/profile/OTIxNTk2OA/ES-GA) (124 species logged)
+- [eBird](https://ebird.org/profile/OTIxNTk2OA/world) (214 species logged)
 - [500px](https://500px.com/p/cibran)
 - [Spotify](https://open.spotify.com/user/comepedras)
 - [Instagram](https://www.instagram.com/yogurgur/)
