@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css'
-import { t } from '../i18n/utils'
+import { t, tAll, loc } from '../i18n/utils'
+import Tr from '../components/ui/Tr.astro'
+import education from '../data/education.json'
 import Nav from '../components/Nav.astro'
 
 interface Props {
@@ -51,32 +53,19 @@ const jsonLd = {
     { '@type': 'Language', name: 'English' },
     { '@type': 'Language', name: 'Portuguese' },
   ],
-  alumniOf: [
-    {
-      '@type': 'EducationalOrganization',
-      name: 'Universidad de Vigo',
-      description: 'Telecommunication Technical Engineering — Image and Sound (2009–2014)',
-    },
-    {
-      '@type': 'EducationalOrganization',
-      name: 'UNIR — La Universidad en Internet',
-      description: "Master's Degree in Teacher Training — Technology and IT (2022–2023)",
-    },
-  ],
-  hasCredential: [
-    {
-      '@type': 'EducationalOccupationalCredential',
-      name: 'Scrum Manager Experto',
-      credentialCategory: 'certificate',
-      recognizedBy: { '@type': 'Organization', name: 'Scrum Manager' },
-    },
-    {
-      '@type': 'EducationalOccupationalCredential',
-      name: 'Drone Pilot Certificate A1-A3',
-      credentialCategory: 'license',
-      recognizedBy: { '@type': 'Organization', name: 'AESA' },
-    },
-  ],
+  // Generated from src/data/education.json so structured data never drifts from the page
+  alumniOf: education.formal.map(d => ({
+    '@type': 'EducationalOrganization',
+    name: d.institution,
+    description: `${loc(d.degree).en} (${d.period.replace(' – ', '–')})`,
+  })),
+  hasCredential: education.certifications.map(c => ({
+    '@type': 'EducationalOccupationalCredential',
+    name: loc(c.name).en,
+    credentialCategory: c.issuer === 'AESA' ? 'license' : 'certificate',
+    recognizedBy: { '@type': 'Organization', name: c.issuer },
+    ...(c.year ? { dateCreated: String(c.year) } : {}),
+  })),
 }
 
 const jsonLdWebsite = {
@@ -156,7 +145,8 @@ const jsonLdWebsite = {
     <!-- Language detection: reads stored preference or detects from browser, applies lang-XX class before first paint -->
     <script is:inline>
       ;(function () {
-        var stored = localStorage.getItem('lang')
+        var stored = null
+        try { stored = localStorage.getItem('lang') } catch (e) {}
         var lang = stored
         if (!lang) {
           var langs = (navigator.languages && navigator.languages.length
@@ -170,13 +160,19 @@ const jsonLdWebsite = {
               lang = 'es'; break
             }
           }
-          localStorage.setItem('lang', lang)
+          try { localStorage.setItem('lang', lang) } catch (e) {}
         }
         document.documentElement.classList.add('lang-' + lang)
         document.documentElement.lang = lang
       })()
     </script>
 
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2 focus:rounded focus:bg-zinc-800 focus:text-white focus:border focus:border-accent"
+    >
+      <Tr {...tAll('a11y.skip')} />
+    </a>
     <Nav />
     <slot />
   </body>
