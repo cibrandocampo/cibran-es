@@ -1,9 +1,9 @@
 # cibran.es
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Astro-5.x-FF5D01?logo=astro&logoColor=white" alt="Astro 5"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS 3"/>
-  <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white" alt="TypeScript 5"/>
+  <img src="https://img.shields.io/badge/Astro-7.x-FF5D01?logo=astro&logoColor=white" alt="Astro 7"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4.x-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4"/>
+  <img src="https://img.shields.io/badge/TypeScript-6.x-3178C6?logo=typescript&logoColor=white" alt="TypeScript 6"/>
 </p>
 
 <p align="center">
@@ -24,10 +24,10 @@
 Single-page personal site with five sections:
 
 - **Hero** — name, typed rotating subtitle, profile photo
-- **About** — bio, interests grid (birding, whale watching, drones, LEGO...), and a fun facts panel with real numbers (birds logged on eBird, whales identified on HappyWhale, drone hours, etc.)
-- **Resume** — skill highlight cards, collapsible experience timeline per company, and education/certifications
+- **About** — bio, interests grid (birding, whale watching, drones, LEGO...), and a fun facts panel with real numbers (birds logged on eBird, whales identified on HappyWhale, kilometres flown by drone, etc.)
+- **Resume** — skill highlight cards, collapsible experience timeline per company (each project card has a short summary and a "Read more" with the full detail and highlights), and education/certifications
 - **Portfolio** — project cards with category, tech tags, links, and live Docker Hub pull counts fetched at build time
-- **Contact** — location, email, LinkedIn
+- **Contact** — location, email, local time, spoken languages and social links
 
 Available in **English, Spanish, and Galician** — single URL, no redirects. Language is detected from the browser and stored in `localStorage`; switching is instant via CSS class on `<html>`.
 
@@ -60,7 +60,9 @@ All Node/npm commands run inside Docker — no local Node installation needed.
 
 ## Content
 
-All site content lives in `src/data/` as JSON: bio, experience, education, skills, projects, interests, and fun facts. UI strings are in `src/i18n/{en,es,gl}.json`.
+All site content lives in `src/data/` as JSON: bio, experience (`timeline.json`), education, skills, projects, interests, and fun facts. Text fields are either a plain string or an `{ en, es, gl }` object, and `**bold**` marks highlights in experience cards. UI strings are in `src/i18n/{en,es,gl}.json`.
+
+The site is built to be easy to read for search engines and LLMs: every per-language block carries a `lang` attribute, the full text is always in the HTML (even collapsed "Read more" content), there is `Person` JSON-LD structured data, and `public/llms.txt` offers a plain-text summary. See [`SEO.md`](SEO.md) for details.
 
 Docker Hub pull counts for portfolio projects are fetched live from the Docker Hub API at build time and baked into the generated HTML — no client-side requests, no proxy. A GitHub Actions scheduled workflow rebuilds the site weekly to keep the counts current.
 
