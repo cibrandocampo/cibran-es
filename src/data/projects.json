@@ -2,10 +2,18 @@
   {
     "id": "nudge",
     "title": "Nudge",
-    "category": "Web App",
+    "category": {
+      "en": "Web App",
+      "es": "Web App",
+      "gl": "Web App"
+    },
     "image": "images/projects/nudge.png",
     "logo": "images/projects/nudge-logo.svg",
-    "description": "A gentle reminder app for recurring things — groceries, medications, filters, anything you tend to forget. Full-stack PWA with push notifications, sharing, and offline support.",
+    "description": {
+      "en": "A gentle reminder app for recurring things — groceries, medications, filters, anything you tend to forget. Full-stack PWA with push notifications, sharing, and offline support.",
+      "es": "Recordatorios amables para las cosas recurrentes — la compra, medicamentos, filtros, todo lo que se suele olvidar. PWA full stack con notificaciones push, opción de compartir y funcionamiento sin conexión.",
+      "gl": "Recordatorios amables para as cousas recorrentes — a compra, medicamentos, filtros, todo o que se adoita esquecer. PWA full stack con notificacións push, opción de compartir e funcionamento sen conexión."
+    },
     "tags": ["Python", "Django", "React", "Celery", "Redis", "PWA"],
     "github": "https://github.com/cibrandocampo/nudge",
     "url": "https://nudge.cibran.es",
@@ -18,10 +26,18 @@
   {
     "id": "ovh-dyndns-client",
     "title": "OVH DynDNS Client",
-    "category": "Networking",
+    "category": {
+      "en": "Networking",
+      "es": "Redes",
+      "gl": "Redes"
+    },
     "image": null,
     "logo": "images/projects/ovh-dyndns-logo.svg",
-    "description": "Lightweight DynDNS client for OVH domains. Keeps your DNS record in sync with your dynamic public IP — perfect for self-hosted setups behind a residential connection.",
+    "description": {
+      "en": "Lightweight DynDNS client for OVH domains. Keeps your DNS record in sync with your dynamic public IP — perfect for self-hosted setups behind a residential connection.",
+      "es": "Cliente DynDNS ligero para dominios de OVH. Mantiene el registro DNS sincronizado con tu IP pública dinámica — ideal para servicios autoalojados detrás de una conexión doméstica.",
+      "gl": "Cliente DynDNS lixeiro para dominios de OVH. Mantén o rexistro DNS sincronizado coa túa IP pública dinámica — ideal para servizos autoaloxados detrás dunha conexión doméstica."
+    },
     "tags": ["Python", "FastAPI", "OVH API", "Docker"],
     "github": "https://github.com/cibrandocampo/ovh-dyndns-client",
     "url": "https://ovh-dyndns.cibran.es",
@@ -34,10 +50,18 @@
   {
     "id": "synology-photos-video-enhancer",
     "title": "Synology Video Enhancer",
-    "category": "Synology & Video",
+    "category": {
+      "en": "Synology & Video",
+      "es": "Synology y vídeo",
+      "gl": "Synology e vídeo"
+    },
     "image": null,
     "logo": "images/projects/synology-logo.svg",
-    "description": "Transcoding optimisation tool for Synology Photos. Automatically re-encodes videos to H.264 High Profile or H.265/HEVC, fixing the quality issues of Synology's default mobile transcoding pipeline.",
+    "description": {
+      "en": "Transcoding optimisation tool for Synology Photos. Automatically re-encodes videos to H.264 High Profile or H.265/HEVC, fixing the quality issues of Synology's default mobile transcoding pipeline.",
+      "es": "Herramienta de optimización de transcodificación para Synology Photos. Recodifica automáticamente los vídeos a H.264 High Profile o H.265/HEVC y corrige los problemas de calidad de la transcodificación móvil por defecto de Synology.",
+      "gl": "Ferramenta de optimización de transcodificación para Synology Photos. Recodifica automaticamente os vídeos a H.264 High Profile ou H.265/HEVC e corrixe os problemas de calidade da transcodificación móbil por defecto de Synology."
+    },
     "tags": ["Python", "FFmpeg", "Docker", "Synology"],
     "github": "https://github.com/cibrandocampo/synology-photos-video-enhancer",
     "url": "https://video-enhancer.cibran.es",
@@ -50,10 +74,18 @@
   {
     "id": "yourfisio",
     "title": "YourFisio",
-    "category": "Professional",
+    "category": {
+      "en": "Professional",
+      "es": "Profesional",
+      "gl": "Profesional"
+    },
     "image": null,
     "logo": "images/projects/yourfisio-logo.png",
-    "description": "Physiotherapy management platform developed at Stickybit. Patient tracking, session scheduling and exercise prescription for clinics.",
+    "description": {
+      "en": "Physiotherapy management platform developed at Stickybit. Patient tracking, session scheduling and exercise prescription for clinics.",
+      "es": "Plataforma de gestión para fisioterapia desarrollada en Stickybit. Seguimiento de pacientes, agenda de sesiones y pauta de ejercicios para clínicas.",
+      "gl": "Plataforma de xestión para fisioterapia desenvolvida en Stickybit. Seguimento de pacientes, axenda de sesións e pauta de exercicios para clínicas."
+    },
     "tags": ["Angular", "Node.js", "MongoDB"],
     "github": null,
     "url": "https://yourfisio.com",
@@ -63,9 +95,17 @@
   {
     "id": "ebird",
     "title": "eBird",
-    "category": "Citizen Science",
+    "category": {
+      "en": "Citizen Science",
+      "es": "Ciencia ciudadana",
+      "gl": "Ciencia cidadá"
+    },
     "image": "images/projects/ebird.jpg",
-    "description": "Bird sightings logged on eBird — Cornell Lab's global citizen science platform. Just getting started with ornithology, but already hooked on finding and identifying new species — 214 logged so far.",
+    "description": {
+      "en": "Bird sightings logged on eBird — Cornell Lab's global citizen science platform. Just getting started with ornithology, but already hooked on finding and identifying new species — 214 logged so far.",
+      "es": "Avistamientos de aves registrados en eBird, la plataforma global de ciencia ciudadana del Cornell Lab. Recién empezando en la ornitología, pero ya enganchado a encontrar e identificar nuevas especies — 214 registradas hasta ahora.",
+      "gl": "Avistamentos de aves rexistrados en eBird, a plataforma global de ciencia cidadá do Cornell Lab. Recén comezando na ornitoloxía, pero xa enganchado a atopar e identificar novas especies — 214 rexistradas ata agora."
+    },
     "tags": ["Citizen Science", "Ornithology", "Wildlife"],
     "github": null,
     "url": "https://ebird.org/profile/OTIxNTk2OA/world",
@@ -76,10 +116,18 @@
   {
     "id": "happywhale",
     "title": "HappyWhale",
-    "category": "Citizen Science",
+    "category": {
+      "en": "Citizen Science",
+      "es": "Ciencia ciudadana",
+      "gl": "Ciencia cidadá"
+    },
     "image": "images/projects/happywhale.jpg",
     "logo": "images/projects/happywhale-logo.webp",
-    "description": "Contributed 56 individual whale identifications to HappyWhale — a global cetacean research database. Fin whales and humpbacks off the Galician coast.",
+    "description": {
+      "en": "Contributed 56 individual whale identifications to HappyWhale — a global cetacean research database. Fin whales and humpbacks off the Galician coast.",
+      "es": "56 identificaciones individuales de ballenas aportadas a HappyWhale, una base de datos global de investigación de cetáceos. Rorcuales comunes y yubartas frente a la costa gallega.",
+      "gl": "56 identificacións individuais de baleas achegadas a HappyWhale, unha base de datos global de investigación de cetáceos. Rorcuais comúns e xubartes fronte á costa galega."
+    },
     "tags": ["Citizen Science", "Marine Biology", "Wildlife Photography"],
     "github": null,
     "url": "https://happywhale.com/user/25322",
@@ -90,10 +138,18 @@
   {
     "id": "carbwise",
     "title": "CarbWise",
-    "category": "Web App",
+    "category": {
+      "en": "Web App",
+      "es": "Web App",
+      "gl": "Web App"
+    },
     "image": null,
     "logo": "images/projects/carbwise-logo.svg",
-    "description": "Carbohydrate calculator built to help people with diabetes manage their diet. Look up carb values from official sources and calculate insulin doses — simple, fast and mobile-first.",
+    "description": {
+      "en": "Carbohydrate calculator built to help people with diabetes manage their diet. Look up carb values from official sources and calculate insulin doses — simple, fast and mobile-first.",
+      "es": "Calculadora de hidratos de carbono para ayudar a personas con diabetes a gestionar su dieta. Consulta valores de fuentes oficiales y calcula dosis de insulina — sencilla, rápida y pensada para móvil.",
+      "gl": "Calculadora de hidratos de carbono para axudar a persoas con diabetes a xestionar a súa dieta. Consulta valores de fontes oficiais e calcula doses de insulina — sinxela, rápida e pensada para móbil."
+    },
     "tags": ["JavaScript", "Nginx", "Docker"],
     "github": "https://github.com/cibrandocampo/carbwise",
     "url": "https://carbwise.cibran.es",
@@ -106,10 +162,18 @@
   {
     "id": "lego-builder",
     "title": "Lego Builder",
-    "category": "Fun",
+    "category": {
+      "en": "Fun",
+      "es": "Por diversión",
+      "gl": "Por diversión"
+    },
     "image": "images/projects/lego-builder.jpg",
     "logo": "images/projects/lego-logo.webp",
-    "description": "A personal experiment — image recognition tool that identifies Lego bricks and suggests possible builds. Because why not?",
+    "description": {
+      "en": "A personal experiment — image recognition tool that identifies Lego bricks and suggests possible builds. Because why not?",
+      "es": "Un experimento personal: reconocimiento de imágenes que identifica piezas de Lego y sugiere posibles construcciones. ¿Por qué no?",
+      "gl": "Un experimento persoal: recoñecemento de imaxes que identifica pezas de Lego e suxire posibles construcións. Por que non?"
+    },
     "tags": ["Python", "Image Recognition", "Fun"],
     "github": null,
     "url": null,
@@ -119,9 +183,17 @@
   {
     "id": "synology-service-stack",
     "title": "Synology Service Stack",
-    "category": "Synology & DevOps",
+    "category": {
+      "en": "Synology & DevOps",
+      "es": "Synology y DevOps",
+      "gl": "Synology e DevOps"
+    },
     "image": "images/projects/synology-stack.png",
-    "description": "Ready-to-deploy dockerised services — the must-have stack for Synology NAS. Pre-configured Docker Compose setups for the most useful self-hosted services.",
+    "description": {
+      "en": "Ready-to-deploy dockerised services — the must-have stack for Synology NAS. Pre-configured Docker Compose setups for the most useful self-hosted services.",
+      "es": "Servicios dockerizados listos para desplegar — el stack imprescindible para un NAS Synology. Configuraciones de Docker Compose para los servicios autoalojados más útiles.",
+      "gl": "Servizos dockerizados listos para despregar — o stack imprescindible para un NAS Synology. Configuracións de Docker Compose para os servizos autoaloxados máis útiles."
+    },
     "tags": ["Docker", "Synology", "Self-hosted"],
     "github": "https://github.com/cibrandocampo/synology-service-stack",
     "url": null,
@@ -131,9 +203,17 @@
   {
     "id": "work-time-control",
     "title": "Work Time Control",
-    "category": "Web App",
+    "category": {
+      "en": "Web App",
+      "es": "Web App",
+      "gl": "Web App"
+    },
     "image": "images/projects/wtc.png",
-    "description": "Time control system for registering and reviewing working hours. Supports multiple users with individual timezones and weekly hour targets. Web dashboard and Excel export.",
+    "description": {
+      "en": "Time control system for registering and reviewing working hours. Supports multiple users with individual timezones and weekly hour targets. Web dashboard and Excel export.",
+      "es": "Sistema de control horario para registrar y revisar las horas de trabajo. Varios usuarios con zona horaria propia y objetivos semanales de horas. Panel web y exportación a Excel.",
+      "gl": "Sistema de control horario para rexistrar e revisar as horas de traballo. Varios usuarios con fuso horario propio e obxectivos semanais de horas. Panel web e exportación a Excel."
+    },
     "tags": ["Python", "Django", "JavaScript", "Docker"],
     "github": "https://github.com/cibrandocampo/work-time-control",
     "url": null,
@@ -146,9 +226,17 @@
   {
     "id": "digitally-wise-seniors",
     "title": "Digitally Wise Seniors",
-    "category": "Web & Education",
+    "category": {
+      "en": "Web & Education",
+      "es": "Web y educación",
+      "gl": "Web e educación"
+    },
     "image": "images/projects/digitally-wise-seniors.jpg",
-    "description": "Suite of HTML5 games designed to help seniors develop touchscreen skills and digital confidence. Runs locally on any device, no installation required.",
+    "description": {
+      "en": "Suite of HTML5 games designed to help seniors develop touchscreen skills and digital confidence. Runs locally on any device, no installation required.",
+      "es": "Conjunto de juegos HTML5 para ayudar a personas mayores a manejar pantallas táctiles y ganar confianza digital. Funciona en local en cualquier dispositivo, sin instalación.",
+      "gl": "Conxunto de xogos HTML5 para axudar a persoas maiores a manexar pantallas táctiles e gañar confianza dixital. Funciona en local en calquera dispositivo, sen instalación."
+    },
     "tags": ["HTML5", "CSS", "JavaScript"],
     "github": "https://github.com/cibrandocampo/digitally-wise-seniors",
     "url": null,

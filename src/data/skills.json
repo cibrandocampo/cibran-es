@@ -80,27 +80,27 @@
       },
       "description": {
         "es": [
-          "**Big Data y grandes volúmenes.** Se ha diseñado y desarrollado software capaz de ingerir, almacenar y explotar volúmenes masivos de eventos, del orden de miles de millones al día. Modelado de datos, bases de datos analíticas y estrategias para que las consultas sigan siendo rápidas, flexibles y sostenibles en coste a medida que el volumen crece.",
-          "**Integraciones complejas.** Se han integrado sistemas de terceros muy heterogéneos, con protocolos, formatos y latencias muy distintos, en entornos 24/7 de alta disponibilidad y con procesamiento en tiempo real. Como las herramientas existentes no cubrían las necesidades, se diseñó y construyó un ESB propio.",
-          "**Arquitectura y cloud.** Sin ser un perfil DevOps puro, se han diseñado e implementado soluciones serverless y orientadas a eventos en AWS, y desplegado plataformas en Kubernetes, siempre de la mano de los equipos de infraestructura.",
+          "**Big Data y grandes volúmenes.** Diseño y desarrollo de software capaz de ingerir, almacenar y explotar volúmenes masivos de eventos, del orden de miles de millones al día. Modelado de datos, bases de datos analíticas y estrategias para que las consultas sigan siendo rápidas, flexibles y sostenibles en coste.",
+          "**Integraciones complejas.** Integración de sistemas de terceros muy heterogéneos, en entornos 24/7 de alta disponibilidad y tiempo real, incluido un ESB propio cuando las herramientas existentes no bastaban.",
+          "**Arquitectura y cloud.** Soluciones serverless y orientadas a eventos en AWS y plataformas en Kubernetes, sin ser un perfil DevOps puro y siempre de la mano de los equipos de infraestructura.",
           "**Alto rendimiento.** Software eficiente allí donde importa: desde C++ cerca del hardware hasta APIs asíncronas que dan servicio a millones de dispositivos.",
-          "**Ciclo completo.** Todo el recorrido: de la toma de requisitos y el diseño de la arquitectura a la operación en producción y la resolución de incidencias críticas.",
+          "**Ciclo completo.** De la toma de requisitos y el diseño de la arquitectura a la operación en producción y la resolución de incidencias críticas.",
           "Me encanta una arquitectura bien definida y un código limpio y mantenible, sin llevarlo a la obsesión."
         ],
         "en": [
-          "**Big Data at scale.** Designing and building software able to ingest, store and exploit massive volumes of events — in the order of billions per day. Data modelling, analytical databases and strategies that keep queries fast, flexible and cost-sustainable as volume grows.",
-          "**Complex integrations.** Integrating highly heterogeneous third-party systems, with very different protocols, formats and latencies, in 24/7 high-availability environments with real-time processing. As existing tools didn't meet the needs, a custom ESB was designed and built.",
-          "**Architecture & cloud.** Without being a pure DevOps profile: designing and implementing serverless, event-driven solutions on AWS and deploying platforms on Kubernetes, always hand in hand with the infrastructure teams.",
+          "**Big Data at scale.** Design and development of software able to ingest, store and exploit massive event volumes — in the order of billions per day. Data modelling, analytical databases and strategies that keep queries fast, flexible and cost-sustainable.",
+          "**Complex integrations.** Integration of highly heterogeneous third-party systems in 24/7 high-availability, real-time environments — including a custom ESB when existing tools fell short.",
+          "**Architecture & cloud.** Serverless, event-driven solutions on AWS and platforms on Kubernetes — without being a pure DevOps profile, and always hand in hand with infrastructure teams.",
           "**High performance.** Efficient software where it matters: from C++ close to the hardware to asynchronous APIs serving millions of devices.",
-          "**Full lifecycle.** The whole journey: from requirements and architecture design to production operations and critical incident resolution.",
+          "**Full lifecycle.** From requirements and architecture design to production operations and critical incident resolution.",
           "I love a well-defined architecture and clean, maintainable code — without taking it to obsession."
         ],
         "gl": [
-          "**Big Data e grandes volumes.** Deseñouse e desenvolveuse software capaz de inxerir, almacenar e explotar volumes masivos de eventos, da orde de miles de millóns ao día. Modelado de datos, bases de datos analíticas e estratexias para que as consultas sigan a ser rápidas, flexibles e sostibles en custo a medida que o volume medra.",
-          "**Integracións complexas.** Integráronse sistemas de terceiros moi heteroxéneos, con protocolos, formatos e latencias moi distintos, en contornos 24/7 de alta dispoñibilidade e con procesamento en tempo real. Como as ferramentas existentes non cubrían as necesidades, deseñouse e construíuse un ESB propio.",
-          "**Arquitectura e cloud.** Sen ser un perfil DevOps puro, deseñáronse e implementáronse solucións serverless e orientadas a eventos en AWS, e despregáronse plataformas en Kubernetes, sempre da man dos equipos de infraestrutura.",
+          "**Big Data e grandes volumes.** Deseño e desenvolvemento de software capaz de inxerir, almacenar e explotar volumes masivos de eventos, da orde de miles de millóns ao día. Modelado de datos, bases de datos analíticas e estratexias para que as consultas sigan a ser rápidas, flexibles e sostibles en custo.",
+          "**Integracións complexas.** Integración de sistemas de terceiros moi heteroxéneos, en contornos 24/7 de alta dispoñibilidade e tempo real, incluído un ESB propio cando as ferramentas existentes non chegaban.",
+          "**Arquitectura e cloud.** Solucións serverless e orientadas a eventos en AWS e plataformas en Kubernetes, sen ser un perfil DevOps puro e sempre da man dos equipos de infraestrutura.",
           "**Alto rendemento.** Software eficiente alí onde importa: desde C++ preto do hardware ata APIs asíncronas que dan servizo a millóns de dispositivos.",
-          "**Ciclo completo.** Todo o percorrido: da toma de requisitos e o deseño da arquitectura á operación en produción e a resolución de incidencias críticas.",
+          "**Ciclo completo.** Da toma de requisitos e o deseño da arquitectura á operación en produción e a resolución de incidencias críticas.",
           "Encántame unha arquitectura ben definida e un código limpo e mantible, sen levalo á obsesión."
         ]
       }
