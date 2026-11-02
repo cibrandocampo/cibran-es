@@ -31,7 +31,10 @@
   "professional": {
     "highlights_title": "Puntos fortes",
     "experience_title": "Experiencia",
-    "read_more": "Saber máis"
+    "read_more": "Saber máis",
+    "education_title": "Formación",
+    "degrees_title": "Titulacións",
+    "courses_title": "Cursos e certificacións"
   },
   "contact": {
     "location_label": "Localización",
@@ -45,5 +48,42 @@
   "meta": {
     "title": "Cibrán Docampo — Senior Software Developer",
     "description": "Senior Software Developer en Galicia. Sistemas escalables, arquitectura cloud e código aberto."
+  },
+  "notfound": {
+    "title": "Páxina non atopada",
+    "text": "A páxina que buscabas non existe ou foi movida.",
+    "home": "Volver ao inicio"
+  },
+  "tags": {
+    "Citizen Science": "Ciencia cidadá",
+    "Fun": "Diversión",
+    "Image Recognition": "Recoñecemento de imaxes",
+    "Marine Biology": "Bioloxía mariña",
+    "Ornithology": "Ornitoloxía",
+    "Self-hosted": "Autoaloxado",
+    "Wildlife": "Fauna",
+    "Wildlife Photography": "Fotografía de natureza",
+    "Airport": "Aeroporto",
+    "Content": "Contidos",
+    "Digital Signage": "Cartelaría dixital",
+    "Embedded": "Sistemas embebidos",
+    "Event-driven": "Orientado a eventos",
+    "High-traffic": "Alto tráfico",
+    "Holographic": "Holografía",
+    "Integrations": "Integracións",
+    "Interactive": "Interactivo",
+    "Lighting": "Iluminación",
+    "Maritime": "Marítimo",
+    "Multiscreen": "Multipantalla",
+    "Product": "Produto"
+  },
+  "a11y": {
+    "menu": "Menú",
+    "scroll_down": "Baixar",
+    "visit": "Visitar",
+    "github": "Repositorio en GitHub",
+    "profile": "O meu perfil",
+    "website": "Web do proxecto",
+    "skip": "Saltar ao contido"
   }
 }

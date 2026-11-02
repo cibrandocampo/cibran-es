@@ -1,5 +1,5 @@
 ---
-import { tAll } from '../../i18n/utils'
+import { tAll, loc } from '../../i18n/utils'
 import Tr from '../ui/Tr.astro'
 import SectionTitle from '../ui/SectionTitle.astro'
 import SkillHighlight from '../ui/SkillHighlight.astro'
@@ -7,6 +7,8 @@ import AccordionEntry from '../ui/AccordionEntry.astro'
 import profile from '../../data/profile.json'
 import skills from '../../data/skills.json'
 import timeline from '../../data/timeline.json'
+import education from '../../data/education.json'
+import { GraduationCap, BadgeCheck } from '@lucide/astro'
 ---
 
 <section id="professional" class="py-24 bg-zinc-900">
@@ -70,6 +72,47 @@ import timeline from '../../data/timeline.json'
       </div>
     </div>
 
+    <!-- Block 3: Education — degrees + courses & certifications -->
+    <div>
+      <h3 class="text-xs font-medium uppercase tracking-widest text-zinc-300 mb-6">
+        <Tr {...tAll('professional.education_title')} />
+      </h3>
+
+      <p class="text-xs uppercase tracking-widest text-zinc-400 mb-3">
+        <Tr {...tAll('professional.degrees_title')} />
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        {education.formal.map(d => (
+          <div class="flex gap-4 p-5 bg-zinc-800 border border-zinc-700 rounded-lg">
+            <GraduationCap size={22} class="text-accent flex-shrink-0 mt-0.5" />
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-accent uppercase tracking-widest">{d.period}</span>
+              <h4 class="text-sm font-semibold text-white leading-snug"><Tr {...loc(d.degree)} /></h4>
+              <span class="text-sm text-zinc-400">{d.institution}</span>
+              {d.description && (
+                <p class="text-xs text-zinc-400 leading-relaxed mt-1"><Tr {...loc(d.description)} /></p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-xs uppercase tracking-widest text-zinc-400 mb-3">
+        <Tr {...tAll('professional.courses_title')} />
+      </p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+        {education.certifications.map(c => (
+          <li class="flex items-start gap-2 p-3 bg-zinc-800/50 border border-zinc-700/30 rounded-lg">
+            <BadgeCheck size={15} class="text-brand flex-shrink-0 mt-0.5" />
+            <div class="flex flex-col">
+              <span class="text-xs text-zinc-200 leading-snug"><Tr {...loc(c.name)} /></span>
+              <span class="text-xs text-zinc-400">{c.issuer}{'year' in c && c.year ? ` · ${c.year}` : ''}</span>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+
   </div>
 </section>
 
@@ -85,6 +128,7 @@ import timeline from '../../data/timeline.json'
         body.style.gridTemplateRows = '1fr'
         chevron.style.transform = 'rotate(180deg)'
         entry.dataset.open = 'true'
+        entry.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'true')
       } else {
         // Collapse "Read more" details when the company block closes
         entry.querySelectorAll('.project-details').forEach(function (d) {
@@ -93,6 +137,7 @@ import timeline from '../../data/timeline.json'
         body.style.gridTemplateRows = '0fr'
         chevron.style.transform = 'rotate(0deg)'
         entry.dataset.open = 'false'
+        entry.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false')
       }
     }
 

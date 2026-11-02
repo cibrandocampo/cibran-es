@@ -38,7 +38,7 @@ See `.claude/skills/frontend-patterns` for component and CSS conventions.
 |------|----------|
 | `profile.json` | Name, title, bio (short + long paragraphs), location, email, typed titles, languages, social links |
 | `timeline.json` | Work history by company — period, company, role, projects[] (title, tagline, tag, url, description[], details[] for "Read more", tags[]). Text fields accept a plain string or `{ en, es, gl }` |
-| `education.json` | Formal degrees, certifications, publications |
+| `education.json` | Formal degrees (degree, period, institution, description) and courses/certifications (name, issuer, optional year). Rendered as the Education block of the Resume section |
 | `skills.json` | Personal skills (list), professional (category + items), highlights (cards) |
 | `interests.json` | Personal interests with icon, name, description |
 | `fun-facts.json` | Fun facts — icon, value, label, note |
