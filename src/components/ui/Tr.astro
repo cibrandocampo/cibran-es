@@ -1,9 +1,19 @@
 ---
+/**
+ * Renders one span per locale; CSS shows only the active one.
+ * - Each span carries `lang` so crawlers/LLMs know the language of each block.
+ * - Spans are separated by a space so raw-text extractors don't glue the
+ *   translations into one word ("Read moreSaber más…").
+ * - If the three values are identical, the text is rendered once.
+ */
 interface Props {
   en: string
   es: string
   gl: string
 }
 const { en, es, gl } = Astro.props
+const same = en === es && es === gl
 ---
-<span class="i18n-en">{en}</span><span class="i18n-es">{es}</span><span class="i18n-gl">{gl}</span>
+{same ? <span>{en}</span> : (
+  <><span class="i18n-en" lang="en">{en}</span>{' '}<span class="i18n-es" lang="es">{es}</span>{' '}<span class="i18n-gl" lang="gl">{gl}</span></>
+)}

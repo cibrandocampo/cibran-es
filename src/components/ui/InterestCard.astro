@@ -24,10 +24,10 @@ const IconComponent = (LucideIcons as Record<string, any>)[toPascalCase(icon)]
   <div class="flex items-center gap-3">
     {IconComponent && <IconComponent size={20} class="text-accent flex-shrink-0" />}
     <h3 class="text-sm font-semibold text-white">
-      <span class="i18n-en">{name.en}</span><span class="i18n-es">{name.es}</span><span class="i18n-gl">{name.gl}</span>
+      <span class="i18n-en" lang="en">{name.en}</span>{' '}<span class="i18n-es" lang="es">{name.es}</span>{' '}<span class="i18n-gl" lang="gl">{name.gl}</span>
     </h3>
   </div>
   <p class="text-sm text-zinc-400 leading-relaxed">
-    <span class="i18n-en">{description.en}</span><span class="i18n-es">{description.es}</span><span class="i18n-gl">{description.gl}</span>
+    <span class="i18n-en" lang="en">{description.en}</span>{' '}<span class="i18n-es" lang="es">{description.es}</span>{' '}<span class="i18n-gl" lang="gl">{description.gl}</span>
   </p>
 </div>

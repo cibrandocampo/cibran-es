@@ -66,6 +66,11 @@ are **accepted decisions**, not bugs:
   depending on the active language). This is a legitimate client-side i18n
   technique, but it means crawlers see text in all three languages within the
   same document.
+  Mitigations for crawlers and LLMs that read raw HTML: every per-locale span
+  or paragraph carries a `lang` attribute; inline translations are separated
+  by a space (so they never glue into one word); text identical in all locales
+  is rendered once (`Tr` / `RichTr`); and "Read more" details use native
+  `<details>`, so the full text is always in the HTML.
 
 If per-language indexing were ever desired, the site would need to move to
 locale routes (`/`, `/es/`, `/gl/`) and add `hreflang` — which contradicts the

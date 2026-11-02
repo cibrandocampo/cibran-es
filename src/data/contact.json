@@ -1,4 +1,8 @@
 {
-  "location": "Cangas, Galicia, Spain",
+  "location": {
+    "en": "Cangas, Galicia, Spain",
+    "es": "Cangas, Galicia, España",
+    "gl": "Cangas, Galicia, España"
+  },
   "email": "hola@cibran.es"
 }

@@ -37,7 +37,7 @@ See `.claude/skills/frontend-patterns` for component and CSS conventions.
 | File | Contents |
 |------|----------|
 | `profile.json` | Name, title, bio (short + long paragraphs), location, email, typed titles, languages, social links |
-| `experience.json` | Work history — role, project, period, company, description[], tags[] |
+| `timeline.json` | Work history by company — period, company, role, projects[] (title, tagline, tag, url, description[], details[] for "Read more", tags[]). Text fields accept a plain string or `{ en, es, gl }` |
 | `education.json` | Formal degrees, certifications, publications |
 | `skills.json` | Personal skills (list), professional (category + items), highlights (cards) |
 | `interests.json` | Personal interests with icon, name, description |
@@ -74,8 +74,8 @@ Three locales: `en` (default), `es`, `gl`. Single URL — no `/es/` or `/gl/` ro
 | Work history | LinkedIn: https://www.linkedin.com/in/cidocampo/ |
 | Projects | GitHub: https://github.com/cibrandocampo |
 | Docker Hub stats | https://hub.docker.com/u/cibrandocampo (API: `hub.docker.com/v2/repositories/cibrandocampo/`) |
-| Bird list | eBird: https://ebird.org/ (124 species logged) |
-| Whale encounters | HappyWhale: https://happywhale.com/user/25322 (50 whales) |
+| Bird list | eBird: https://ebird.org/ (214 species logged) |
+| Whale encounters | HappyWhale: https://happywhale.com/user/25322 (56 whales identified) |
 
 ## Old site reference
 

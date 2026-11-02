@@ -20,6 +20,7 @@
     "contact": "Contact"
   },
   "hero": {
+    "greeting": "Hi, I'm",
     "scroll_down": "Scroll down"
   },
   "about": {
@@ -29,7 +30,8 @@
   },
   "professional": {
     "highlights_title": "Highlights",
-    "experience_title": "Experience"
+    "experience_title": "Experience",
+    "read_more": "Read more"
   },
   "contact": {
     "location_label": "Location",
